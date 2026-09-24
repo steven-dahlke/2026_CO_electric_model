@@ -1,0 +1,117 @@
+fuel_type,year,price_per_mmbtu,price_native,native_unit,region,source,scenario
+natural_gas,2022,3.6645,3.8001,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2023,3.6645,3.8001,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2024,3.6645,3.8001,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2025,3.6645,3.8001,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2026,4.0321,4.1813,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2027,3.9402,4.086,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2028,4.0833,4.2344,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2029,4.3124,4.4719,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2030,4.9108,5.0925,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2031,5.3595,5.5578,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2032,5.8626,6.0795,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2033,5.8369,6.0529,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2034,5.7348,5.947,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2035,5.7237,5.9354,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2036,5.8929,6.1109,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2037,6.0208,6.2435,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2038,6.0004,6.2224,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2039,5.9222,6.1413,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2040,5.907,6.1255,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2041,5.9843,6.2057,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2042,5.9289,6.1483,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2043,5.7822,5.9961,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2044,5.6878,5.8982,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2045,5.627,5.8352,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2046,5.6892,5.8997,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2047,5.6398,5.8485,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2048,5.5737,5.7799,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2049,5.5351,5.7399,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+natural_gas,2050,5.4638,5.6659,$/Mcf,Mountain,"EIA AEO2026 Table 63, Electric Power sector, Mountain census division",cb2026
+coal,2022,2.5613,2.5613,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2023,2.5613,2.5613,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2024,2.5613,2.5613,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2025,2.5613,2.5613,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2026,2.5155,2.5155,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2027,2.4765,2.4765,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2028,2.4618,2.4618,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2029,2.483,2.483,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2030,2.4728,2.4728,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2031,2.4416,2.4416,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2032,2.4798,2.4798,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2033,2.4986,2.4986,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2034,2.4866,2.4866,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2035,2.4794,2.4794,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2036,2.4787,2.4787,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2037,2.5029,2.5029,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2038,2.513,2.513,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2039,2.5717,2.5717,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2040,2.564,2.564,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2041,2.557,2.557,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2042,2.5755,2.5755,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2043,2.575,2.575,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2044,2.4629,2.4629,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2045,2.3251,2.3251,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2046,2.238,2.238,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2047,2.4198,2.4198,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2048,2.4233,2.4233,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2049,2.4511,2.4511,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+coal,2050,2.4621,2.4621,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Steam Coal, national",cb2026
+distillate_fuel_oil,2022,26.2778,26.2778,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2023,26.2778,26.2778,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2024,26.2778,26.2778,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2025,26.2778,26.2778,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2026,23.8269,23.8269,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2027,23.6595,23.6595,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2028,23.1147,23.1147,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2029,22.5257,22.5257,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2030,21.5891,21.5891,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2031,20.0927,20.0927,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2032,20.8089,20.8089,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2033,21.0578,21.0578,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2034,21.5988,21.5988,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2035,21.6374,21.6374,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2036,21.7466,21.7466,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2037,22.0673,22.0673,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2038,22.2953,22.2953,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2039,22.5869,22.5869,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2040,22.8762,22.8762,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2041,23.1367,23.1367,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2042,23.3422,23.3422,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2043,23.5507,23.5507,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2044,23.8397,23.8397,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2045,24.198,24.198,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2046,24.6543,24.6543,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2047,24.9011,24.9011,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2048,25.1682,25.1682,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2049,25.3889,25.3889,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+distillate_fuel_oil,2050,25.6112,25.6112,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Distillate Fuel Oil, national",cb2026
+uranium,2022,0.55,0.55,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2023,0.55,0.55,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2024,0.55,0.55,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2025,0.55,0.55,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2026,0.5451,0.5451,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2027,0.5441,0.5441,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2028,0.5421,0.5421,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2029,0.5401,0.5401,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2030,0.5382,0.5382,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2031,0.5352,0.5352,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2032,0.5323,0.5323,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2033,0.5293,0.5293,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2034,0.5254,0.5254,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2035,0.5214,0.5214,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2036,0.5175,0.5175,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2037,0.5145,0.5145,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2038,0.5116,0.5116,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2039,0.5086,0.5086,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2040,0.5047,0.5047,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2041,0.5017,0.5017,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2042,0.4978,0.4978,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2043,0.4948,0.4948,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2044,0.4909,0.4909,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2045,0.4869,0.4869,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2046,0.483,0.483,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2047,0.48,0.48,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2048,0.4761,0.4761,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2049,0.4721,0.4721,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026
+uranium,2050,0.4682,0.4682,$/MMBtu,National,"EIA AEO2026 Table 3, Electric Power sector, Nuclear Fuel, national",cb2026

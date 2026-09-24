@@ -1,0 +1,2 @@
+discount_rate,base_year,step_years,npv_total,npv_capex_overnight,npv_fom,npv_opex_instate,npv_trade_net,npv_ex_trade
+0.03,2030,5,45928753193.94224,23559888107.583187,13642094106.759542,8726770979.59951,0.0,45928753193.94224

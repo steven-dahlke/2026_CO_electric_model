@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+~$*
+*.tmp
+.claude/
+.vscode/
+.cursorignore
+
+# Order matters below: later rules win. A bare "dir/**" also stops git from
+# traversing into that directory at all, so it's paired with "!dir/**/" to
+# keep traversal open for the more specific re-includes that follow.
+data_cleaning/**
+!data_cleaning/**/
+!data_cleaning/_scripts/**/*.py
+!data_cleaning/**/*.md
+!data_cleaning/**/*.csv
+!data_cleaning/**/*.png
+!data_cleaning/**/*.xlsx
+!data_cleaning/**/*.txt
+!data_cleaning/**/*.tsv
+!data_cleaning/**/*.pptx
+!data_cleaning/**/*.pdf
+!data_cleaning/**/*.docx
+data_cleaning/**/raw/**
+data_cleaning/counties/**
+data_cleaning/transmission/**
+data_cleaning/load/EFSLoadProfile_Reference_Moderate.csv
+
+_temp/
+
+pypsa/scenarios/**/dispatch_*.csv
+pypsa/scenarios/**/*.nc
+pypsa/scenarios/_dev_milestones/
+pypsa/scripts/_dev_milestones/

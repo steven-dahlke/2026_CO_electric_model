@@ -1,0 +1,26 @@
+Plant	Technology	Capacity (MW)	Fixed O&M ($/kW-yr)	Variable O&M ($/MWh)
+Craig	Coal	1285	43.34	4.66
+Comanche	Coal	1080	22.79	2.45
+Hayden	Coal	441	22.79	2.45
+Rawhide	Coal	280	30.48	3.28
+Ray D. Nixon	Coal	195	30.48	3.28
+Fort St. Vrain	Gas:CC	308	7.69	0.49
+Rocky Mountain	Gas:CC	300	17.53	1.11
+Cherokee	Gas:CC	240	17.56	1.11
+Pueblo Airport	Gas:CC	188	16.73	1.06
+Fort St. Vrain	Gas:CT	714	5.12	1.38
+Cherokee	Gas:CT	336	11.61	3.12
+Rocky Mountain	Gas:CT	292	12.58	3.38
+Blue Spruce	Gas:CT	264	4.44	1.19
+Manchief	Gas:CT	250	5.42	1.46
+Fort Lupton	Gas:CT	88	6.04	1.62
+Cherokee	Gas:ST	310	11.61	3.12
+Pawnee	Gas:ST	505	33.80	2.14
+Cabin Creek	Hydro:Pumped	340	14.42	0.41
+Mt. Elbert / Flatiron	Hydro:Pumped	238	16.69	0.48
+North WACM Hydro small	Hydro	193	42.06	0.00
+West WACM Hydro small	Hydro	363	71.75	0.00
+Rush Creek Wind	Wind	582	22.97	0.00
+Cheyenne Ridge	Wind	477	21.73	0.00
+Peak View	Wind	61	31.71	0.00
+Busch Ranch	Wind	29	14.91	0.00

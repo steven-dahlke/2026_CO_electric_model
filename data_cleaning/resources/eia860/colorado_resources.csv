@@ -1,0 +1,123 @@
+resource_name,zone,tech_type,status_category,group_type,is_grouped,unit_count,nameplate_mw,summer_mw,storage_mwh,max_charge_mw,max_discharge_mw,commission_date,retirement_date,encompass_cf_shape,plant_codes,generator_ids,plant_name,energy_source,prime_mover,ba_code,filter_source
+Denver_PSCO_GasCC_small,Denver,Gas:CC,operating,small_group,True,2,52.8,45.5,,,,,,,54372; 55200,ST1; UN7,,NG,CA,PSCO,CO+BA
+cherokee__7,Denver,Gas:CC,operating,large_thermal,False,1,255.0,240.0,,,,2015-08-01,,,469,7,Cherokee,NG,CA,PSCO,CO+BA
+Denver_PSCO_GasCT_small,Denver,Gas:CT,operating,small_group,True,9,529.9,361.0,,,,,,,477; 54372; 55200; 55207; 55505,6; BR1; BR2; GT1; GT2; UN5; UN6; UN7; UN8,,NG,GT,PSCO,CO+BA
+blue_spruce_energy_center__CT01,Denver,Gas:CT,operating,large_thermal,False,1,198.9,130.0,,,,2003-05-01,,,55645,CT01,Blue Spruce Energy Center,NG,GT,PSCO,CO+BA
+blue_spruce_energy_center__CT02,Denver,Gas:CT,operating,large_thermal,False,1,198.9,134.0,,,,2003-05-01,,,55645,CT02,Blue Spruce Energy Center,NG,GT,PSCO,CO+BA
+canyon_peak_power_station_GasCT_proposed,Denver,Gas:CT,proposed,proposed,True,6,156.6,133.2,,,,,,,68741,CPP_1; CPP_2; CPP_3; CPP_4; CPP_5; CPP_6,,NG,GT,WACM,CO+BA
+cherokee__5,Denver,Gas:CT,operating,large_thermal,False,1,185.3,168.0,,,,2015-08-01,,,469,5,Cherokee,NG,CT,PSCO,CO+BA
+cherokee__6,Denver,Gas:CT,operating,large_thermal,False,1,185.3,168.0,,,,2015-08-01,,,469,6,Cherokee,NG,CT,PSCO,CO+BA
+Denver_PSCO_GasIC_small,Denver,Gas:IC,operating,small_group,True,36,235.60000000000002,226.31999999999996,,,,,,,55650; 56516; 65898,2G01; 2G02; 2G03; 2G04; 2G05; 2G06; 2G07; 2G08; 2G09; 2G10; 2G11; 2G12; 2G13; 2G14; GE10; GE11; GE12; GE13; GE14; GE15; GE16; GE17; GE18; GE19; GE20; GEN1; GEN2; GEN3; GEN4; GEN5; GEN6; GEN7; GEN8; GEN9; T0041; T0042,,NG,IC,PSCO,CO+BA
+Denver_PSCO_GasST_small,Denver,Gas:ST,operating,small_group,True,3,35.0,40.0,,,,,,,10003,GEN1; GEN2; GEN3,,NG,ST,PSCO,CO+BA
+cherokee__4,Denver,Gas:ST,operating,large_thermal,False,1,380.8,310.0,,,,1968-06-01,2027-12-01,,469,4,Cherokee,NG,ST,PSCO,CO+BA
+Denver_PSCO_Hydro_small,Denver,Hydro,operating,small_group,True,9,22.0,22.400000000000002,,,,,,,10081; 10424; 472; 54142; 54679; 54680; 55931,0001; 1; 2; GEN1; GEN2,,WAT,HY,PSCO,CO+BA
+Denver_WACM_Hydro_small,Denver,Hydro,operating,small_group,True,1,3.1,3.1,,,,,,,10070,GEN1,,WAT,HY,WACM,CO+BA
+cabin_creek__A,Denver,Hydro:Pumped,operating,individual_tech,False,1,150.0,170.0,,,,1967-06-01,,,467,A,Cabin Creek,WAT,PS,PSCO,CO+BA
+cabin_creek__B,Denver,Hydro:Pumped,operating,individual_tech,False,1,150.0,170.0,,,,1967-06-01,,,467,B,Cabin Creek,WAT,PS,PSCO,CO+BA
+Denver_PSCO_Other_small,Denver,Other,operating,small_group,True,8,14.2,10.600000000000001,,,,,,,10180; 56530,3; 4; 5; 6; GEN1; GEN2; GEN3; GEN4,,OBG,IC,PSCO,CO+BA
+Denver_PSCO_SolarPV_existing,Denver,Solar:PV,operating,renewable_zone,True,42,296.59999999999997,296.5,,,,,,Denver_Solar_CF,56815; 57645; 57681; 59849; 59850; 60320; 60724; 60725; 60726; 60764; 61439; 61563; 61752; 61753; 61811; 61991; 62243; 62245; 62252; 62253; 62254; 62256; 62667; 62877; 63276; 63277; 63278; 63536; 63869; 64200; 64388; 64880; 65178; 65231; 65235; 65236; 65237; 65806; 67201; 67441; 67446,1; 23376; 23377; 528; 53962; 53964; 53965; 53966; 53967; 53968; 53970; 724; 75020; 75021; 75023; 75024; ADCO1; ADCO2; ADEN3; ARAP3; BLD3; DGIBM; HCO; JSG; LFHSL; MTNS4; PANPV; PCEC; PI-QF; PV1; PV2; SC; SSCO1; TRUCO; X0056; X0133,,SUN,PV,PSCO,CO+BA
+Denver_SWPP_SolarPV_existing,Denver,Solar:PV,operating,renewable_zone,True,8,19.5,19.5,,,,,,Denver_Solar_CF,59462; 59807; 64831; 66736; 66737; 66738; 66739; 66740,DIA4; DIA7; GBDIA; P4159; P4161; P4162; P4347; P4581,,SUN,PV,SWPP,CO_only
+Denver_WACM_SolarPV_existing,Denver,Solar:PV,operating,renewable_zone,True,3,8.3,8.3,,,,,,Denver_Solar_CF,59144; 62664; 68944,15755; PI21; SO393,,SUN,PV,WACM,CO+BA
+Denver_PSCO_battery_4hr_small,Denver,Storage:Battery,operating,small_battery,True,2,15.6,15.6,62.6,15.6,15.6,,,,67301; 67307,PKWBA; PLVBA,,MWH,BA,PSCO,CO+BA
+Denver_WACM_battery_4hr_small,Denver,Storage:Battery,operating,small_battery,True,1,11.8,11.8,47.0,11.8,11.8,,,,67305,BROBA,,MWH,BA,WACM,CO+BA
+Denver_WACM_battery_7hr_small,Denver,Storage:Battery,operating,small_battery,True,1,35.4,33.7,235.0,35.4,35.4,,,,68058,PCEBS,,MWH,BA,WACM,CO+BA
+East_WACM_GasCT_small,East,Gas:CT,operating,small_group,True,2,154.2,134.0,,,,,,,55504,L1; L2,,NG,GT,WACM,CO+BA
+East_PSCO_GasIC_small,East,Gas:IC,operating,small_group,True,5,10.0,10.0,,,,,,,6516,IC1A; IC2; IC3; IC4; IC5,,DFO,IC,PSCO,CO+BA
+East_WACM_GasIC_small,East,Gas:IC,operating,small_group,True,16,14.0,12.700000000000001,,,,,,,502; 504; 507; 8100,1; 2; 3; 4; 5; 6; CAT; EMD; IC4; IC5,,DFO,IC,WACM,CO+BA
+East_WACM_Other_small,East,Other,operating,small_group,True,2,129.4,100.0,,,,,,,6619,1; 2,,DFO,GT,WACM,CO+BA
+East_PSCO_SolarPV_existing,East,Solar:PV,operating,renewable_zone,True,4,12.1,12.1,,,,,,East_Solar_CF,59198; 60722; 61606; 67465,1; CBEP1; LOGA1; STER3,,SUN,PV,PSCO,CO+BA
+East_WACM_SolarPV_existing,East,Solar:PV,operating,renewable_zone,True,8,14.5,14.5,,,,,,East_Solar_CF,63092; 64352; 64353; 64355; 64356; 64359; 68941; 68945,BHC3; PI37; RIVER; SC,,SUN,PV,WACM,CO+BA
+sundance_co_SolarPV_proposed,East,Solar:PV,proposed,proposed,False,1,74.9,74.9,,,,,,East_Solar_CF,67666,SUNDN,Sundance (CO),SUN,PV,PSCO,CO+BA
+East_Wind_pt1_PSCO_existing,East,Wind,operating,renewable_zone,True,5,244.5,244.0,,,,,,East_Wind_pt1_CF,508; 56173; 56460; 67160,CG; T1-T3; T1S; T4; WT1,,WND,WT,PSCO,CO+BA
+East_Wind_pt1_WACM_existing,East,Wind,operating,renewable_zone,True,1,75.0,75.0,,,,,,East_Wind_pt1_CF,61040,WT1,,WND,WT,WACM,CO+BA
+East_Wind_pt2_PSCO_existing,East,Wind,operating,renewable_zone,True,7,1952.6,1932.9,,,,,,East_Wind_pt2_CF,57315; 58126; 58127; 59083; 60619; 63803; 66014,1; 1-139; GEN1; WBOPL; WBOPT; WT1,,WND,WT,PSCO,CO+BA
+East_Wind_pt2_WACM_existing,East,Wind,operating,renewable_zone,True,1,104.0,104.0,,,,,,East_Wind_pt2_CF,62489,GEN1,,WND,WT,WACM,CO+BA
+East_Wind_pt3_PSCO_existing,East,Wind,operating,renewable_zone,True,9,1345.8,1324.5,,,,,,East_Wind_pt3_CF,56320; 56563; 56613; 57290; 58769; 59975; 62952,1; CRW01; CW1; GE; SCIII; SIEM,,WND,WT,PSCO,CO+BA
+East_Wind_pt3_WACM_existing,East,Wind,operating,renewable_zone,True,4,352.7,352.1,,,,,,East_Wind_pt3_CF,57174; 57244; 65059,CHW1; CHW2; KCW; WNIYO,,WND,WT,WACM,CO+BA
+Mountain_PSCO_GasCT_small,Mountain,Gas:CT,operating,small_group,True,2,6.4,5.2,,,,,,,54630,T-1; T-2,,NG,GT,PSCO,CO+BA
+Mountain_PSCO_GasIC_small,Mountain,Gas:IC,operating,small_group,True,2,3.2,2.4,,,,,,,54630,D-1; D-2,,DFO,IC,PSCO,CO+BA
+Mountain_PSCO_Hydro_small,Mountain,Hydro,operating,small_group,True,4,10.5,10.0,,,,,,,10421; 50435; 60119; 7458,1; GEN1; SUG1,,WAT,HY,PSCO,CO+BA
+Mountain_WACM_Hydro_small,Mountain,Hydro,operating,small_group,True,4,29.5,29.5,,,,,,,10422; 516,1; 2; GEN1; GEN2,,WAT,HY,WACM,CO+BA
+mount_elbert__1,Mountain,Hydro:Pumped,operating,individual_tech,False,1,100.0,115.0,,,,1981-06-01,,,6208,1,Mount Elbert,WAT,PS,WACM,CO+BA
+mount_elbert__2,Mountain,Hydro:Pumped,operating,individual_tech,False,1,100.0,115.0,,,,1984-02-01,,,6208,2,Mount Elbert,WAT,PS,WACM,CO+BA
+Mountain_WACM_SolarPV_existing,Mountain,Solar:PV,operating,renewable_zone,True,3,7.0,7.0,,,,,,Mountain_Solar_CF,63163; 63164; 65084,PTKN; SIFRS; WHSKY,,SUN,PV,WACM,CO+BA
+rawhide__1,North,Coal,operating,individual_tech,False,1,293.6,280.0,,,,1984-04-01,2029-12-01,,6761,1,Rawhide,SUB,ST,PSCO,CO+BA
+North_PSCO_GasCC_small,North,Gas:CC,operating,small_group,True,4,231.39999999999998,130.0,,,,,,,10682; 50707,ST2; ST4; STA; STB,,NG,CA,PSCO,CO+BA
+fort_st_vrain__1,North,Gas:CC,operating,large_thermal,False,1,342.6,308.0,,,,1998-07-01,,,6112,1,Fort St Vrain,NG,CA,PSCO,CO+BA
+rocky_mountain_energy_center__STG1,North,Gas:CC,operating,large_thermal,False,1,334.9,300.0,,,,2004-05-01,,,55835,STG1,Rocky Mountain Energy Center,NG,CA,PSCO,CO+BA
+North_PSCO_GasCT_small,North,Gas:CT,operating,small_group,True,13,776.5999999999999,430.0,,,,,,,10682; 50707; 6761; 8067,1; 2; A; B; C; D; GT3; GT4; GT5; LMB; LMC; LMD; LME,,NG,CT,PSCO,CO+BA
+fort_st_vrain__2,North,Gas:CT,operating,large_thermal,False,1,175.1,150.0,,,,1996-05-01,,,6112,2,Fort St Vrain,NG,CT,PSCO,CO+BA
+fort_st_vrain__3,North,Gas:CT,operating,large_thermal,False,1,175.1,142.0,,,,1999-01-01,,,6112,3,Fort St Vrain,NG,CT,PSCO,CO+BA
+fort_st_vrain__4,North,Gas:CT,operating,large_thermal,False,1,175.1,142.0,,,,2001-06-01,,,6112,4,Fort St Vrain,NG,CT,PSCO,CO+BA
+fort_st_vrain__5,North,Gas:CT,operating,large_thermal,False,1,140.3,140.0,,,,2009-05-01,,,6112,5,Fort St Vrain,NG,GT,PSCO,CO+BA
+fort_st_vrain__6,North,Gas:CT,operating,large_thermal,False,1,140.3,140.0,,,,2009-05-01,,,6112,6,Fort St Vrain,NG,GT,PSCO,CO+BA
+jm_shafer_generating_station__LMA,North,Gas:CT,operating,large_thermal,False,1,58.5,272.0,,,,1994-06-01,,,50707,LMA,JM Shafer Generating Station,NG,CT,PSCO,CO+BA
+manchief_electric_generating_station__UN1,North,Gas:CT,operating,large_thermal,False,1,150.0,125.0,,,,2000-06-01,,,55127,UN1,Manchief Electric Generating Station,NG,GT,PSCO,CO+BA
+manchief_electric_generating_station__UN2,North,Gas:CT,operating,large_thermal,False,1,150.0,125.0,,,,2000-06-01,,,55127,UN2,Manchief Electric Generating Station,NG,GT,PSCO,CO+BA
+rawhide_GasCT_proposed,North,Gas:CT,proposed,proposed,True,5,223.0,223.0,,,,,,,6761,G; H; LM3; LM4; LM5,,NG,GT,PSCO,CO+BA
+rawhide__F,North,Gas:CT,operating,large_thermal,False,1,149.6,128.0,,,,2008-06-01,,,6761,F,Rawhide,NG,GT,PSCO,CO+BA
+rocky_mountain_energy_center__CTG1,North,Gas:CT,operating,large_thermal,False,1,175.1,146.0,,,,2004-05-01,,,55835,CTG1,Rocky Mountain Energy Center,NG,CT,PSCO,CO+BA
+rocky_mountain_energy_center__CTG2,North,Gas:CT,operating,large_thermal,False,1,175.1,146.0,,,,2004-05-01,,,55835,CTG2,Rocky Mountain Energy Center,NG,CT,PSCO,CO+BA
+spindle_hill_energy_center__GEN1,North,Gas:CT,operating,large_thermal,False,1,210.0,135.0,,,,2007-05-01,,,56445,GEN1,Spindle Hill Energy Center,NG,GT,PSCO,CO+BA
+spindle_hill_energy_center__GEN2,North,Gas:CT,operating,large_thermal,False,1,210.0,135.0,,,,2007-05-01,,,56445,GEN2,Spindle Hill Energy Center,NG,GT,PSCO,CO+BA
+North_PSCO_GasST_small,North,Gas:ST,operating,small_group,True,1,3.0,3.0,,,,,,,58081,ATB-2,,NG,ST,PSCO,CO+BA
+pawnee__1,North,Gas:ST,operating,large_thermal,False,1,552.3,505.0,,,,1981-11-01,,,6248,1,Pawnee,NG,ST,PSCO,CO+BA
+North_WACM_Hydro_small,North,Hydro,operating,small_group,True,10,184.40000000000003,192.90000000000003,,,,,,,513; 515; 517; 518; 519; 58622,1; 2; 3,,WAT,HY,WACM,CO+BA
+flatiron__3,North,Hydro:Pumped,operating,individual_tech,False,1,8.5,8.5,,,,1954-05-01,,,518,3,Flatiron,WAT,PS,WACM,CO+BA
+North_WACM_Other_small,North,Other,operating,small_group,True,1,3.2,3.1,,,,,,,59143,FR-1,,LFG,IC,WACM,CO+BA
+North_PSCO_SolarPV_existing,North,Solar:PV,operating,renewable_zone,True,21,136.10000000000002,136.10000000000002,,,,,,North_Wind_CF,57141; 57507; 60023; 60351; 60720; 61462; 62224; 62255; 63379; 63722; 63753; 64021; 64386; 65520; 65609; 66436; 67466; 67467; 68041; 68639; 68640,218; 225; 53971; 53973; 948; BSPV1; CBEP4; CBEP5; CBEP7; CSU1; CSUII; FTLUP; GLCRS; GLCRV; GREEL; PV1; USCOG; VASQV; WELD1; X0134,,SUN,PV,PSCO,CO+BA
+North_WACM_SolarPV_existing,North,Solar:PV,operating,renewable_zone,True,19,54.3,54.3,,,,,,North_Wind_CF,60247; 60248; 60283; 60497; 61314; 61425; 62663; 63586; 63587; 64152; 64357; 64358; 64648; 64650; 64651; 64652; 64655; 68943; 68964,CAREY; COYCS; KERII; KERS; MVRKS; PI20; PI35; SC; SKY B; SKYC; SNAKE; SO390; VVS,,SUN,PV,WACM,CO+BA
+beclee_solar_csg_SolarPV_proposed,North,Solar:PV,proposed,proposed,False,1,5.0,5.0,,,,,,North_Solar_CF,67364,BECLS,BecLee Solar CSG,SUN,PV,PSCO,CO+BA
+black_hollow_sun_SolarPV_proposed,North,Solar:PV,proposed,proposed,False,1,107.0,107.0,,,,,,North_Solar_CF,64745,BHS02,Black Hollow Sun,SUN,PV,PSCO,CO+BA
+dove_solar_csg_SolarPV_proposed,North,Solar:PV,proposed,proposed,False,1,5.0,5.0,,,,,,North_Solar_CF,67361,DOVES,Dove Solar CSG,SUN,PV,PSCO,CO+BA
+lark_bunting_solar_csg_SolarPV_proposed,North,Solar:PV,proposed,proposed,False,1,5.0,5.0,,,,,,North_Solar_CF,67362,LARKS,Lark Bunting Solar CSG,SUN,PV,PSCO,CO+BA
+pivot_solar_30_SolarPV_proposed,North,Solar:PV,proposed,proposed,False,1,5.0,5.0,,,,,,North_Solar_CF,68957,PI30,Pivot Solar 30,SUN,PV,WACM,CO+BA
+North_PSCO_battery_2hr_small,North,Storage:Battery,operating,small_battery,True,1,1.0,1.0,2.0,1.0,1.0,,,,63722,BA1,,MWH,BA,PSCO,CO+BA
+North_WACM_battery_4hr_small,North,Storage:Battery,operating,small_battery,True,6,55.0,55.0,219.6,55.0,55.0,,,,62373; 67300; 67302; 67303; 67304; 67306,DAVBA; FREBA; I25BA; KEEBA; MEABA; RATBA,,MWH,BA,WACM,CO+BA
+North_PSCO_Wind_existing,North,Wind,operating,renewable_zone,True,4,720.5,720.5,,,,,,North_Wind_CF,56371; 57210; 62840,1; 2; MTBRZ,,WND,WT,PSCO,CO+BA
+North_WACM_Wind_existing,North,Wind,operating,renewable_zone,True,1,145.0,145.0,,,,,,North_Wind_CF,64872,PANWD,,WND,WT,WACM,CO+BA
+comanche_co__2,South,Coal,operating,individual_tech,False,1,396.0,330.0,,,,1975-06-01,2025-12-01,,470,2,Comanche (CO),SUB,ST,WACM,CO+BA
+comanche_co__3,South,Coal,operating,individual_tech,False,1,856.8,750.0,,,,2010-07-01,,,470,3,Comanche (CO),SUB,ST,WACM,CO+BA
+ray_d_nixon__1,South,Coal,operating,individual_tech,False,1,207.0,195.0,,,,1980-04-01,2029-12-01,,8219,1,Ray D Nixon,SUB,ST,WACM,CO+BA
+South_PSCO_GasCC_small,South,Gas:CC,operating,small_group,True,2,40.0,40.0,,,,,,,56998,43; 53,,NG,CA,PSCO,CO+BA
+front_range_power_plant__3,South,Gas:CC,operating,large_thermal,False,1,246.5,190.0,,,,2003-04-01,,,55283,3,Front Range Power Plant,NG,CA,WACM,CO+BA
+South_PSCO_GasCT_small,South,Gas:CT,operating,small_group,True,15,681.2,629.0,,,,,,,464; 55453; 56998,4; 5; 6; 7; CT08; CT1; CT2; GT1; GT2; S1; S2; S3; S4; S5; S6,,NG,GT,PSCO,CO+BA
+South_WACM_GasCT_small,South,Gas:CT,operating,small_group,True,8,320.7,210.0,,,,,,,492; 8219,A1; A2; A3; A4; A5; A6; GT1; GT2,,NG,GT,WACM,CO+BA
+front_range_power_plant__1,South,Gas:CT,operating,large_thermal,False,1,153.9,135.0,,,,2003-04-01,,,55283,1,Front Range Power Plant,NG,CT,WACM,CO+BA
+front_range_power_plant__2,South,Gas:CT,operating,large_thermal,False,1,153.9,135.0,,,,2003-04-01,,,55283,2,Front Range Power Plant,NG,CT,WACM,CO+BA
+horizon_GasCT_proposed,South,Gas:CT,proposed,proposed,True,10,480.0,370.0,,,,,,,68705,H01; H02; H03; H04; H05; H06; H07; H08; H09; H10,,NG,GT,WACM,CO+BA
+South_PSCO_GasIC_small,South,Gas:IC,operating,small_group,True,8,18.0,18.0,,,,,,,460; 7995,IC1; IC2; IC3; IC4; IC5,,DFO,IC,PSCO,CO+BA
+South_WACM_GasIC_small,South,Gas:IC,operating,small_group,True,5,9.2,9.2,,,,,,,511,3; 4; 5; 6; 7,,DFO,IC,WACM,CO+BA
+South_WACM_GasST_small,South,Gas:ST,operating,small_group,True,3,61.1,54.0,,,,,,,493,1; 2; 3,,NG,ST,WACM,CO+BA
+South_PACE_Hydro_small,South,Hydro,operating,small_group,True,2,7.5,7.1,,,,,,,64123,GEN35; GEN40,,WAT,HY,PACE,CO_only
+South_PSCO_Hydro_small,South,Hydro,operating,small_group,True,1,0.6,0.6,,,,,,,474,2,,WAT,HY,PSCO,CO+BA
+South_WACM_Hydro_small,South,Hydro,operating,small_group,True,6,38.7,40.0,,,,,,,10423; 494; 495; 7233,1; 2; 3; GEN1,,WAT,HY,WACM,CO+BA
+South_PSCO_SolarPV_existing,South,Solar:PV,operating,renewable_zone,True,27,1642.6,1639.94,,,,,,South_Wind_CF,56481; 57317; 57368; 57377; 59656; 60008; 60304; 60723; 60801; 61472; 61605; 62239; 62260; 62379; 63681; 63731; 63770; 63776; 64024; 64031; 64212; 64266; 65032; 65990,1; 13; 14; 2; 228; 262; 264; 44901; 47301; 53963; ANTO2; CO465; COBH1; COMCH; CONEJ; COSM1; GS-P1; GS-P2; NT325; PUEB2; SCCO3; SISPV; TW300; USSGB,,SUN,PV,PSCO,CO+BA
+South_WACM_SolarPV_existing,South,Solar:PV,operating,renewable_zone,True,9,129.4,127.91999999999999,,,,,,South_Wind_CF,57509; 57554; 58481; 59848; 60511; 62376; 62495; 64265; 67419,1; 20181; 263; AFA1; CSU1; PPSG1; PV1,,SUN,PV,WACM,CO+BA
+elk_run_SolarPV_proposed,South,Solar:PV,proposed,proposed,False,1,200.0,200.0,,,,,,South_Solar_CF,67655,ELKRN,Elk Run,SUN,PV,PSCO,CO+BA
+stagecoach_lre_SolarPV_proposed,South,Solar:PV,proposed,proposed,False,1,300.0,300.0,,,,,,South_Solar_CF,68079,STAS1,Stagecoach LRE,SUN,PV,PSCO,CO+BA
+turkey_creek_solar_project_SolarPV_proposed,South,Solar:PV,proposed,proposed,False,1,200.0,200.0,,,,,,South_Solar_CF,64744,TC001,Turkey Creek Solar Project,SUN,PV,WACM,CO+BA
+South_WACM_battery_2hr_small,South,Storage:Battery,operating,small_battery,True,1,4.2,4.2,8.5,4.2,4.2,,,,63022,1,,MWH,BA,WACM,CO+BA
+neptune_energy_center_hybrid__NT125,South,Storage:Battery,operating,individual_tech,False,1,125.0,125.0,500.0,125.0,125.0,2023-06-01,,,63731,NT125,Neptune Energy Center Hybrid,MWH,BA,PSCO,CO+BA
+thunder_wolf_energy_center_hybrid__TW100,South,Storage:Battery,operating,individual_tech,False,1,100.0,100.0,400.0,100.0,100.0,2023-06-01,,,63776,TW100,Thunder Wolf Energy Center Hybrid,MWH,BA,PSCO,CO+BA
+South_PSCO_Wind_existing,South,Wind,operating,renewable_zone,True,4,399.2,399.2,,,,,,South_Wind_CF,57980; 59974; 60143; 62445,GW1; WT; WTG,,WND,WT,PSCO,CO+BA
+South_WACM_Wind_existing,South,Wind,operating,renewable_zone,True,5,9.8,9.8,,,,,,South_Wind_CF,57643; 58548,V100; WTG1; WTG2; WTG3; WTG4,,WND,WT,WACM,CO+BA
+craig_co__1,West,Coal,operating,individual_tech,False,1,446.4,427.0,,,,1980-07-01,2025-12-01,,6021,1,Craig (CO),SUB,ST,WACM,CO+BA
+craig_co__2,West,Coal,operating,individual_tech,False,1,446.4,410.0,,,,1979-11-01,2028-09-01,,6021,2,Craig (CO),SUB,ST,WACM,CO+BA
+craig_co__3,West,Coal,operating,individual_tech,False,1,534.8,448.0,,,,1984-10-01,2029-12-01,,6021,3,Craig (CO),SUB,ST,WACM,CO+BA
+hayden__1,West,Coal,operating,individual_tech,False,1,190.0,179.0,,,,1965-07-01,2028-12-01,,525,1,Hayden,BIT,ST,PSCO,CO+BA
+hayden__2,West,Coal,operating,individual_tech,False,1,275.4,262.0,,,,1976-09-01,2027-12-01,,525,2,Hayden,BIT,ST,PSCO,CO+BA
+West_PSCO_GasCT_small,West,Gas:CT,operating,small_group,True,1,26.6,14.0,,,,,,,471,1,,NG,GT,PSCO,CO+BA
+West_PSCO_Hydro_small,West,Hydro,operating,small_group,True,4,20.3,19.9,,,,,,,476; 50267; 68234,A; B; GEN1; RED1,,WAT,HY,PSCO,CO+BA
+West_WACM_Hydro_small,West,Hydro,operating,small_group,True,23,357.5,362.7,,,,,,,50206; 512; 514; 520; 521; 54729; 58783; 58784; 58901; 61189; 61190; 61191; 6159; 6206; 6207; 7372; 7373,1; 2; COX1; GEN1; GEN2; GEN3; SC-1; SC-3; TCWG1; TCWG2,,WAT,HY,WACM,CO+BA
+West_WACM_Other_small,West,Other,operating,small_group,True,1,6.1,6.1,,,,,,,50205,7101,,WH,ST,WACM,CO+BA
+West_PSCO_SolarPV_existing,West,Solar:PV,operating,renewable_zone,True,13,28.9,28.7,,,,,,West_Solar_CF,56922; 58547; 59199; 59239; 59742; 62244; 62251; 62718; 62719; 66247; 66271; 66945,1; 21536; 53975; 53977; EAST; ESS01; HCE; HCEPV; MESA1; WEST; X0037; X0038; YVEA,,SUN,PV,PSCO,CO+BA
+West_WACM_SolarPV_existing,West,Solar:PV,operating,renewable_zone,True,9,21.9,21.9,,,,,,West_Solar_CF,61886; 64649; 64653; 64654; 66095; 66141; 66169; 66432; 67952,710; 711; 712; GEN1; PV001; SC; USGBS,,SUN,PV,WACM,CO+BA
+axial_basin_solar_SolarPV_proposed,West,Solar:PV,proposed,proposed,False,1,145.0,145.0,,,,,,West_Solar_CF,65480,CO505,Axial Basin Solar,SUN,PV,PSCO,CO+BA
+canyonland_solar_SolarPV_proposed,West,Solar:PV,proposed,proposed,False,1,140.0,140.0,,,,,,West_Solar_CF,68468,CO513,Canyonland Solar,SUN,PV,WACM,CO+BA
+coyote_gulch_solar_SolarPV_proposed,West,Solar:PV,proposed,proposed,False,1,140.0,140.0,,,,,,West_Solar_CF,64857,C0513,Coyote Gulch Solar,SUN,PV,WACM,CO+BA
+dolores_canyon_solar_SolarPV_proposed,West,Solar:PV,proposed,proposed,False,1,110.0,110.0,,,,,,West_Solar_CF,64858,C0497,Dolores Canyon Solar,SUN,PV,WACM,CO+BA
+grand_valley_solar_generation_and_bess_SolarPV_proposed,West,Solar:PV,proposed,proposed,False,1,100.0,100.0,,,,,,West_Solar_CF,68343,GRVA1,Grand Valley Solar Generation and BESS,SUN,PV,PSCO,CO+BA
+sun_bear_SolarPV_proposed,West,Solar:PV,proposed,proposed,False,1,756.0,756.0,,,,,,West_Solar_CF,68261,SNBR1,Sun Bear,SUN,PV,WACM,CO+BA
+grand_valley_solar_generation_and_bess_StorageBattery_proposed,West,Storage:Battery,proposed,proposed,False,1,100.0,100.0,400.0,100.0,100.0,,,,68343,GRVA2,Grand Valley Solar Generation and BESS,MWH,BA,PSCO,CO+BA
+sun_bear_StorageBattery_proposed,West,Storage:Battery,proposed,proposed,False,1,756.0,756.0,3024.0,756.0,756.0,,,,68261,SNBR2,Sun Bear,MWH,BA,WACM,CO+BA

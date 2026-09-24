@@ -1,0 +1,3754 @@
+--- solve.log core start 2026-08-28T05:22:41 ---
+  solve log: pypsa\scenarios\core\solve.log
+
+
+
+--- Colorado PyPSA case: core ---
+
+Investment years: [2030, 2035, 2040, 2045, 2050]
+
+internal_limits=True
+
+neighbors=True
+
+reserve_margin=True
+
+zonal_ra=True
+
+co2_cap=True
+
+co2_path=statutory
+
+relax_pmin=True
+
+aggregate_large_cc=True
+
+hybrid_candidates=True
+
+HiGHS dual simplex, threads=2, include_objective_constant=False
+
+
+
+=== YEAR 2030/2050 START (step 1/5) ===
+
+  surviving vintages: 0 generators, 0 storage
+
+.\.venv\Lib\site-packages\pypsa\network\io.py:2082: FutureWarning: pandas infers the `str` dtype for string data since its version 3.0. PyPSA still converts it back to numpy object dtype on import, but will keep it from PyPSA 2.0 on. Set `pypsa.options.api.legacy_string_dtype` explicitly to suppress this warning.
+
+  new_static = _coerce_string_dtypes(new_static)
+
+
+
+[1/6] Buses...
+
+  6 CO buses: ['Denver', 'North', 'South', 'Mountain', 'East', 'West']
+
+  6 external buses: ['Wyoming', 'Utah', 'FourCorners', 'NewMexico', 'Nebraska', 'EasternInterconnect']
+
+
+
+[2/6] Links...
+
+  11 links, internal_limits (raw_sum_mw), bidirectional
+
+    Link_South_West: South <-> West  p_nom=363.1 MW
+
+    Link_East_South: East <-> South  p_nom=994.4 MW
+
+    Link_East_North: East <-> North  p_nom=1,245.3 MW
+
+    Link_Denver_South: Denver <-> South  p_nom=3,024.1 MW
+
+    Link_Mountain_South: Mountain <-> South  p_nom=1,394.4 MW
+
+    Link_Denver_East: Denver <-> East  p_nom=1,769.1 MW
+
+    Link_Mountain_West: Mountain <-> West  p_nom=1,720.9 MW
+
+    Link_Denver_Mountain: Denver <-> Mountain  p_nom=522.0 MW
+
+    Link_Denver_North: Denver <-> North  p_nom=6,786.4 MW
+
+    Link_Mountain_North: Mountain <-> North  p_nom=37.2 MW
+
+    Link_North_West: North <-> West  p_nom=421.5 MW
+
+  7 links, external (raw_sum_mw), bidirectional
+
+    Link_West_FourCorners: West <-> FourCorners  p_nom=1,555.6 MW
+
+    Link_West_Utah: West <-> Utah  p_nom=1,118.8 MW
+
+    Link_East_Nebraska: East <-> Nebraska  p_nom=1,044.0 MW
+
+    Link_South_NewMexico: South <-> NewMexico  p_nom=324.9 MW
+
+    Link_Mountain_Wyoming: Mountain <-> Wyoming  p_nom=504.8 MW
+
+    Link_North_Wyoming: North <-> Wyoming  p_nom=2,031.5 MW
+
+    Link_East_EasternInterconnect: East <-> EasternInterconnect  p_nom=210.0 MW
+
+
+
+[3/6] Representative weeks (Milestone 2 load + Milestone 3 clustering)...
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:296: UserWarning: The time series covers 8760 time steps, which is not a whole number of 168-step periods. The last period is filled up with the first 144 time steps of the series so it can be clustered; its occurrence count is reduced accordingly and the padding is dropped again on reconstruction.
+
+  period_profiles = unstack_to_periods(norm_data.values, cfg.n_timesteps_per_period)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+INFO:pyomo.contrib.appsi.solvers.highs:Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+INFO:pyomo.contrib.appsi.solvers.highs:MIP has 2863 rows; 2809 cols; 8374 nonzeros; 2809 integer variables (2809 binary)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Coefficient ranges:
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Matrix  [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Cost    [7e+01, 6e+02]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Bound   [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  RHS     [1e+00, 1e+01]
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolving model
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolve reductions: rows 2810(-53); columns 2809(-0); nonzeros 8374(-0) 
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving MIP model with:
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2810 rows
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2809 cols (2809 binary, 0 integer, 0 implied int., 0 continuous, 0 domain fixed)
+
+INFO:pyomo.contrib.appsi.solvers.highs:   8374 nonzeros
+
+INFO:pyomo.contrib.appsi.solvers.highs:   Thread count 2 (of 4 threads). Using 1 max workers. Parallel search off
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs: J       0       0         0   0.00%   -inf            12071.762821       Large        0      0      0         0     0.1s
+
+INFO:pyomo.contrib.appsi.solvers.highs: T       0       0         0   0.00%   0               5624.730147      100.00%        0      0      0       236     0.2s
+
+INFO:pyomo.contrib.appsi.solvers.highs:         1       0         1 100.00%   5624.730147     5624.730147        0.00%        0      0      0       236     0.2s
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving report
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Status            Optimal
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Primal bound      5624.73014677
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Dual bound        5624.73014677
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Gap               0% (tolerance: 0.01%)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  P-D integral      0.0348001997918
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Solution status   feasible
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    5624.73014677 (objective)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (bound viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (int. viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (row viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Timing            0.19
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.07 (Presolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.12 (Solve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.00 (Postsolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Max sub-MIP depth 0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Nodes             1
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Repair LPs        0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  LP iterations     236
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (strong br.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (separation)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (heuristics)
+
+  1848 snapshots in 11 periods (weighted hours=8760.0)
+
+    2018-12-03 00:00 to 2018-12-09 23:00  (168h)  weight=3.14
+
+    2018-04-09 00:00 to 2018-04-15 23:00  (168h)  weight=6.00
+
+    2018-05-07 00:00 to 2018-05-13 23:00  (168h)  weight=6.00
+
+    2018-05-21 00:00 to 2018-05-27 23:00  (168h)  weight=3.00
+
+    2018-06-04 00:00 to 2018-06-10 23:00  (168h)  weight=2.00
+
+    2018-07-09 00:00 to 2018-07-15 23:00  (168h)  weight=2.00
+
+    2018-08-06 00:00 to 2018-08-12 23:00  (168h)  weight=4.00
+
+    2018-09-17 00:00 to 2018-09-23 23:00  (168h)  weight=6.00
+
+    2018-10-22 00:00 to 2018-10-28 23:00  (168h)  weight=6.00
+
+    2018-11-12 00:00 to 2018-11-18 23:00  (168h)  weight=11.00
+
+    2018-06-25 00:00 to 2018-07-01 23:00  (168h)  weight=3.00
+
+
+
+[4/6] Existing fleet + candidates...
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+  large CC merge: fort_st_vrain__1_cc  499.2 MW  (CT 292.0 + CA 207.2, scale=0.673)  co2=815.3 lb/MWh  hr=6859 Btu/kWh
+
+  large CC merge: rocky_mountain_energy_center__STG1_cc  592.0 MW  (CT 292.0 + CA 300.0, scale=1.000)  co2=806.3 lb/MWh  hr=6784 Btu/kWh
+
+  large CC merge: front_range_power_plant__3_cc  460.0 MW  (CT 270.0 + CA 190.0, scale=1.000)  co2=887.7 lb/MWh  hr=7469 Btu/kWh
+
+  53 existing + 0 vintage + 41 candidate generators
+
+  7 existing + 0 vintage + 12 candidate storage
+
+  hybrid_candidates: 6 Solar+Storage generators, 6 storage
+
+  6 market generators at Candidate_Gas:CC MC = $32.67/MWh
+
+    Market_Wyoming: bus=Wyoming  p_nom=2,536.3 MW
+
+    Market_Utah: bus=Utah  p_nom=1,118.8 MW
+
+    Market_FourCorners: bus=FourCorners  p_nom=1,555.6 MW
+
+    Market_NewMexico: bus=NewMexico  p_nom=324.9 MW
+
+    Market_Nebraska: bus=Nebraska  p_nom=1,044.0 MW
+
+    Market_EasternInterconnect: bus=EasternInterconnect  p_nom=210.0 MW
+
+  relax_pmin: p_min_pu=0 on 94 in-state generators (6 Market_* kept at p_min_pu=-1)
+
+
+
+[5/6] Capacity factors (aligned to representative snapshots)...
+
+  p_max_pu assigned to 28 of 94 generators (solar/wind only)
+
+INFO:pypsa.consistency:Sanitizing network...
+
+INFO:pypsa.components._types.carriers:Adding 15 missing carriers: ['AC', 'Coal', 'Gas:CC', 'Gas:CT', 'Gas:IC', 'Gas:ST', 'Geothermal', 'Hydro', 'Hydro:Pumped', 'Nuclear:SMR', 'Solar+Storage', 'Solar:PV', 'Storage:Battery', 'Wind', 'import']
+
+INFO:pypsa.components._types.carriers:Assigned colors to 15 carriers using 'tab10' palette.
+
+
+
+[6/6] Network assembled.INFO:pypsa.consistency:Network sanitization complete.
+
+
+
+Solving 2030 (1848 snapshots, week-cyclic SOC, statewide PRM, zonal RA pipes, CO2 cap, relax_pmin, aggregate_large_cc, hybrid_candidates)...
+
+  RA: peak=13,187.5 MW at 2018-06-28 13:00:00  PRM=15.7%  requirement=15,258.0 MW
+
+  RA pipes: t*=2018-06-28 13:00:00  statewide peak=13,187.5 MW  11 internal interfaces
+
+    RA_pipe_South_West: South <-> West  +/-63.5 MW
+
+    RA_pipe_East_South: East <-> South  +/-484.4 MW
+
+    RA_pipe_East_North: East <-> North  +/-591.5 MW
+
+    RA_pipe_Denver_South: Denver <-> South  +/-1,610.4 MW
+
+    RA_pipe_Mountain_South: Mountain <-> South  +/-683.8 MW
+
+    RA_pipe_Denver_East: Denver <-> East  +/-464.5 MW
+
+    RA_pipe_Mountain_West: Mountain <-> West  +/-961.1 MW
+
+    RA_pipe_Denver_Mountain: Denver <-> Mountain  +/-73.1 MW
+
+    RA_pipe_Denver_North: Denver <-> North  +/-4,070.5 MW
+
+    RA_pipe_Mountain_North: Mountain <-> North  +/-0.0 MW  (N-1 zero)
+
+    RA_pipe_North_West: North <-> West  +/-0.0 MW  (N-1 zero)
+
+  zonal load at t*:
+
+    Denver: 7,700.4 MW
+
+    North: 1,296.3 MW
+
+    South: 2,529.1 MW
+
+    Mountain: 276.1 MW
+
+    East: 437.0 MW
+
+    West: 948.6 MW
+
+  CO2: cap=8.4046 MMT (8,404,600 t)  path=statutory  import intensity=729.8 lb/MWh (Candidate_Gas:CC)
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: fort_st_vrain__1_cc  499.2 MW  (CT 292.0 + CA 207.2, scale=0.673)  co2=815.3 lb/MWh  hr=6859 Btu/kWh
+
+
+  large CC merge: rocky_mountain_energy_center__STG1_cc  592.0 MW  (CT 292.0 + CA 300.0, scale=1.000)  co2=806.3 lb/MWh  hr=6784 Btu/kWh
+
+
+  large CC merge: front_range_power_plant__3_cc  460.0 MW  (CT 270.0 + CA 190.0, scale=1.000)  co2=887.7 lb/MWh  hr=7469 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: fort_st_vrain__1_cc  499.2 MW  (CT 292.0 + CA 207.2, scale=0.673)  co2=815.3 lb/MWh  hr=6859 Btu/kWh
+
+
+  large CC merge: rocky_mountain_energy_center__STG1_cc  592.0 MW  (CT 292.0 + CA 300.0, scale=1.000)  co2=806.3 lb/MWh  hr=6784 Btu/kWh
+
+
+  large CC merge: front_range_power_plant__3_cc  460.0 MW  (CT 270.0 + CA 190.0, scale=1.000)  co2=887.7 lb/MWh  hr=7469 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: fort_st_vrain__1_cc  499.2 MW  (CT 292.0 + CA 207.2, scale=0.673)  co2=815.3 lb/MWh  hr=6859 Btu/kWh
+
+
+  large CC merge: rocky_mountain_energy_center__STG1_cc  592.0 MW  (CT 292.0 + CA 300.0, scale=1.000)  co2=806.3 lb/MWh  hr=6784 Btu/kWh
+
+
+  large CC merge: front_range_power_plant__3_cc  460.0 MW  (CT 270.0 + CA 190.0, scale=1.000)  co2=887.7 lb/MWh  hr=7469 Btu/kWh
+
+
+  hybrid: 6 pairs  p_nom equality on 6 extendable  charge-from-solar on 6
+
+
+INFO:linopy.model: Solve problem using Highs solver
+
+INFO:linopy.model:Solver options:
+
+ - solver: simplex
+
+ - threads: 2
+
+INFO:linopy.io:Writing objective.
+
+
+Writing constraints.:   0%|[38;2;128;191;255m          [0m| 0/55 [00:00<?, ?it/s]
+Writing constraints.:   5%|[38;2;128;191;255m5         [0m| 3/55 [00:00<00:02, 21.18it/s]
+Writing constraints.:  11%|[38;2;128;191;255m#         [0m| 6/55 [00:00<00:02, 19.23it/s]
+Writing constraints.:  29%|[38;2;128;191;255m##9       [0m| 16/55 [00:00<00:00, 45.28it/s]
+Writing constraints.:  40%|[38;2;128;191;255m####      [0m| 22/55 [00:00<00:00, 44.48it/s]
+Writing constraints.:  67%|[38;2;128;191;255m######7   [0m| 37/55 [00:00<00:00, 74.55it/s]
+Writing constraints.:  91%|[38;2;128;191;255m######### [0m| 50/55 [00:00<00:00, 90.32it/s]
+Writing constraints.: 100%|[38;2;128;191;255m##########[0m| 55/55 [00:00<00:00, 69.37it/s]
+
+
+Writing continuous variables.:   0%|[38;2;128;191;255m          [0m| 0/9 [00:00<?, ?it/s]
+Writing continuous variables.: 100%|[38;2;128;191;255m##########[0m| 9/9 [00:00<00:00, 147.86it/s]
+
+INFO:linopy.io: Writing time: 1.24s
+
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+LP linopy-problem-wwg379fa has 726331 rows; 334552 cols; 1385388 nonzeros
+
+Coefficient ranges:
+
+  Matrix  [4e-05, 1e+01]
+
+  Cost    [8e-01, 7e+05]
+
+  Bound   [6e+01, 4e+03]
+
+  RHS     [9e-04, 8e+06]
+
+WARNING: Problem has some excessively large row bounds
+
+WARNING:    Consider scaling the    bounds by 1e-1, or setting the user_bound_scale option to -4
+
+Presolving model
+
+190085 rows, 301566 cols, 800293 nonzeros 1s
+
+Dependent equations search running on 41453 equations with time limit of 1000.00s
+
+Dependent equations search removed 0 rows and 0 nonzeros in 0.01s (limit = 1000.00s)
+
+183490 rows, 262745 cols, 745407 nonzeros 2s
+
+Presolve reductions: rows 183490(-542841); columns 262745(-71807); nonzeros 745407(-639981) 
+
+Solving the presolved LP
+
+Using dual simplex solver
+
+
+
+========== HiGHS simplex: YEAR 2030 (step 1/5) ==========
+
+2030 |   Iteration        Objective     Infeasibilities num(sum)
+
+2030 |           0    -1.9434122514e+09 Pr: 11091(2.23266e+07) 3.1s
+
+2030 |       15337    -1.5793030535e+09 Pr: 11039(1.97512e+07); Du: 0(2.25625e-05) 8.2s
+
+2030 |       34189    -1.4199793544e+09 Pr: 14710(2.00935e+07); Du: 0(2.39334e-05) 13.2s
+
+2030 |       43431    -1.2665511830e+09 Pr: 16842(3.14966e+07); Du: 0(2.21382e-05) 18.3s
+
+2030 |       52517    -1.0349231133e+09 Pr: 19044(2.94625e+07); Du: 0(2.04434e-05) 23.4s
+
+2030 |       64271    -8.2320216582e+08 Pr: 21639(3.13311e+07); Du: 0(1.96054e-05) 28.4s
+
+2030 |       73193    -7.4468527712e+08 Pr: 23705(6.25805e+07); Du: 0(1.88111e-05) 33.6s
+
+2030 |       81444    -2.3204857794e+08 Pr: 36796(5.22787e+08); Du: 0(1.70203e-05) 39.2s
+
+2030 |       82201    -2.3156710552e+08 Pr: 36702(3.66994e+08); Du: 0(1.61239e-05) 44.4s
+
+2030 |       86439    -1.0668889502e+08 Pr: 42104(2.01983e+08); Du: 0(1.53628e-05) 49.7s
+
+2030 |       88861    -9.2886309163e+07 Pr: 40404(2.09553e+08); Du: 0(1.47896e-05) 55.1s
+
+2030 |       93458    -2.5201741143e+07 Pr: 35868(4.69977e+09); Du: 0(1.48265e-05) 61.0s
+
+2030 |       95646     1.8346478470e+07 Pr: 37705(6.97411e+08); Du: 0(1.53676e-05) 66.4s
+
+2030 |       98163     3.0561582506e+07 Pr: 37888(6.3447e+08); Du: 0(1.47571e-05) 72.8s
+
+2030 |      103147     1.1337590235e+08 Pr: 37325(1.36538e+09); Du: 0(1.57143e-05) 78.8s
+
+2030 |      105501     1.6478460315e+08 Pr: 36199(8.11873e+07); Du: 0(1.6084e-05) 84.4s
+
+2030 |      110007     2.5970297912e+08 Pr: 41588(5.01124e+08); Du: 0(1.82712e-05) 91.4s
+
+2030 |      114049     3.1519205139e+08 Pr: 36830(1.05944e+08); Du: 0(1.88233e-05) 96.8s
+
+2030 |      118429     3.7166725488e+08 Pr: 36231(1.87489e+08); Du: 0(1.80419e-05) 101.8s
+
+2030 |      122853     4.2610221598e+08 Pr: 36430(1.94327e+08); Du: 0(1.84878e-05) 107.4s
+
+2030 |      128115     4.6740596333e+08 Pr: 42460(1.33216e+08); Du: 0(1.97731e-05) 114.9s
+
+2030 |      130395     4.7882143368e+08 Pr: 34634(2.10681e+07); Du: 0(2.12398e-05) 120.3s
+
+2030 |      133352     5.0131264657e+08 Pr: 30742(5.76958e+07); Du: 0(2.21793e-05) 125.5s
+
+2030 |      137118     5.3595878218e+08 Pr: 30338(2.93457e+07); Du: 0(2.23135e-05) 131.8s
+
+2030 |      139897     5.5606122282e+08 Pr: 43671(3.27173e+07); Du: 0(2.38817e-05) 138.3s
+
+2030 |      144048     5.7478684778e+08 Pr: 39400(4.99854e+07); Du: 0(2.32769e-05) 143.5s
+
+2030 |      148529     5.9430021939e+08 Pr: 33076(2.04595e+07); Du: 0(2.58664e-05) 148.9s
+
+2030 |      151541     6.0249705157e+08 Pr: 28412(1.62818e+07); Du: 0(2.77288e-05) 153.9s
+
+2030 |      156317     6.1655559402e+08 Pr: 33776(5.50198e+07); Du: 0(2.74679e-05) 159.4s
+
+2030 |      160833     6.2639467051e+08 Pr: 29363(3.58064e+08); Du: 0(2.97319e-05) 167.1s
+
+2030 |      163150     6.3137813571e+08 Pr: 33440(4.33562e+07); Du: 0(3.06319e-05) 172.6s
+
+2030 |      164657     6.3294452349e+08 Pr: 22104(8.30141e+06); Du: 0(3.11109e-05) 179.0s
+
+2030 |      167763     6.4000109687e+08 Pr: 22312(4.21492e+07); Du: 0(3.14242e-05) 184.6s
+
+2030 |      170201     6.5815274524e+08 Pr: 38702(1.60149e+08); Du: 0(3.12404e-05) 189.7s
+
+2030 |      173150     6.6254769445e+08 Pr: 30725(1.958e+07); Du: 0(3.34764e-05) 195.7s
+
+2030 |      175576     6.6777953981e+08 Pr: 24107(5.46921e+06); Du: 0(3.26597e-05) 201.3s
+
+2030 |      177038     6.6867445148e+08 Pr: 19880(8.02413e+06); Du: 0(3.03039e-05) 207.4s
+
+2030 |      179430     6.7178372950e+08 Pr: 18225(6.79466e+06); Du: 0(3.24477e-05) 213.3s
+
+2030 |      182706     6.7629737278e+08 Pr: 22277(5.30634e+06); Du: 0(3.39114e-05) 219.2s
+
+2030 |      184599     6.7761190942e+08 Pr: 23497(7.00223e+06); Du: 0(3.40797e-05) 226.0s
+
+2030 |      186788     6.7937131668e+08 Pr: 23070(6.51302e+06); Du: 0(3.37286e-05) 231.2s
+
+2030 |      189068     6.8239748635e+08 Pr: 16546(3.00013e+06); Du: 0(3.44437e-05) 241.2s
+
+2030 |      189651     6.8307989828e+08 Pr: 18877(6.0934e+06); Du: 0(3.4466e-05) 249.1s
+
+2030 |      191173     6.8527493786e+08 Pr: 24603(1.34491e+07); Du: 0(3.50945e-05) 258.1s
+
+2030 |      191907     6.8588071282e+08 Pr: 33867(1.18772e+07); Du: 0(3.58651e-05) 266.4s
+
+2030 |      193425     6.8789017857e+08 Pr: 15268(3.06984e+06); Du: 0(3.54634e-05) 272.7s
+
+2030 |      194339     6.8852778908e+08 Pr: 18993(2.87447e+07); Du: 0(3.40793e-05) 280.3s
+
+2030 |      197694     6.9062819429e+08 Pr: 20399(2.15137e+06); Du: 0(3.63127e-05) 285.6s
+
+2030 |      199685     6.9206984202e+08 Pr: 15028(2.07483e+06); Du: 0(3.63165e-05) 291.5s
+
+2030 |      205283     7.1356415660e+08 Pr: 22055(3.38197e+07); Du: 0(3.61467e-05) 296.6s
+
+2030 |      208482     7.2694063387e+08 Pr: 25641(2.32705e+07); Du: 0(3.58896e-05) 302.1s
+
+2030 |      210263     7.2861745206e+08 Pr: 15798(4.94893e+06); Du: 0(3.78058e-05) 307.4s
+
+2030 |      212397     7.3015254355e+08 Pr: 12876(2.21214e+06); Du: 0(3.84938e-05) 313.3s
+
+2030 |      215151     7.3124508185e+08 Pr: 19269(1.0879e+07); Du: 0(3.90308e-05) 320.0s
+
+2030 |      217213     7.3631697467e+08 Pr: 26094(2.57097e+07); Du: 0(3.88227e-05) 326.0s
+
+2030 |      218724     7.4049623678e+08 Pr: 24856(1.54962e+07); Du: 0(3.72799e-05) 332.0s
+
+2030 |      219896     7.4104571101e+08 Pr: 19145(2.09034e+07); Du: 0(3.77106e-05) 337.3s
+
+2030 |      222377     7.4633199203e+08 Pr: 14851(6.35116e+07); Du: 0(3.851e-05) 343.4s
+
+2030 |      223968     7.4966226374e+08 Pr: 16915(2.15099e+06); Du: 0(3.89661e-05) 350.9s
+
+2030 |      226013     7.5161416597e+08 Pr: 11047(842524); Du: 0(3.87057e-05) 357.4s
+
+2030 |      228820     7.5282322340e+08 Pr: 22793(1.05923e+07); Du: 0(3.87641e-05) 363.3s
+
+2030 |      230408     7.5310023476e+08 Pr: 15471(1.27733e+06); Du: 0(3.8175e-05) 369.5s
+
+2030 |      236191     7.5836733346e+08 Pr: 13597(5.27535e+06); Du: 0(3.90892e-05) 375.7s
+
+2030 |      238491     7.5916801988e+08 Pr: 12954(1.76097e+06); Du: 0(3.84592e-05) 381.3s
+
+2030 |      242598     7.6241254142e+08 Pr: 11311(1.34938e+06); Du: 0(3.98775e-05) 386.5s
+
+2030 |      245639     7.6273387741e+08 Pr: 3305(195584); Du: 0(3.887e-05) 392.6s
+
+2030 |      247386     7.6303792282e+08 Pr: 3823(125341); Du: 0(3.94195e-05) 397.7s
+
+2030 |      250412     7.6387042499e+08 Pr: 1731(12941.1); Du: 0(3.95797e-05) 402.9s
+
+2030 |      252412     7.6445280662e+08 Pr: 0(0); Du: 0(1.0772e-08) 404.9s
+
+2030 |      252412     7.6445280662e+08 Pr: 0(0); Du: 0(1.0772e-08) 404.9s
+
+
+
+Performed postsolve
+
+Solving the original LP from the solution after postsolve
+
+
+
+Model name          : linopy-problem-wwg379fa
+
+Model status        : Optimal
+
+Simplex   iterations: 252412
+
+Objective value     :  7.6445280662e+08
+
+P-D objective error :  3.1344076412e-14
+
+HiGHS run time      :        405.76
+
+INFO:linopy.constants: Optimization successful: 
+
+Status: ok
+
+Termination condition: optimal
+
+Solution: 334552 primals, 726540 duals
+
+Objective: 7.64e+08
+
+Solver: highs
+
+Runtime: 405.76s
+
+MIP gap: inf
+
+Dual bound: 0.00e+00
+
+Solver model: available
+
+Solver message: Optimal
+
+
+
+INFO:pypsa.optimization.optimize:The variable 'RA_pipe' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The variable 'CO2_import_flow' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Generator-ext-p-lower, Generator-ext-p-upper, Link-fix-p-lower, Link-fix-p-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance, reserve_margin_CO, RA_deliverability_Denver, RA_deliverability_North, RA_deliverability_South, RA_deliverability_Mountain, RA_deliverability_East, RA_deliverability_West, CO2_import_ge_p, co2_CO, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_East_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_East_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_North_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_North_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_South_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_South_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_West_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_West_Battery were not assigned to the network.
+
+=== YEAR 2030 DONE status=ok  wall=424s  objective=$764,452,807  vintages_carried=4 ===
+
+Build-out by carrier (MW):
+
+layer            existing  vintage  new_build    total
+
+carrier                                               
+
+Wind              5,307.0      0.0    9,797.9 15,104.9
+
+Gas:CT            3,191.4      0.0    1,780.0  4,971.4
+
+Solar:PV          4,659.7      0.0        0.0  4,659.7
+
+Gas:CC            2,799.2      0.0        0.0  2,799.2
+
+Storage:Battery   1,202.3      0.0        0.0  1,202.3
+
+Coal                750.0      0.0        0.0    750.0
+
+Hydro               687.6      0.0        0.0    687.6
+
+Gas:ST              602.0      0.0        0.0    602.0
+
+Hydro:Pumped        578.5      0.0        0.0    578.5
+
+Gas:IC              278.6      0.0        0.0    278.6
+
+Zonal shadow prices, mean over snapshots ($/MWh):
+
+name
+
+Denver                 27.300391
+
+North                  27.300391
+
+South                  27.300391
+
+Mountain               32.486498
+
+East                   24.337122
+
+West                   32.486498
+
+Wyoming                32.673570
+
+Utah                   32.673570
+
+FourCorners            32.673570
+
+NewMexico              32.673570
+
+Nebraska               32.673570
+
+EasternInterconnect    32.673570
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+  large CC merge: fort_st_vrain__1_cc  499.2 MW  (CT 292.0 + CA 207.2, scale=0.673)  co2=815.3 lb/MWh  hr=6859 Btu/kWh
+
+  large CC merge: rocky_mountain_energy_center__STG1_cc  592.0 MW  (CT 292.0 + CA 300.0, scale=1.000)  co2=806.3 lb/MWh  hr=6784 Btu/kWh
+
+  large CC merge: front_range_power_plant__3_cc  460.0 MW  (CT 270.0 + CA 190.0, scale=1.000)  co2=887.7 lb/MWh  hr=7469 Btu/kWh
+
+Reserve margin (statewide, copper-plate):
+
+  peak 13,187.5 MW at 2018-06-28 13:00:00  PRM 15.7%  requirement 15,258.0 MW
+
+                 accredited_mw    p_nom
+
+carrier                                
+
+Coal                     666.7    750.0
+
+Gas:CC                 2,612.9  2,799.2
+
+Gas:CT                 4,485.8  4,971.4
+
+Gas:IC                   232.5    278.6
+
+Gas:ST                   505.3    602.0
+
+Geothermal                 0.0      0.0
+
+Hydro                    580.8    687.6
+
+Hydro:Pumped             532.0    578.5
+
+Nuclear:SMR                0.0      0.0
+
+Solar+Storage              0.0      0.0
+
+Solar:PV                 626.7  4,659.7
+
+Storage:Battery          950.4  1,202.3
+
+Wind                   4,064.8 15,104.9
+
+  accredited total 15,258.0 MW  slack 0.0 MW
+
+  dual $105,851.75/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+  large CC merge: fort_st_vrain__1_cc  499.2 MW  (CT 292.0 + CA 207.2, scale=0.673)  co2=815.3 lb/MWh  hr=6859 Btu/kWh
+
+  large CC merge: rocky_mountain_energy_center__STG1_cc  592.0 MW  (CT 292.0 + CA 300.0, scale=1.000)  co2=806.3 lb/MWh  hr=6784 Btu/kWh
+
+  large CC merge: front_range_power_plant__3_cc  460.0 MW  (CT 270.0 + CA 190.0, scale=1.000)  co2=887.7 lb/MWh  hr=7469 Btu/kWh
+
+Zonal deliverability (firm RA pipes at t*):
+
+  t* 2018-06-28 13:00:00  statewide peak 13,187.5 MW
+
+          accredited_mw  net_firm_in_mw  load_at_tstar_mw  slack_mw  dual
+
+zone                                                                     
+
+Denver          2,039.0         5,661.3           7,700.4      -0.0  -0.0
+
+North           6,648.8        -4,662.0           1,296.3     690.4  -0.0
+
+South           2,949.7          -420.7           2,529.1       0.0  -0.0
+
+Mountain          252.2            23.9             276.1       0.0  -0.0
+
+East            2,174.4          -357.4             437.0   1,380.0  -0.0
+
+West            1,193.7          -245.2             948.6       0.0  -0.0
+
+RA pipe flows (positive = from -> to):
+
+                             from        to  flow_mw  limit_mw  at_bound
+
+pipe                                                                    
+
+RA_pipe_South_West          South      West     63.5      63.5      True
+
+RA_pipe_East_South           East     South    484.4     484.4      True
+
+RA_pipe_East_North           East     North   -591.5     591.5      True
+
+RA_pipe_Denver_South       Denver     South -1,053.2   1,610.4     False
+
+RA_pipe_Mountain_South   Mountain     South    211.7     683.8     False
+
+RA_pipe_Denver_East        Denver      East   -464.5     464.5      True
+
+RA_pipe_Mountain_West    Mountain      West   -308.7     961.1     False
+
+RA_pipe_Denver_Mountain    Denver  Mountain    -73.1      73.1      True
+
+RA_pipe_Denver_North       Denver     North -4,070.5   4,070.5      True
+
+RA_pipe_Mountain_North   Mountain     North      0.0       0.0      True
+
+RA_pipe_North_West          North      West      0.0       0.0      True
+
+  reserve_margin_CO dual $105,851.75/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+  large CC merge: fort_st_vrain__1_cc  499.2 MW  (CT 292.0 + CA 207.2, scale=0.673)  co2=815.3 lb/MWh  hr=6859 Btu/kWh
+
+  large CC merge: rocky_mountain_energy_center__STG1_cc  592.0 MW  (CT 292.0 + CA 300.0, scale=1.000)  co2=806.3 lb/MWh  hr=6784 Btu/kWh
+
+  large CC merge: front_range_power_plant__3_cc  460.0 MW  (CT 270.0 + CA 190.0, scale=1.000)  co2=887.7 lb/MWh  hr=7469 Btu/kWh
+
+CO2 cap (annual, production + attributed imports):
+
+  cap 8.4046 MMT  solved 8.4046 MMT  in-state 5.2620  imports 3.1426  slack 0.0000
+
+  import energy 9,493,464 MWh (positive Market.p only)
+
+  dual $-0.00/metric ton  (native on co2_CO)
+
+Storage cyclic-week energy balance (expect ~0):
+
+  week 0: max |net| = 0.0000 MWh  (Denver_Storage:Battery_agg)
+
+  week 1: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 2: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 3: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 4: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 5: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 6: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 7: max |net| = 0.0000 MWh  (South_Storage:Battery_agg)
+
+  week 8: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 9: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 10: max |net| = 0.0000 MWh  (South_Storage:Battery_agg)
+
+Net interchange by interface (TWh, + = CO export):
+
+  Link_West_FourCorners: West <-> FourCorners  +3.922 TWh
+
+  Link_West_Utah: West <-> Utah  +2.960 TWh
+
+  Link_East_Nebraska: East <-> Nebraska  +3.929 TWh
+
+  Link_South_NewMexico: South <-> NewMexico  +0.970 TWh
+
+  Link_Mountain_Wyoming: Mountain <-> Wyoming  +0.848 TWh
+
+  Link_North_Wyoming: North <-> Wyoming  +6.412 TWh
+
+  Link_East_EasternInterconnect: East <-> EasternInterconnect  +0.701 TWh
+
+  total  +19.742 TWh
+
+INFO:pypsa.network.io:Exported network 'Unnamed Network' saved to '.\pypsa\scenarios\core\2030.nc contains: storage_units, sub_networks, carriers, links, loads, buses, generators
+
+  wrote pypsa\scenarios\core\2030.nc
+
+
+
+=== YEAR 2035/2050 START (step 2/5) ===
+
+  surviving vintages: 4 generators, 0 storage
+
+
+
+[1/6] Buses...
+
+  6 CO buses: ['Denver', 'North', 'South', 'Mountain', 'East', 'West']
+
+  6 external buses: ['Wyoming', 'Utah', 'FourCorners', 'NewMexico', 'Nebraska', 'EasternInterconnect']
+
+
+
+[2/6] Links...
+
+  11 links, internal_limits (raw_sum_mw), bidirectional
+
+    Link_South_West: South <-> West  p_nom=363.1 MW
+
+    Link_East_South: East <-> South  p_nom=994.4 MW
+
+    Link_East_North: East <-> North  p_nom=1,245.3 MW
+
+    Link_Denver_South: Denver <-> South  p_nom=3,024.1 MW
+
+    Link_Mountain_South: Mountain <-> South  p_nom=1,394.4 MW
+
+    Link_Denver_East: Denver <-> East  p_nom=1,769.1 MW
+
+    Link_Mountain_West: Mountain <-> West  p_nom=1,720.9 MW
+
+    Link_Denver_Mountain: Denver <-> Mountain  p_nom=522.0 MW
+
+    Link_Denver_North: Denver <-> North  p_nom=6,786.4 MW
+
+    Link_Mountain_North: Mountain <-> North  p_nom=37.2 MW
+
+    Link_North_West: North <-> West  p_nom=421.5 MW
+
+  7 links, external (raw_sum_mw), bidirectional
+
+    Link_West_FourCorners: West <-> FourCorners  p_nom=1,555.6 MW
+
+    Link_West_Utah: West <-> Utah  p_nom=1,118.8 MW
+
+    Link_East_Nebraska: East <-> Nebraska  p_nom=1,044.0 MW
+
+    Link_South_NewMexico: South <-> NewMexico  p_nom=324.9 MW
+
+    Link_Mountain_Wyoming: Mountain <-> Wyoming  p_nom=504.8 MW
+
+    Link_North_Wyoming: North <-> Wyoming  p_nom=2,031.5 MW
+
+    Link_East_EasternInterconnect: East <-> EasternInterconnect  p_nom=210.0 MW
+
+
+
+[3/6] Representative weeks (Milestone 2 load + Milestone 3 clustering)...
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:296: UserWarning: The time series covers 8760 time steps, which is not a whole number of 168-step periods. The last period is filled up with the first 144 time steps of the series so it can be clustered; its occurrence count is reduced accordingly and the padding is dropped again on reconstruction.
+
+  period_profiles = unstack_to_periods(norm_data.values, cfg.n_timesteps_per_period)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+INFO:pyomo.contrib.appsi.solvers.highs:Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+INFO:pyomo.contrib.appsi.solvers.highs:MIP has 2863 rows; 2809 cols; 8374 nonzeros; 2809 integer variables (2809 binary)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Coefficient ranges:
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Matrix  [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Cost    [7e+01, 6e+02]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Bound   [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  RHS     [1e+00, 1e+01]
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolving model
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolve reductions: rows 2810(-53); columns 2809(-0); nonzeros 8374(-0) 
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving MIP model with:
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2810 rows
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2809 cols (2809 binary, 0 integer, 0 implied int., 0 continuous, 0 domain fixed)
+
+INFO:pyomo.contrib.appsi.solvers.highs:   8374 nonzeros
+
+INFO:pyomo.contrib.appsi.solvers.highs:   Thread count 2 (of 4 threads). Using 1 max workers. Parallel search off
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs: J       0       0         0   0.00%   -inf            12823.005754       Large        0      0      0         0     0.3s
+
+INFO:pyomo.contrib.appsi.solvers.highs: R       0       0         0   0.00%   5987.417213     7358.079589       18.63%        0      0      0       259     0.7s
+
+INFO:pyomo.contrib.appsi.solvers.highs: L       0       0         0 100.00%   5988.070925     5988.070925        0.00%       40      1     25       260     1.0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:         1       0         1 100.00%   5988.070925     5988.070925        0.00%       40      1     25       260     1.1s
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving report
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Status            Optimal
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Primal bound      5988.07092499
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Dual bound        5988.07092499
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Gap               0% (tolerance: 0.01%)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  P-D integral      0.382694490041
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Solution status   feasible
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    5988.07092499 (objective)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (bound viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (int. viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (row viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Timing            1.05
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.23 (Presolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        MIP    time [calls] = 0.12 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        subMIP time [calls] = 0.11 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.82 (Solve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        MIP    time [calls] = 0.67 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        subMIP time [calls] = 0.15 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.00 (Postsolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        MIP    time [calls] = 0.00 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        subMIP time [calls] = 0.00 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Max sub-MIP depth 2
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Nodes             1
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Repair LPs        0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  LP iterations     260
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (strong br.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    1 (separation)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (heuristics)
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:100: UserWarning: At least one maximal value of the aggregated time series exceeds the maximal value the input time series for: {'South': 4.547473508864641e-13, 'East_wind_pt3_cf': 1.1102230246251565e-16, 'South_wind_pt1_cf': 2.220446049250313e-16}. To silence the warning set the 'numerical_tolerance' to a higher value.
+
+  warnings.warn(
+
+  1704 snapshots in 11 periods (weighted hours=8451.4)
+
+    2018-01-08 00:00 to 2018-01-14 23:00  (168h)  weight=5.00
+
+    2018-09-17 00:00 to 2018-09-23 23:00  (168h)  weight=9.00
+
+    2018-03-12 00:00 to 2018-03-18 23:00  (168h)  weight=8.00
+
+    2018-09-10 00:00 to 2018-09-16 23:00  (168h)  weight=4.00
+
+    2018-06-04 00:00 to 2018-06-10 23:00  (168h)  weight=2.00
+
+    2018-07-09 00:00 to 2018-07-15 23:00  (168h)  weight=2.00
+
+    2018-07-30 00:00 to 2018-08-05 23:00  (168h)  weight=3.00
+
+    2018-10-22 00:00 to 2018-10-28 23:00  (168h)  weight=8.00
+
+    2018-12-03 00:00 to 2018-12-09 23:00  (168h)  weight=6.00
+
+    2018-12-31 00:00 to 2018-12-31 23:00  (24h)  weight=2.14
+
+    2018-06-25 00:00 to 2018-07-01 23:00  (168h)  weight=3.00
+
+
+
+[4/6] Existing fleet + candidates...
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+  30 existing + 4 vintage + 41 candidate generators
+
+  7 existing + 0 vintage + 12 candidate storage
+
+  hybrid_candidates: 6 Solar+Storage generators, 6 storage
+
+  6 market generators at Candidate_Gas:CC MC = $37.21/MWh
+
+    Market_Wyoming: bus=Wyoming  p_nom=2,536.3 MW
+
+    Market_Utah: bus=Utah  p_nom=1,118.8 MW
+
+    Market_FourCorners: bus=FourCorners  p_nom=1,555.6 MW
+
+    Market_NewMexico: bus=NewMexico  p_nom=324.9 MW
+
+    Market_Nebraska: bus=Nebraska  p_nom=1,044.0 MW
+
+    Market_EasternInterconnect: bus=EasternInterconnect  p_nom=210.0 MW
+
+  relax_pmin: p_min_pu=0 on 75 in-state generators (6 Market_* kept at p_min_pu=-1)
+
+
+
+[5/6] Capacity factors (aligned to representative snapshots)...
+
+  p_max_pu assigned to 30 of 75 generators (solar/wind only)
+
+INFO:pypsa.consistency:Sanitizing network...
+
+INFO:pypsa.components._types.carriers:Adding 13 missing carriers: ['AC', 'Gas:CC', 'Gas:CT', 'Gas:IC', 'Geothermal', 'Hydro', 'Hydro:Pumped', 'Nuclear:SMR', 'Solar+Storage', 'Solar:PV', 'Storage:Battery', 'Wind', 'import']
+
+INFO:pypsa.components._types.carriers:Assigned colors to 13 carriers using 'tab10' palette.
+
+
+
+[6/6] Network assembled.INFO:pypsa.consistency:Network sanitization complete.
+
+
+
+Solving 2035 (1704 snapshots, week-cyclic SOC, statewide PRM, zonal RA pipes, CO2 cap, relax_pmin, aggregate_large_cc, hybrid_candidates)...
+
+  RA: peak=14,710.5 MW at 2018-06-28 13:00:00  PRM=13.9%  requirement=16,755.3 MW
+
+  RA pipes: t*=2018-06-28 13:00:00  statewide peak=14,710.5 MW  11 internal interfaces
+
+    RA_pipe_South_West: South <-> West  +/-63.5 MW
+
+    RA_pipe_East_South: East <-> South  +/-484.4 MW
+
+    RA_pipe_East_North: East <-> North  +/-591.5 MW
+
+    RA_pipe_Denver_South: Denver <-> South  +/-1,610.4 MW
+
+    RA_pipe_Mountain_South: Mountain <-> South  +/-683.8 MW
+
+    RA_pipe_Denver_East: Denver <-> East  +/-464.5 MW
+
+    RA_pipe_Mountain_West: Mountain <-> West  +/-961.1 MW
+
+    RA_pipe_Denver_Mountain: Denver <-> Mountain  +/-73.1 MW
+
+    RA_pipe_Denver_North: Denver <-> North  +/-4,070.5 MW
+
+    RA_pipe_Mountain_North: Mountain <-> North  +/-0.0 MW  (N-1 zero)
+
+    RA_pipe_North_West: North <-> West  +/-0.0 MW  (N-1 zero)
+
+  zonal load at t*:
+
+    Denver: 8,760.5 MW
+
+    North: 1,355.9 MW
+
+    South: 2,763.8 MW
+
+    Mountain: 303.0 MW
+
+    East: 485.3 MW
+
+    West: 1,042.0 MW
+
+  CO2: cap=6.3035 MMT (6,303,450 t)  path=statutory  import intensity=729.8 lb/MWh (Candidate_Gas:CC)
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  hybrid: 6 pairs  p_nom equality on 6 extendable  charge-from-solar on 6
+
+
+INFO:linopy.model: Solve problem using Highs solver
+
+INFO:linopy.model:Solver options:
+
+ - solver: simplex
+
+ - threads: 2
+
+INFO:linopy.io:Writing objective.
+
+
+Writing constraints.:   0%|[38;2;128;191;255m          [0m| 0/54 [00:00<?, ?it/s]
+Writing constraints.:   9%|[38;2;128;191;255m9         [0m| 5/54 [00:00<00:01, 42.45it/s]
+Writing constraints.:  19%|[38;2;128;191;255m#8        [0m| 10/54 [00:00<00:01, 42.66it/s]
+Writing constraints.:  30%|[38;2;128;191;255m##9       [0m| 16/54 [00:00<00:00, 46.40it/s]
+Writing constraints.:  39%|[38;2;128;191;255m###8      [0m| 21/54 [00:00<00:00, 36.44it/s]
+Writing constraints.:  50%|[38;2;128;191;255m#####     [0m| 27/54 [00:00<00:00, 43.02it/s]
+Writing constraints.:  76%|[38;2;128;191;255m#######5  [0m| 41/54 [00:00<00:00, 67.52it/s]
+Writing constraints.:  94%|[38;2;128;191;255m#########4[0m| 51/54 [00:00<00:00, 75.42it/s]
+Writing constraints.: 100%|[38;2;128;191;255m##########[0m| 54/54 [00:00<00:00, 60.97it/s]
+
+
+Writing continuous variables.:   0%|[38;2;128;191;255m          [0m| 0/9 [00:00<?, ?it/s]
+Writing continuous variables.:  89%|[38;2;128;191;255m########8 [0m| 8/9 [00:00<00:00, 73.82it/s]
+Writing continuous variables.: 100%|[38;2;128;191;255m##########[0m| 9/9 [00:00<00:00, 76.69it/s]
+
+INFO:linopy.io: Writing time: 1.03s
+
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+LP linopy-problem-2bzlsti1 has 604987 rows; 276112 cols; 1144096 nonzeros
+
+Coefficient ranges:
+
+  Matrix  [1e-05, 5e+00]
+
+  Cost    [8e-01, 6e+05]
+
+  Bound   [6e+01, 4e+03]
+
+  RHS     [9e-04, 6e+06]
+
+WARNING: Problem has some excessively large row bounds
+
+WARNING:    Consider scaling the    bounds by 1e-1, or setting the user_bound_scale option to -3
+
+Presolving model
+
+174422 rows, 244516 cols, 666682 nonzeros 0s
+
+Dependent equations search running on 38041 equations with time limit of 1000.00s
+
+Dependent equations search removed 0 rows and 0 nonzeros in 0.01s (limit = 1000.00s)
+
+168159 rows, 215885 cols, 633795 nonzeros 2s
+
+Presolve reductions: rows 168159(-436828); columns 215885(-60227); nonzeros 633795(-510301) 
+
+Solving the presolved LP
+
+Using dual simplex solver
+
+
+
+========== HiGHS simplex: YEAR 2035 (step 2/5) ==========
+
+2035 |   Iteration        Objective     Infeasibilities num(sum)
+
+2035 |           0    -2.1354237461e+09 Pr: 10227(1.91325e+07) 2.5s
+
+2035 |       33542    -1.7354269388e+09 Pr: 13634(1.14452e+07); Du: 0(1.77311e-05) 7.6s
+
+2035 |       50027    -1.5701779920e+09 Pr: 16994(1.35567e+07); Du: 0(1.70806e-05) 12.7s
+
+2035 |       63249    -1.4081146576e+09 Pr: 21861(2.19544e+07); Du: 0(1.49129e-05) 18.0s
+
+2035 |       70781    -1.2912083185e+09 Pr: 26343(5.081e+07); Du: 0(1.46329e-05) 23.4s
+
+2035 |       77923    -1.1606094572e+09 Pr: 23437(5.04187e+08); Du: 0(1.66183e-05) 28.8s
+
+2035 |       81348    -8.0678471099e+08 Pr: 27794(2.28836e+08); Du: 0(1.65102e-05) 33.9s
+
+2035 |       84388    -7.8268626771e+08 Pr: 28535(1.23213e+08); Du: 0(1.64907e-05) 39.1s
+
+2035 |       88745    -6.2076621298e+08 Pr: 22975(1.59833e+07); Du: 0(1.6483e-05) 45.1s
+
+2035 |      103167    -3.2592915145e+08 Pr: 32685(2.03499e+07); Du: 0(1.53212e-05) 50.2s
+
+2035 |      116244    -1.7187282352e+08 Pr: 32192(1.44102e+07); Du: 0(1.9927e-05) 55.6s
+
+2035 |      127458    -1.1503107505e+08 Pr: 32322(2.34988e+07); Du: 0(2.31654e-05) 60.8s
+
+2035 |      135278    -9.5586823807e+07 Pr: 20843(4.44962e+06); Du: 0(2.41222e-05) 67.0s
+
+2035 |      151037    -2.6450473333e+07 Pr: 34850(4.05518e+07); Du: 0(3.15252e-05) 72.0s
+
+2035 |      158195    -6.6049453231e+06 Pr: 22138(6.40532e+06); Du: 0(3.18206e-05) 77.6s
+
+2035 |      165762     1.5210559007e+07 Pr: 17562(6.69824e+06); Du: 0(3.30622e-05) 83.9s
+
+2035 |      173912     5.2725979103e+07 Pr: 24606(2.46396e+06); Du: 0(3.09774e-05) 89.5s
+
+2035 |      185915     1.1254805856e+08 Pr: 17482(1.84936e+06); Du: 0(3.28724e-05) 94.8s
+
+2035 |      190791     1.2638796253e+08 Pr: 13256(397701); Du: 0(3.4496e-05) 99.9s
+
+2035 |      203641     1.4286480378e+08 Pr: 0(0); Du: 0(2.3542e-10) 104.5s
+
+2035 |      203641     1.4286480378e+08 Pr: 0(0); Du: 0(2.3542e-10) 104.5s
+
+
+
+Performed postsolve
+
+Solving the original LP from the solution after postsolve
+
+
+
+Model name          : linopy-problem-2bzlsti1
+
+Model status        : Optimal
+
+Simplex   iterations: 203641
+
+Objective value     :  1.4286480378e+08
+
+P-D objective error :  3.1290760386e-16
+
+HiGHS run time      :        105.63
+
+INFO:linopy.constants: Optimization successful: 
+
+Status: ok
+
+Termination condition: optimal
+
+Solution: 276112 primals, 605196 duals
+
+Objective: 1.43e+08
+
+Solver: highs
+
+Runtime: 105.63s
+
+MIP gap: inf
+
+Dual bound: 0.00e+00
+
+Solver model: available
+
+Solver message: Optimal
+
+
+
+INFO:pypsa.optimization.optimize:The variable 'RA_pipe' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The variable 'CO2_import_flow' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Generator-ext-p-lower, Generator-ext-p-upper, Link-fix-p-lower, Link-fix-p-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance, reserve_margin_CO, RA_deliverability_Denver, RA_deliverability_North, RA_deliverability_South, RA_deliverability_Mountain, RA_deliverability_East, RA_deliverability_West, CO2_import_ge_p, co2_CO, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_East_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_East_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_North_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_North_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_South_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_South_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_West_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_West_Battery were not assigned to the network.
+
+=== YEAR 2035 DONE status=ok  wall=129s  objective=$142,864,804  vintages_carried=10 ===
+
+Build-out by carrier (MW):
+
+layer            existing  vintage  new_build    total
+
+carrier                                               
+
+Wind              5,307.0  9,797.9    1,361.0 16,465.8
+
+Gas:CT            1,794.2  1,780.0    5,898.3  9,472.5
+
+Solar:PV          4,659.7      0.0        0.0  4,659.7
+
+Storage:Battery   1,198.1      0.0      217.6  1,415.7
+
+Gas:CC              764.0      0.0        0.0    764.0
+
+Hydro               687.6      0.0        0.0    687.6
+
+Hydro:Pumped        578.5      0.0        0.0    578.5
+
+Gas:IC              226.3      0.0        0.0    226.3
+
+Zonal shadow prices, mean over snapshots ($/MWh):
+
+name
+
+Denver                 30.525620
+
+North                  30.525620
+
+South                  30.525620
+
+Mountain               37.159907
+
+East                   25.132149
+
+West                   37.142198
+
+Wyoming                37.212268
+
+Utah                   37.212268
+
+FourCorners            37.212268
+
+NewMexico              37.212268
+
+Nebraska               37.212268
+
+EasternInterconnect    37.212268
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+Reserve margin (statewide, copper-plate):
+
+  peak 14,710.5 MW at 2018-06-28 13:00:00  PRM 13.9%  requirement 16,755.3 MW
+
+                 accredited_mw    p_nom
+
+carrier                                
+
+Gas:CC                   712.7    764.0
+
+Gas:CT                 8,536.7  9,472.5
+
+Gas:IC                   188.0    226.3
+
+Geothermal                 0.0      0.0
+
+Hydro                    580.8    687.6
+
+Hydro:Pumped             532.0    578.5
+
+Nuclear:SMR                0.0      0.0
+
+Solar+Storage              0.0      0.0
+
+Solar:PV                 281.7  4,659.7
+
+Storage:Battery        1,082.2  1,415.7
+
+Wind                   4,841.1 16,465.8
+
+  accredited total 16,755.3 MW  slack 0.0 MW
+
+  dual $101,659.61/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+Zonal deliverability (firm RA pipes at t*):
+
+  t* 2018-06-28 13:00:00  statewide peak 14,710.5 MW
+
+          accredited_mw  net_firm_in_mw  load_at_tstar_mw  slack_mw  dual
+
+zone                                                                     
+
+Denver          4,569.2         4,191.3           8,760.5       0.0  -0.0
+
+North           4,560.9        -3,205.0           1,355.9      -0.0  -0.0
+
+South           1,389.3         1,374.5           2,763.8       0.0  -0.0
+
+Mountain        1,078.3          -775.4             303.0       0.0  -0.0
+
+East            4,070.5        -1,540.4             485.3   2,044.8  -0.0
+
+West            1,087.0           -45.0           1,042.0       0.0  -0.0
+
+RA pipe flows (positive = from -> to):
+
+                             from        to  flow_mw  limit_mw  at_bound
+
+pipe                                                                    
+
+RA_pipe_South_West          South      West    -63.5      63.5      True
+
+RA_pipe_East_South           East     South    484.4     484.4      True
+
+RA_pipe_East_North           East     North    591.5     591.5      True
+
+RA_pipe_Denver_South       Denver     South    142.8   1,610.4     False
+
+RA_pipe_Mountain_South   Mountain     South    683.8     683.8      True
+
+RA_pipe_Denver_East        Denver      East   -464.5     464.5      True
+
+RA_pipe_Mountain_West    Mountain      West     18.5     961.1     False
+
+RA_pipe_Denver_Mountain    Denver  Mountain    -73.1      73.1      True
+
+RA_pipe_Denver_North       Denver     North -3,796.5   4,070.5     False
+
+RA_pipe_Mountain_North   Mountain     North      0.0       0.0      True
+
+RA_pipe_North_West          North      West      0.0       0.0      True
+
+  reserve_margin_CO dual $101,659.61/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+CO2 cap (annual, production + attributed imports):
+
+  cap 6.3035 MMT  solved 5.3291 MMT  in-state 0.0273  imports 5.3018  slack 0.9743
+
+  import energy 16,016,118 MWh (positive Market.p only)
+
+  dual $-0.00/metric ton  (native on co2_CO)
+
+Storage cyclic-week energy balance (expect ~0):
+
+  week 0: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 1: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 2: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 3: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 4: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 5: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 6: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_East)
+
+  week 7: max |net| = 0.0000 MWh  (South_Storage:Battery_agg)
+
+  week 8: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 9: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 10: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+Net interchange by interface (TWh, + = CO export):
+
+  Link_West_FourCorners: West <-> FourCorners  +2.460 TWh
+
+  Link_West_Utah: West <-> Utah  +1.745 TWh
+
+  Link_East_Nebraska: East <-> Nebraska  +3.697 TWh
+
+  Link_South_NewMexico: South <-> NewMexico  +0.699 TWh
+
+  Link_Mountain_Wyoming: Mountain <-> Wyoming  +0.741 TWh
+
+  Link_North_Wyoming: North <-> Wyoming  +5.153 TWh
+
+  Link_East_EasternInterconnect: East <-> EasternInterconnect  +0.768 TWh
+
+  total  +15.263 TWh
+
+INFO:pypsa.network.io:Exported network 'Unnamed Network' saved to '.\pypsa\scenarios\core\2035.nc contains: storage_units, sub_networks, carriers, links, loads, buses, generators
+
+  wrote pypsa\scenarios\core\2035.nc
+
+
+
+=== YEAR 2040/2050 START (step 3/5) ===
+
+  surviving vintages: 9 generators, 1 storage
+
+
+
+[1/6] Buses...
+
+  6 CO buses: ['Denver', 'North', 'South', 'Mountain', 'East', 'West']
+
+  6 external buses: ['Wyoming', 'Utah', 'FourCorners', 'NewMexico', 'Nebraska', 'EasternInterconnect']
+
+
+
+[2/6] Links...
+
+  11 links, internal_limits (raw_sum_mw), bidirectional
+
+    Link_South_West: South <-> West  p_nom=363.1 MW
+
+    Link_East_South: East <-> South  p_nom=994.4 MW
+
+    Link_East_North: East <-> North  p_nom=1,245.3 MW
+
+    Link_Denver_South: Denver <-> South  p_nom=3,024.1 MW
+
+    Link_Mountain_South: Mountain <-> South  p_nom=1,394.4 MW
+
+    Link_Denver_East: Denver <-> East  p_nom=1,769.1 MW
+
+    Link_Mountain_West: Mountain <-> West  p_nom=1,720.9 MW
+
+    Link_Denver_Mountain: Denver <-> Mountain  p_nom=522.0 MW
+
+    Link_Denver_North: Denver <-> North  p_nom=6,786.4 MW
+
+    Link_Mountain_North: Mountain <-> North  p_nom=37.2 MW
+
+    Link_North_West: North <-> West  p_nom=421.5 MW
+
+  7 links, external (raw_sum_mw), bidirectional
+
+    Link_West_FourCorners: West <-> FourCorners  p_nom=1,555.6 MW
+
+    Link_West_Utah: West <-> Utah  p_nom=1,118.8 MW
+
+    Link_East_Nebraska: East <-> Nebraska  p_nom=1,044.0 MW
+
+    Link_South_NewMexico: South <-> NewMexico  p_nom=324.9 MW
+
+    Link_Mountain_Wyoming: Mountain <-> Wyoming  p_nom=504.8 MW
+
+    Link_North_Wyoming: North <-> Wyoming  p_nom=2,031.5 MW
+
+    Link_East_EasternInterconnect: East <-> EasternInterconnect  p_nom=210.0 MW
+
+
+
+[3/6] Representative weeks (Milestone 2 load + Milestone 3 clustering)...
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:296: UserWarning: The time series covers 8760 time steps, which is not a whole number of 168-step periods. The last period is filled up with the first 144 time steps of the series so it can be clustered; its occurrence count is reduced accordingly and the padding is dropped again on reconstruction.
+
+  period_profiles = unstack_to_periods(norm_data.values, cfg.n_timesteps_per_period)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+INFO:pyomo.contrib.appsi.solvers.highs:Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+INFO:pyomo.contrib.appsi.solvers.highs:MIP has 2863 rows; 2809 cols; 8374 nonzeros; 2809 integer variables (2809 binary)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Coefficient ranges:
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Matrix  [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Cost    [7e+01, 7e+02]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Bound   [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  RHS     [1e+00, 1e+01]
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolving model
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolve reductions: rows 2810(-53); columns 2809(-0); nonzeros 8374(-0) 
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving MIP model with:
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2810 rows
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2809 cols (2809 binary, 0 integer, 0 implied int., 0 continuous, 0 domain fixed)
+
+INFO:pyomo.contrib.appsi.solvers.highs:   8374 nonzeros
+
+INFO:pyomo.contrib.appsi.solvers.highs:   Thread count 2 (of 4 threads). Using 1 max workers. Parallel search off
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs: J       0       0         0   0.00%   -inf            13900.454985       Large        0      0      0         0     0.3s
+
+INFO:pyomo.contrib.appsi.solvers.highs: R       0       0         0   0.00%   6560.324477     9865.539879       33.50%        0      0      0       331     0.4s
+
+INFO:pyomo.contrib.appsi.solvers.highs: C       0       0         0   0.00%   6573.377287     7878.738169       16.57%      616     11      0       380     2.6s
+
+INFO:pyomo.contrib.appsi.solvers.highs: L       0       0         0   0.00%   6573.377287     6573.377287        0.00%      616     11      0       380     4.7s
+
+INFO:pyomo.contrib.appsi.solvers.highs:         1       0         1 100.00%   6573.377287     6573.377287        0.00%      616     11      0       414     4.7s
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving report
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Status            Optimal
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Primal bound      6573.37728658
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Dual bound        6573.37728658
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Gap               0% (tolerance: 0.01%)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  P-D integral      1.17759313733
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Solution status   feasible
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    6573.37728658 (objective)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (bound viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    3.77475828373e-15 (int. viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (row viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Timing            4.74
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.28 (Presolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        MIP    time [calls] = 0.10 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        subMIP time [calls] = 0.18 [2]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    4.45 (Solve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        MIP    time [calls] = 2.59 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        subMIP time [calls] = 1.86 [2]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.00 (Postsolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        MIP    time [calls] = 0.00 [1]
+
+INFO:pyomo.contrib.appsi.solvers.highs:                        subMIP time [calls] = 0.00 [2]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Max sub-MIP depth 4
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Nodes             1
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Repair LPs        0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  LP iterations     414
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (strong br.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    49 (separation)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    34 (heuristics)
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:100: UserWarning: At least one maximal value of the aggregated time series exceeds the maximal value the input time series for: {'West': 2.2737367544323206e-13, 'East_wind_pt3_cf': 1.1102230246251565e-16, 'South_wind_pt1_cf': 2.220446049250313e-16}. To silence the warning set the 'numerical_tolerance' to a higher value.
+
+  warnings.warn(
+
+  1704 snapshots in 11 periods (weighted hours=8451.4)
+
+    2018-01-08 00:00 to 2018-01-14 23:00  (168h)  weight=4.00
+
+    2018-02-19 00:00 to 2018-02-25 23:00  (168h)  weight=2.00
+
+    2018-03-12 00:00 to 2018-03-18 23:00  (168h)  weight=9.00
+
+    2018-06-04 00:00 to 2018-06-10 23:00  (168h)  weight=3.00
+
+    2018-07-02 00:00 to 2018-07-08 23:00  (168h)  weight=2.00
+
+    2018-07-30 00:00 to 2018-08-05 23:00  (168h)  weight=3.00
+
+    2018-09-17 00:00 to 2018-09-23 23:00  (168h)  weight=12.00
+
+    2018-10-22 00:00 to 2018-10-28 23:00  (168h)  weight=9.00
+
+    2018-12-03 00:00 to 2018-12-09 23:00  (168h)  weight=5.00
+
+    2018-12-31 00:00 to 2018-12-31 23:00  (24h)  weight=2.14
+
+    2018-06-25 00:00 to 2018-07-01 23:00  (168h)  weight=1.00
+
+
+
+[4/6] Existing fleet + candidates...
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+  24 existing + 9 vintage + 41 candidate generators
+
+  4 existing + 1 vintage + 12 candidate storage
+
+  hybrid_candidates: 6 Solar+Storage generators, 6 storage
+
+  6 market generators at Candidate_Gas:CC MC = $38.28/MWh
+
+    Market_Wyoming: bus=Wyoming  p_nom=2,536.3 MW
+
+    Market_Utah: bus=Utah  p_nom=1,118.8 MW
+
+    Market_FourCorners: bus=FourCorners  p_nom=1,555.6 MW
+
+    Market_NewMexico: bus=NewMexico  p_nom=324.9 MW
+
+    Market_Nebraska: bus=Nebraska  p_nom=1,044.0 MW
+
+    Market_EasternInterconnect: bus=EasternInterconnect  p_nom=210.0 MW
+
+  relax_pmin: p_min_pu=0 on 74 in-state generators (6 Market_* kept at p_min_pu=-1)
+
+
+
+[5/6] Capacity factors (aligned to representative snapshots)...
+
+  p_max_pu assigned to 32 of 74 generators (solar/wind only)
+
+INFO:pypsa.consistency:Sanitizing network...
+
+INFO:pypsa.components._types.carriers:Adding 12 missing carriers: ['AC', 'Gas:CC', 'Gas:CT', 'Geothermal', 'Hydro', 'Hydro:Pumped', 'Nuclear:SMR', 'Solar+Storage', 'Solar:PV', 'Storage:Battery', 'Wind', 'import']
+
+INFO:pypsa.components._types.carriers:Assigned colors to 12 carriers using 'tab10' palette.
+
+INFO:pypsa.consistency:Network sanitization complete.
+
+
+
+[6/6] Network assembled.
+
+Solving 2040 (1704 snapshots, week-cyclic SOC, statewide PRM, zonal RA pipes, CO2 cap, relax_pmin, aggregate_large_cc, hybrid_candidates)...
+
+  RA: peak=16,423.6 MW at 2018-06-28 13:00:00  PRM=13.9%  requirement=18,706.4 MW
+
+  RA pipes: t*=2018-06-28 13:00:00  statewide peak=16,423.6 MW  11 internal interfaces
+
+    RA_pipe_South_West: South <-> West  +/-63.5 MW
+
+    RA_pipe_East_South: East <-> South  +/-484.4 MW
+
+    RA_pipe_East_North: East <-> North  +/-591.5 MW
+
+    RA_pipe_Denver_South: Denver <-> South  +/-1,610.4 MW
+
+    RA_pipe_Mountain_South: Mountain <-> South  +/-683.8 MW
+
+    RA_pipe_Denver_East: Denver <-> East  +/-464.5 MW
+
+    RA_pipe_Mountain_West: Mountain <-> West  +/-961.1 MW
+
+    RA_pipe_Denver_Mountain: Denver <-> Mountain  +/-73.1 MW
+
+    RA_pipe_Denver_North: Denver <-> North  +/-4,070.5 MW
+
+    RA_pipe_Mountain_North: Mountain <-> North  +/-0.0 MW  (N-1 zero)
+
+    RA_pipe_North_West: North <-> West  +/-0.0 MW  (N-1 zero)
+
+  zonal load at t*:
+
+    Denver: 9,966.6 MW
+
+    North: 1,419.9 MW
+
+    South: 3,020.3 MW
+
+    Mountain: 333.4 MW
+
+    East: 538.9 MW
+
+    West: 1,144.5 MW
+
+  CO2: cap=4.2023 MMT (4,202,300 t)  path=statutory  import intensity=729.8 lb/MWh (Candidate_Gas:CC)
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+INFO:linopy.model: Solve problem using Highs solver
+
+INFO:linopy.model:Solver options:
+
+ - solver: simplex
+
+ - threads: 2
+
+  hybrid: 6 pairs  p_nom equality on 6 extendable  charge-from-solar on 6
+
+
+INFO:linopy.io:Writing objective.
+
+
+Writing constraints.:   0%|[38;2;128;191;255m          [0m| 0/54 [00:00<?, ?it/s]
+Writing constraints.:   9%|[38;2;128;191;255m9         [0m| 5/54 [00:00<00:01, 48.83it/s]
+Writing constraints.:  20%|[38;2;128;191;255m##        [0m| 11/54 [00:00<00:00, 51.26it/s]
+Writing constraints.:  35%|[38;2;128;191;255m###5      [0m| 19/54 [00:00<00:00, 61.38it/s]
+Writing constraints.:  48%|[38;2;128;191;255m####8     [0m| 26/54 [00:00<00:00, 52.03it/s]
+Writing constraints.:  78%|[38;2;128;191;255m#######7  [0m| 42/54 [00:00<00:00, 81.09it/s]
+Writing constraints.: 100%|[38;2;128;191;255m##########[0m| 54/54 [00:00<00:00, 79.58it/s]
+
+
+Writing continuous variables.:   0%|[38;2;128;191;255m          [0m| 0/9 [00:00<?, ?it/s]
+Writing continuous variables.: 100%|[38;2;128;191;255m##########[0m| 9/9 [00:00<00:00, 126.27it/s]
+
+INFO:linopy.io: Writing time: 0.77s
+
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+LP linopy-problem-8xtine2t has 577723 rows; 264184 cols; 1092829 nonzeros
+
+Coefficient ranges:
+
+  Matrix  [1e-04, 7e+00]
+
+  Cost    [4e-01, 6e+05]
+
+  Bound   [6e+01, 4e+03]
+
+  RHS     [9e-04, 4e+06]
+
+WARNING: Problem has some excessively large row bounds
+
+WARNING:    Consider scaling the    bounds by 1e-1, or setting the user_bound_scale option to -3
+
+Presolving model
+
+170781 rows, 231973 cols, 638294 nonzeros 0s
+
+Dependent equations search running on 34549 equations with time limit of 1000.00s
+
+Dependent equations search removed 0 rows and 0 nonzeros in 0.01s (limit = 1000.00s)
+
+164434 rows, 205385 cols, 613365 nonzeros 2s
+
+Presolve reductions: rows 164434(-413289); columns 205385(-58799); nonzeros 613365(-479464) 
+
+Solving the presolved LP
+
+Using dual simplex solver
+
+
+
+========== HiGHS simplex: YEAR 2040 (step 3/5) ==========
+
+2040 |   Iteration        Objective     Infeasibilities num(sum)
+
+2040 |           0    -2.1967324701e+09 Pr: 10227(2.1501e+07) 2.5s
+
+2040 |       27158    -2.0401930156e+09 Pr: 11833(3.07983e+07); Du: 0(2.85928e-05) 7.7s
+
+2040 |       38160    -1.8049803820e+09 Pr: 13509(4.1201e+07); Du: 0(2.35433e-05) 12.9s
+
+2040 |       46245    -1.6733514112e+09 Pr: 15113(3.05092e+07); Du: 0(2.21626e-05) 18.0s
+
+2040 |       60325    -1.4537131235e+09 Pr: 17121(2.24857e+07); Du: 0(1.86262e-05) 23.1s
+
+2040 |       72120    -1.3445287139e+09 Pr: 19005(2.71175e+07); Du: 0(1.93048e-05) 28.2s
+
+2040 |       85485    -8.5383431078e+08 Pr: 29130(3.8233e+07); Du: 0(2.05794e-05) 33.7s
+
+2040 |       88839    -7.8040772347e+08 Pr: 33741(3.86043e+07); Du: 0(2.18906e-05) 39.9s
+
+2040 |       91635    -7.5553136256e+08 Pr: 24165(2.45444e+07); Du: 0(2.15607e-05) 45.4s
+
+2040 |       92625    -7.5081635453e+08 Pr: 28750(2.29039e+07); Du: 0(2.07129e-05) 51.2s
+
+2040 |       97484    -7.1239847500e+08 Pr: 29080(4.57168e+07); Du: 0(2.13222e-05) 56.5s
+
+2040 |      106310    -6.3768383952e+08 Pr: 29126(1.33209e+07); Du: 0(2.12919e-05) 61.9s
+
+2040 |      111682    -5.9129372806e+08 Pr: 34929(4.11446e+07); Du: 0(2.18689e-05) 67.6s
+
+2040 |      118901    -5.1714838899e+08 Pr: 25102(3.48662e+07); Du: 0(2.30963e-05) 72.7s
+
+2040 |      126447    -4.5530573530e+08 Pr: 29364(6.66088e+07); Du: 0(2.35136e-05) 78.0s
+
+2040 |      127739    -4.5454774747e+08 Pr: 27767(1.92993e+08); Du: 0(2.20829e-05) 84.3s
+
+2040 |      131265    -4.4396469157e+08 Pr: 24255(1.07275e+07); Du: 0(2.50391e-05) 90.2s
+
+2040 |      134778    -4.3418962749e+08 Pr: 30017(1.36108e+08); Du: 0(2.39887e-05) 95.6s
+
+2040 |      137820    -4.2809297148e+08 Pr: 27812(1.27583e+07); Du: 0(2.51357e-05) 101.4s
+
+2040 |      140910    -4.2206720188e+08 Pr: 28429(4.25394e+07); Du: 0(2.71525e-05) 107.5s
+
+2040 |      142789    -4.1821641962e+08 Pr: 23258(1.70565e+07); Du: 0(2.7197e-05) 112.9s
+
+2040 |      144470    -4.1693830861e+08 Pr: 22838(1.41982e+07); Du: 0(2.66135e-05) 118.3s
+
+2040 |      152465    -3.9634299210e+08 Pr: 23637(1.85286e+07); Du: 0(2.97135e-05) 124.1s
+
+2040 |      156033    -3.8297163522e+08 Pr: 26915(1.13484e+07); Du: 0(2.99968e-05) 129.5s
+
+2040 |      157765    -3.8192361502e+08 Pr: 18047(1.2983e+07); Du: 0(2.77894e-05) 134.7s
+
+2040 |      159652    -3.7789678763e+08 Pr: 21253(8.46117e+06); Du: 0(2.9416e-05) 141.9s
+
+2040 |      162533    -3.7502853129e+08 Pr: 22512(1.05716e+07); Du: 0(2.91117e-05) 149.2s
+
+2040 |      165555    -3.5542470555e+08 Pr: 16299(3.49012e+06); Du: 0(3.07606e-05) 154.4s
+
+2040 |      170422    -3.3376459406e+08 Pr: 23964(4.0877e+07); Du: 0(3.03427e-05) 160.8s
+
+2040 |      171912    -3.3316180985e+08 Pr: 25589(9.62014e+06); Du: 0(3.04203e-05) 167.0s
+
+2040 |      173817    -3.3252127762e+08 Pr: 27593(7.65619e+06); Du: 0(3.05485e-05) 173.4s
+
+2040 |      176004    -3.3115866547e+08 Pr: 34467(3.0866e+08); Du: 0(2.97098e-05) 179.1s
+
+2040 |      178531    -3.3018959760e+08 Pr: 27136(4.28212e+08); Du: 0(3.06095e-05) 185.0s
+
+2040 |      181971    -3.2212353458e+08 Pr: 29435(1.55392e+07); Du: 0(3.15002e-05) 190.3s
+
+2040 |      186517    -3.1394476399e+08 Pr: 25889(1.47997e+07); Du: 0(3.40818e-05) 196.0s
+
+2040 |      190236    -3.1216132967e+08 Pr: 16841(2.7807e+06); Du: 0(3.45827e-05) 202.0s
+
+2040 |      193393    -3.1070463786e+08 Pr: 15686(2.45951e+06); Du: 0(3.45192e-05) 207.5s
+
+2040 |      197549    -2.9712019314e+08 Pr: 10157(4.75912e+06); Du: 0(3.57604e-05) 213.1s
+
+2040 |      201422    -2.9137839109e+08 Pr: 17407(3.35509e+07); Du: 0(3.46893e-05) 218.4s
+
+2040 |      203226    -2.9018157217e+08 Pr: 18595(1.35105e+07); Du: 0(3.55636e-05) 224.1s
+
+2040 |      208376    -2.8620633114e+08 Pr: 12880(707568); Du: 0(3.45576e-05) 231.0s
+
+2040 |      211096    -2.8550638373e+08 Pr: 6718(789481); Du: 0(3.62825e-05) 236.1s
+
+2040 |      215303    -2.8422289844e+08 Pr: 7201(1.23229e+07); Du: 0(3.651e-05) 242.3s
+
+2040 |      216553    -2.8421025321e+08 Pr: 10044(1.50387e+08); Du: 0(3.59046e-05) 249.0s
+
+2040 |      217814    -2.8418158530e+08 Pr: 12296(9.95348e+06); Du: 0(3.51456e-05) 256.3s
+
+2040 |      219565    -2.8417202460e+08 Pr: 9677(9.94517e+06); Du: 0(3.57527e-05) 262.3s
+
+2040 |      220861    -2.8417161335e+08 Pr: 7599(2.01277e+06); Du: 0(3.40547e-05) 267.8s
+
+2040 |      225338    -2.8326120373e+08 Pr: 6729(218510); Du: 0(3.61228e-05) 273.6s
+
+2040 |      227437    -2.6823398596e+08 Pr: 5881(329317); Du: 0(3.6672e-05) 279.0s
+
+2040 |      230281    -2.6722545939e+08 Pr: 3978(649112); Du: 0(3.7993e-05) 284.2s
+
+2040 |      233177    -2.6711415143e+08 Pr: 4248(97349.5); Du: 0(3.82655e-05) 289.7s
+
+2040 |      236995    -2.6548235913e+08 Pr: 175(1190.15); Du: 0(3.80883e-05) 294.8s
+
+2040 |      237166    -2.6546143885e+08 Pr: 0(0); Du: 0(1.44765e-09) 294.9s
+
+
+
+Performed postsolve
+
+Solving the original LP from the solution after postsolve
+
+
+
+Model name          : linopy-problem-8xtine2t
+
+Model status        : Optimal
+
+Simplex   iterations: 237166
+
+Objective value     : -2.6546143885e+08
+
+P-D objective error :  2.1274427300e-14
+
+HiGHS run time      :        295.67
+
+INFO:linopy.constants: Optimization successful: 
+
+Status: ok
+
+Termination condition: optimal
+
+Solution: 264184 primals, 577910 duals
+
+Objective: -2.65e+08
+
+Solver: highs
+
+Runtime: 295.67s
+
+MIP gap: inf
+
+Dual bound: 0.00e+00
+
+Solver model: available
+
+Solver message: Optimal
+
+
+
+INFO:pypsa.optimization.optimize:The variable 'RA_pipe' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The variable 'CO2_import_flow' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Generator-ext-p-lower, Generator-ext-p-upper, Link-fix-p-lower, Link-fix-p-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance, reserve_margin_CO, RA_deliverability_Denver, RA_deliverability_North, RA_deliverability_South, RA_deliverability_Mountain, RA_deliverability_East, RA_deliverability_West, CO2_import_ge_p, co2_CO, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_East_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_East_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_North_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_North_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_South_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_South_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_West_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_West_Battery were not assigned to the network.
+
+=== YEAR 2040 DONE status=ok  wall=315s  objective=$-265,461,439  vintages_carried=16 ===
+
+Build-out by carrier (MW):
+
+layer            existing  vintage  new_build    total
+
+carrier                                               
+
+Wind              5,063.0 11,158.8      177.4 16,399.2
+
+Gas:CT            1,116.2  7,678.3    2,662.3 11,456.8
+
+Solar:PV          4,659.7      0.0    4,054.3  8,713.9
+
+Storage:Battery     856.0    217.6      303.0  1,376.6
+
+Gas:CC              764.0      0.0        0.0    764.0
+
+Hydro               667.7      0.0        0.0    667.7
+
+Hydro:Pumped        578.5      0.0        0.0    578.5
+
+Zonal shadow prices, mean over snapshots ($/MWh):
+
+name
+
+Denver                 31.217841
+
+North                  31.217841
+
+South                  31.198976
+
+Mountain               37.696583
+
+East                   27.556553
+
+West                   37.679026
+
+Wyoming                38.281213
+
+Utah                   38.281213
+
+FourCorners            38.281213
+
+NewMexico              38.281213
+
+Nebraska               38.281213
+
+EasternInterconnect    38.281213
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+Reserve margin (statewide, copper-plate):
+
+  peak 16,423.6 MW at 2018-06-28 13:00:00  PRM 13.9%  requirement 18,706.4 MW
+
+                 accredited_mw    p_nom
+
+carrier                                
+
+Gas:CC                   712.7    764.0
+
+Gas:CT                10,319.6 11,456.8
+
+Geothermal                 0.0      0.0
+
+Hydro                    564.0    667.7
+
+Hydro:Pumped             532.0    578.5
+
+Nuclear:SMR                0.0      0.0
+
+Solar+Storage              0.0      0.0
+
+Solar:PV                 124.9  8,713.9
+
+Storage:Battery          995.5  1,376.6
+
+Wind                   5,588.3 16,399.2
+
+  accredited total 18,837.0 MW  slack 130.6 MW
+
+  dual $-0.00/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+Zonal deliverability (firm RA pipes at t*):
+
+  t* 2018-06-28 13:00:00  statewide peak 16,423.6 MW
+
+          accredited_mw  net_firm_in_mw  load_at_tstar_mw  slack_mw     dual
+
+zone                                                                        
+
+Denver          4,322.0         5,644.6           9,966.6       0.0 97,585.9
+
+North           4,343.3        -2,923.5           1,419.9       0.0 97,585.9
+
+South           3,579.1          -558.8           3,020.3       0.0 97,585.9
+
+Mountain        1,078.1          -744.7             333.4       0.0 97,585.9
+
+East            4,492.7        -1,540.4             538.9   2,413.4     -0.0
+
+West            1,021.7           122.9           1,144.5       0.0 97,585.9
+
+RA pipe flows (positive = from -> to):
+
+                             from        to  flow_mw  limit_mw  at_bound
+
+pipe                                                                    
+
+RA_pipe_South_West          South      West    -63.5      63.5      True
+
+RA_pipe_East_South           East     South    484.4     484.4      True
+
+RA_pipe_East_North           East     North    591.5     591.5      True
+
+RA_pipe_Denver_South       Denver     South -1,610.4   1,610.4      True
+
+RA_pipe_Mountain_South   Mountain     South    503.7     683.8     False
+
+RA_pipe_Denver_East        Denver      East   -464.5     464.5      True
+
+RA_pipe_Mountain_West    Mountain      West    186.4     961.1     False
+
+RA_pipe_Denver_Mountain    Denver  Mountain    -54.7      73.1     False
+
+RA_pipe_Denver_North       Denver     North -3,515.0   4,070.5     False
+
+RA_pipe_Mountain_North   Mountain     North      0.0       0.0      True
+
+RA_pipe_North_West          North      West      0.0       0.0      True
+
+  reserve_margin_CO dual $-0.00/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+CO2 cap (annual, production + attributed imports):
+
+  cap 4.2023 MMT  solved 4.2023 MMT  in-state 0.0210  imports 4.1813  slack 0.0000
+
+  import energy 12,631,051 MWh (positive Market.p only)
+
+  dual $-0.00/metric ton  (native on co2_CO)
+
+Storage cyclic-week energy balance (expect ~0):
+
+  week 0: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 1: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 2: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 3: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 4: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 5: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 6: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 7: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 8: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 9: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 10: max |net| = 0.0000 MWh  (West_Storage:Battery_agg)
+
+Net interchange by interface (TWh, + = CO export):
+
+  Link_West_FourCorners: West <-> FourCorners  +4.394 TWh
+
+  Link_West_Utah: West <-> Utah  +2.785 TWh
+
+  Link_East_Nebraska: East <-> Nebraska  +3.931 TWh
+
+  Link_South_NewMexico: South <-> NewMexico  +0.910 TWh
+
+  Link_Mountain_Wyoming: Mountain <-> Wyoming  +1.161 TWh
+
+  Link_North_Wyoming: North <-> Wyoming  +6.567 TWh
+
+  Link_East_EasternInterconnect: East <-> EasternInterconnect  +0.797 TWh
+
+  total  +20.547 TWh
+
+INFO:pypsa.network.io:Exported network 'Unnamed Network' saved to '.\pypsa\scenarios\core\2040.nc contains: storage_units, sub_networks, carriers, links, loads, buses, generators
+
+  wrote pypsa\scenarios\core\2040.nc
+
+
+
+=== YEAR 2045/2050 START (step 4/5) ===
+
+  surviving vintages: 14 generators, 2 storage
+
+
+
+[1/6] Buses...
+
+  6 CO buses: ['Denver', 'North', 'South', 'Mountain', 'East', 'West']
+
+  6 external buses: ['Wyoming', 'Utah', 'FourCorners', 'NewMexico', 'Nebraska', 'EasternInterconnect']
+
+
+
+[2/6] Links...
+
+  11 links, internal_limits (raw_sum_mw), bidirectional
+
+    Link_South_West: South <-> West  p_nom=363.1 MW
+
+    Link_East_South: East <-> South  p_nom=994.4 MW
+
+    Link_East_North: East <-> North  p_nom=1,245.3 MW
+
+    Link_Denver_South: Denver <-> South  p_nom=3,024.1 MW
+
+    Link_Mountain_South: Mountain <-> South  p_nom=1,394.4 MW
+
+    Link_Denver_East: Denver <-> East  p_nom=1,769.1 MW
+
+    Link_Mountain_West: Mountain <-> West  p_nom=1,720.9 MW
+
+    Link_Denver_Mountain: Denver <-> Mountain  p_nom=522.0 MW
+
+    Link_Denver_North: Denver <-> North  p_nom=6,786.4 MW
+
+    Link_Mountain_North: Mountain <-> North  p_nom=37.2 MW
+
+    Link_North_West: North <-> West  p_nom=421.5 MW
+
+  7 links, external (raw_sum_mw), bidirectional
+
+    Link_West_FourCorners: West <-> FourCorners  p_nom=1,555.6 MW
+
+    Link_West_Utah: West <-> Utah  p_nom=1,118.8 MW
+
+    Link_East_Nebraska: East <-> Nebraska  p_nom=1,044.0 MW
+
+    Link_South_NewMexico: South <-> NewMexico  p_nom=324.9 MW
+
+    Link_Mountain_Wyoming: Mountain <-> Wyoming  p_nom=504.8 MW
+
+    Link_North_Wyoming: North <-> Wyoming  p_nom=2,031.5 MW
+
+    Link_East_EasternInterconnect: East <-> EasternInterconnect  p_nom=210.0 MW
+
+
+
+[3/6] Representative weeks (Milestone 2 load + Milestone 3 clustering)...
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:296: UserWarning: The time series covers 8760 time steps, which is not a whole number of 168-step periods. The last period is filled up with the first 144 time steps of the series so it can be clustered; its occurrence count is reduced accordingly and the padding is dropped again on reconstruction.
+
+  period_profiles = unstack_to_periods(norm_data.values, cfg.n_timesteps_per_period)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+INFO:pyomo.contrib.appsi.solvers.highs:Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+INFO:pyomo.contrib.appsi.solvers.highs:MIP has 2863 rows; 2809 cols; 8374 nonzeros; 2809 integer variables (2809 binary)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Coefficient ranges:
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Matrix  [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Cost    [7e+01, 8e+02]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Bound   [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  RHS     [1e+00, 1e+01]
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolving model
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolve reductions: rows 2810(-53); columns 2809(-0); nonzeros 8374(-0) 
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving MIP model with:
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2810 rows
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2809 cols (2809 binary, 0 integer, 0 implied int., 0 continuous, 0 domain fixed)
+
+INFO:pyomo.contrib.appsi.solvers.highs:   8374 nonzeros
+
+INFO:pyomo.contrib.appsi.solvers.highs:   Thread count 2 (of 4 threads). Using 1 max workers. Parallel search off
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs: J       0       0         0   0.00%   -inf            15201.935369       Large        0      0      0         0     0.2s
+
+INFO:pyomo.contrib.appsi.solvers.highs: T       0       0         0   0.00%   0               7075.387446      100.00%        0      0      0       299     0.3s
+
+INFO:pyomo.contrib.appsi.solvers.highs:         1       0         1 100.00%   7075.387446     7075.387446        0.00%        0      0      0       299     0.3s
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving report
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Status            Optimal
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Primal bound      7075.38744567
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Dual bound        7075.38744567
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Gap               0% (tolerance: 0.01%)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  P-D integral      0.0503541999497
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Solution status   feasible
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    7075.38744567 (objective)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (bound viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (int. viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (row viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Timing            0.31
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.13 (Presolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.19 (Solve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.00 (Postsolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Max sub-MIP depth 0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Nodes             1
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Repair LPs        0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  LP iterations     299
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (strong br.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (separation)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (heuristics)
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:100: UserWarning: At least one maximal value of the aggregated time series exceeds the maximal value the input time series for: {'South': 4.547473508864641e-13, 'East_wind_pt3_cf': 1.1102230246251565e-16, 'South_wind_pt1_cf': 2.220446049250313e-16}. To silence the warning set the 'numerical_tolerance' to a higher value.
+
+  warnings.warn(
+
+  1704 snapshots in 11 periods (weighted hours=8451.4)
+
+    2018-01-08 00:00 to 2018-01-14 23:00  (168h)  weight=4.00
+
+    2018-02-12 00:00 to 2018-02-18 23:00  (168h)  weight=4.00
+
+    2018-03-12 00:00 to 2018-03-18 23:00  (168h)  weight=9.00
+
+    2018-06-04 00:00 to 2018-06-10 23:00  (168h)  weight=3.00
+
+    2018-07-02 00:00 to 2018-07-08 23:00  (168h)  weight=2.00
+
+    2018-07-16 00:00 to 2018-07-22 23:00  (168h)  weight=1.00
+
+    2018-07-30 00:00 to 2018-08-05 23:00  (168h)  weight=3.00
+
+    2018-09-17 00:00 to 2018-09-23 23:00  (168h)  weight=12.00
+
+    2018-12-03 00:00 to 2018-12-09 23:00  (168h)  weight=11.00
+
+    2018-12-31 00:00 to 2018-12-31 23:00  (24h)  weight=2.14
+
+    2018-06-25 00:00 to 2018-07-01 23:00  (168h)  weight=1.00
+
+
+
+[4/6] Existing fleet + candidates...
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+  21 existing + 14 vintage + 41 candidate generators
+
+  3 existing + 2 vintage + 12 candidate storage
+
+  hybrid_candidates: 6 Solar+Storage generators, 6 storage
+
+  6 market generators at Candidate_Gas:CC MC = $36.51/MWh
+
+    Market_Wyoming: bus=Wyoming  p_nom=2,536.3 MW
+
+    Market_Utah: bus=Utah  p_nom=1,118.8 MW
+
+    Market_FourCorners: bus=FourCorners  p_nom=1,555.6 MW
+
+    Market_NewMexico: bus=NewMexico  p_nom=324.9 MW
+
+    Market_Nebraska: bus=Nebraska  p_nom=1,044.0 MW
+
+    Market_EasternInterconnect: bus=EasternInterconnect  p_nom=210.0 MW
+
+  relax_pmin: p_min_pu=0 on 76 in-state generators (6 Market_* kept at p_min_pu=-1)
+
+
+
+[5/6] Capacity factors (aligned to representative snapshots)...
+
+  p_max_pu assigned to 36 of 76 generators (solar/wind only)INFO:pypsa.consistency:Sanitizing network...
+
+
+
+INFO:pypsa.components._types.carriers:Adding 12 missing carriers: ['AC', 'Gas:CC', 'Gas:CT', 'Geothermal', 'Hydro', 'Hydro:Pumped', 'Nuclear:SMR', 'Solar+Storage', 'Solar:PV', 'Storage:Battery', 'Wind', 'import']
+
+INFO:pypsa.components._types.carriers:Assigned colors to 12 carriers using 'tab10' palette.
+
+
+
+[6/6] Network assembled.INFO:pypsa.consistency:Network sanitization complete.
+
+
+
+Solving 2045 (1704 snapshots, week-cyclic SOC, statewide PRM, zonal RA pipes, CO2 cap, relax_pmin, aggregate_large_cc, hybrid_candidates)...
+
+  RA: peak=18,351.2 MW at 2018-06-28 13:00:00  PRM=13.9%  requirement=20,902.0 MW
+
+  RA pipes: t*=2018-06-28 13:00:00  statewide peak=18,351.2 MW  11 internal interfaces
+
+    RA_pipe_South_West: South <-> West  +/-63.5 MW
+
+    RA_pipe_East_South: East <-> South  +/-484.4 MW
+
+    RA_pipe_East_North: East <-> North  +/-591.5 MW
+
+    RA_pipe_Denver_South: Denver <-> South  +/-1,610.4 MW
+
+    RA_pipe_Mountain_South: Mountain <-> South  +/-683.8 MW
+
+    RA_pipe_Denver_East: Denver <-> East  +/-464.5 MW
+
+    RA_pipe_Mountain_West: Mountain <-> West  +/-961.1 MW
+
+    RA_pipe_Denver_Mountain: Denver <-> Mountain  +/-73.1 MW
+
+    RA_pipe_Denver_North: Denver <-> North  +/-4,070.5 MW
+
+    RA_pipe_Mountain_North: Mountain <-> North  +/-0.0 MW  (N-1 zero)
+
+    RA_pipe_North_West: North <-> West  +/-0.0 MW  (N-1 zero)
+
+  zonal load at t*:
+
+    Denver: 11,338.7 MW
+
+    North: 1,488.6 MW
+
+    South: 3,300.6 MW
+
+    Mountain: 367.7 MW
+
+    East: 598.4 MW
+
+    West: 1,257.2 MW
+
+  CO2: cap=2.1012 MMT (2,101,150 t)  path=statutory  import intensity=729.8 lb/MWh (Candidate_Gas:CC)
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+
+INFO:linopy.model: Solve problem using Highs solver
+
+  hybrid: 6 pairs  p_nom equality on 6 extendable  charge-from-solar on 6
+
+
+INFO:linopy.model:Solver options:
+
+ - solver: simplex
+
+ - threads: 2
+
+INFO:linopy.io:Writing objective.
+
+
+Writing constraints.:   0%|[38;2;128;191;255m          [0m| 0/54 [00:00<?, ?it/s]
+Writing constraints.:   9%|[38;2;128;191;255m9         [0m| 5/54 [00:00<00:01, 48.52it/s]
+Writing constraints.:  19%|[38;2;128;191;255m#8        [0m| 10/54 [00:00<00:00, 46.90it/s]
+Writing constraints.:  33%|[38;2;128;191;255m###3      [0m| 18/54 [00:00<00:00, 59.39it/s]
+Writing constraints.:  44%|[38;2;128;191;255m####4     [0m| 24/54 [00:00<00:00, 42.10it/s]
+Writing constraints.:  76%|[38;2;128;191;255m#######5  [0m| 41/54 [00:00<00:00, 74.60it/s]
+Writing constraints.: 100%|[38;2;128;191;255m##########[0m| 54/54 [00:00<00:00, 73.24it/s]
+
+
+Writing continuous variables.:   0%|[38;2;128;191;255m          [0m| 0/9 [00:00<?, ?it/s]
+Writing continuous variables.: 100%|[38;2;128;191;255m##########[0m| 9/9 [00:00<00:00, 110.33it/s]
+
+INFO:linopy.io: Writing time: 0.84s
+
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+LP linopy-problem-eytzkyih has 584539 rows; 267592 cols; 1099938 nonzeros
+
+Coefficient ranges:
+
+  Matrix  [1e-04, 7e+00]
+
+  Cost    [4e-01, 6e+05]
+
+  Bound   [6e+01, 4e+03]
+
+  RHS     [9e-04, 2e+06]
+
+WARNING: Problem has some excessively large row bounds
+
+WARNING:    Consider scaling the    bounds by 1e-1, or setting the user_bound_scale option to -2
+
+Presolving model
+
+171342 rows, 233342 cols, 637511 nonzeros 0s
+
+Dependent equations search running on 34673 equations with time limit of 1000.00s
+
+Dependent equations search removed 0 rows and 0 nonzeros in 0.01s (limit = 1000.00s)
+
+165119 rows, 204234 cols, 611693 nonzeros 2s
+
+Presolve reductions: rows 165119(-419420); columns 204234(-63358); nonzeros 611693(-488245) 
+
+Solving the presolved LP
+
+Using dual simplex solver
+
+
+
+========== HiGHS simplex: YEAR 2045 (step 4/5) ==========
+
+2045 |   Iteration        Objective     Infeasibilities num(sum)
+
+2045 |           0    -2.0949013472e+09 Pr: 10227(2.18613e+07) 2.6s
+
+2045 |       20717    -1.6353894886e+09 Pr: 10883(1.97231e+07); Du: 0(2.92802e-05) 7.6s
+
+2045 |       35210    -1.4959336721e+09 Pr: 13275(1.91952e+07); Du: 0(2.52077e-05) 12.7s
+
+2045 |       45168    -1.3551925074e+09 Pr: 20137(2.21759e+07); Du: 0(2.1773e-05) 17.7s
+
+2045 |       55013    -1.2776679028e+09 Pr: 18393(2.38181e+07); Du: 0(2.07391e-05) 23.0s
+
+2045 |       57772    -1.2776677654e+09 Pr: 18874(3.33261e+07); Du: 0(2.00591e-05) 28.3s
+
+2045 |       64237    -1.2099334345e+09 Pr: 22943(2.84137e+07); Du: 0(1.86303e-05) 33.4s
+
+2045 |       69992    -1.1736700950e+09 Pr: 24456(8.89838e+07); Du: 0(1.77084e-05) 38.6s
+
+2045 |       75303    -8.6313549601e+08 Pr: 25267(1.35876e+08); Du: 0(1.73309e-05) 43.9s
+
+2045 |       76746    -8.4343159071e+08 Pr: 21945(8.31351e+07); Du: 0(1.70342e-05) 50.1s
+
+2045 |       77673    -8.4343084801e+08 Pr: 21775(7.70274e+07); Du: 0(1.68296e-05) 55.5s
+
+2045 |       80634    -8.0366802855e+08 Pr: 34429(1.50006e+08); Du: 0(1.73969e-05) 61.0s
+
+2045 |       81745    -7.9650844208e+08 Pr: 29957(1.06878e+08); Du: 0(1.71896e-05) 66.4s
+
+2045 |       84695    -7.2600246454e+08 Pr: 34554(7.4491e+07); Du: 0(1.76859e-05) 72.9s
+
+2045 |       86836    -6.5551447754e+08 Pr: 41843(3.17291e+08); Du: 0(1.67858e-05) 79.5s
+
+2045 |       90644    -5.7046282291e+08 Pr: 24147(2.01291e+07); Du: 0(1.91901e-05) 84.6s
+
+2045 |       93262    -5.2913971936e+08 Pr: 38172(1.37813e+08); Du: 0(1.92603e-05) 90.8s
+
+2045 |       97447    -4.4818765437e+08 Pr: 37315(6.28345e+08); Du: 0(1.82553e-05) 96.3s
+
+2045 |      105064    -3.7246727383e+08 Pr: 31197(8.9905e+07); Du: 0(1.86215e-05) 102.0s
+
+2045 |      109164    -3.4226925062e+08 Pr: 36535(8.39861e+07); Du: 0(1.7668e-05) 108.5s
+
+2045 |      111253    -3.3532528236e+08 Pr: 27888(8.50947e+07); Du: 0(1.69401e-05) 115.7s
+
+2045 |      115479    -3.0892335395e+08 Pr: 27191(1.76105e+07); Du: 0(1.87533e-05) 121.3s
+
+2045 |      119121    -2.9269503817e+08 Pr: 21570(1.13542e+07); Du: 0(2.04806e-05) 126.4s
+
+2045 |      123451    -2.7942613098e+08 Pr: 21398(1.59865e+07); Du: 0(2.07483e-05) 131.6s
+
+2045 |      126637    -2.7322514585e+08 Pr: 30919(3.44775e+07); Du: 0(2.29111e-05) 137.1s
+
+2045 |      132953    -2.4951587882e+08 Pr: 23064(5.47649e+07); Du: 0(2.49165e-05) 142.2s
+
+2045 |      137047    -2.4155854981e+08 Pr: 30691(1.90186e+07); Du: 0(2.61285e-05) 148.2s
+
+2045 |      142126    -2.3319728543e+08 Pr: 23717(1.10789e+07); Du: 0(3.00659e-05) 153.3s
+
+2045 |      146429    -2.2585517406e+08 Pr: 19560(1.08827e+07); Du: 0(2.90717e-05) 158.5s
+
+2045 |      149088    -2.2215207343e+08 Pr: 35724(3.56529e+07); Du: 0(3.05969e-05) 163.8s
+
+2045 |      155841    -2.0800054371e+08 Pr: 22924(1.21242e+07); Du: 0(3.22361e-05) 169.8s
+
+2045 |      160236    -1.9786239874e+08 Pr: 29130(1.57393e+07); Du: 0(3.32848e-05) 176.0s
+
+2045 |      164005    -1.9275319532e+08 Pr: 22821(2.52511e+07); Du: 0(3.34253e-05) 181.7s
+
+2045 |      168399    -1.8833346691e+08 Pr: 18922(3.72892e+06); Du: 0(3.43894e-05) 186.7s
+
+2045 |      174247    -1.7154607438e+08 Pr: 12637(3.88367e+06); Du: 0(3.5755e-05) 192.1s
+
+2045 |      177191    -1.6943552854e+08 Pr: 26870(4.59525e+07); Du: 0(3.3635e-05) 197.3s
+
+2045 |      179177    -1.6911059557e+08 Pr: 14349(7.51461e+06); Du: 0(3.2393e-05) 202.7s
+
+2045 |      182195    -1.6663316730e+08 Pr: 20730(1.05966e+07); Du: 0(3.35782e-05) 208.4s
+
+2045 |      185533    -1.6540644035e+08 Pr: 18550(3.0204e+06); Du: 0(3.5625e-05) 213.9s
+
+2045 |      190807    -1.6293463916e+08 Pr: 16922(3.04756e+06); Du: 0(3.55842e-05) 220.1s
+
+2045 |      194060    -1.5644788718e+08 Pr: 14090(1.98398e+06); Du: 0(3.54204e-05) 227.4s
+
+2045 |      197529    -1.5412369710e+08 Pr: 21040(2.49701e+07); Du: 0(3.48503e-05) 235.3s
+
+2045 |      200526    -1.5312510033e+08 Pr: 12608(3.64922e+06); Du: 0(3.55106e-05) 240.4s
+
+2045 |      203056    -1.5218315904e+08 Pr: 17894(8.62527e+06); Du: 0(3.54316e-05) 248.3s
+
+2045 |      207444    -1.3604939732e+08 Pr: 17515(9.92966e+06); Du: 0(3.6154e-05) 254.3s
+
+2045 |      210964    -1.3508775653e+08 Pr: 20188(2.12642e+07); Du: 0(3.59772e-05) 259.9s
+
+2045 |      213575    -1.3484609470e+08 Pr: 12875(4.32896e+06); Du: 0(3.56063e-05) 266.9s
+
+2045 |      217193    -1.2826284673e+08 Pr: 12369(7.09242e+06); Du: 0(3.61963e-05) 272.8s
+
+2045 |      219300    -1.2702526764e+08 Pr: 10321(2.0454e+06); Du: 0(3.60579e-05) 278.0s
+
+2045 |      223387    -1.2366525083e+08 Pr: 11380(1.48966e+07); Du: 0(3.69058e-05) 283.3s
+
+2045 |      225801    -1.2352717129e+08 Pr: 9955(1.16912e+06); Du: 0(3.68498e-05) 289.6s
+
+2045 |      228423    -1.2300707898e+08 Pr: 22332(7.12181e+08); Du: 0(3.6123e-05) 296.1s
+
+2045 |      229923    -1.2282238770e+08 Pr: 8819(783453); Du: 0(3.66008e-05) 301.5s
+
+2045 |      233509    -1.2232787256e+08 Pr: 14090(1.11043e+08); Du: 0(3.76394e-05) 306.8s
+
+2045 |      237275    -1.2177513751e+08 Pr: 8718(3.09525e+06); Du: 0(3.72049e-05) 312.3s
+
+2045 |      239921    -1.2122149948e+08 Pr: 5953(2.04653e+06); Du: 0(3.69768e-05) 317.9s
+
+2045 |      242009    -1.2098544168e+08 Pr: 5312(110302); Du: 0(3.7425e-05) 323.5s
+
+2045 |      243674    -1.2018049635e+08 Pr: 4929(133428); Du: 0(3.80373e-05) 329.3s
+
+2045 |      245471    -1.1989627804e+08 Pr: 4423(174819); Du: 0(3.76896e-05) 334.6s
+
+2045 |      247365    -1.1958275387e+08 Pr: 4151(164044); Du: 0(3.79029e-05) 340.0s
+
+2045 |      249565    -1.1916177342e+08 Pr: 2686(73731.1); Du: 0(3.80495e-05) 348.1s
+
+2045 |      252846    -1.1778270256e+08 Pr: 550(15243); Du: 0(3.80821e-05) 356.7s
+
+2045 |      253010    -1.1776944760e+08 Pr: 0(0); Du: 0(5.75907e-11) 357.1s
+
+
+
+Performed postsolve
+
+Solving the original LP from the solution after postsolve
+
+
+
+Model name          : linopy-problem-eytzkyih
+
+Model status        : Optimal
+
+Simplex   iterations: 253010
+
+Objective value     : -1.1776944760e+08
+
+P-D objective error :  7.1361928317e-14
+
+HiGHS run time      :        357.85
+
+INFO:linopy.constants: Optimization successful: 
+
+Status: ok
+
+Termination condition: optimal
+
+Solution: 267592 primals, 584726 duals
+
+Objective: -1.18e+08
+
+Solver: highs
+
+Runtime: 357.85s
+
+MIP gap: inf
+
+Dual bound: 0.00e+00
+
+Solver model: available
+
+Solver message: Optimal
+
+
+
+INFO:pypsa.optimization.optimize:The variable 'RA_pipe' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The variable 'CO2_import_flow' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Generator-ext-p-lower, Generator-ext-p-upper, Link-fix-p-lower, Link-fix-p-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance, reserve_margin_CO, RA_deliverability_Denver, RA_deliverability_North, RA_deliverability_South, RA_deliverability_Mountain, RA_deliverability_East, RA_deliverability_West, CO2_import_ge_p, co2_CO, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_East_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_East_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_North_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_North_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_South_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_South_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_West_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_West_Battery were not assigned to the network.
+
+=== YEAR 2045 DONE status=ok  wall=376s  objective=$-117,769,448  vintages_carried=22 ===
+
+Build-out by carrier (MW):
+
+layer            existing  vintage  new_build    total
+
+carrier                                               
+
+Wind              3,008.2 11,336.2    2,015.9 16,360.3
+
+Gas:CT              936.2 10,340.6    3,633.6 14,910.4
+
+Solar:PV          4,659.7  4,054.3      444.9  9,158.8
+
+Storage:Battery       0.0    520.6      583.5  1,104.1
+
+Hydro               667.7      0.0        0.0    667.7
+
+Hydro:Pumped        578.5      0.0        0.0    578.5
+
+Gas:CC              576.0      0.0        0.0    576.0
+
+Zonal shadow prices, mean over snapshots ($/MWh):
+
+name
+
+Denver                 29.932263
+
+North                  29.798072
+
+South                  29.839244
+
+Mountain               35.381532
+
+East                   24.252899
+
+West                   35.301047
+
+Wyoming                36.550403
+
+Utah                   36.551361
+
+FourCorners            36.551361
+
+NewMexico              36.551361
+
+Nebraska               36.535653
+
+EasternInterconnect    36.535653
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+Reserve margin (statewide, copper-plate):
+
+  peak 18,351.2 MW at 2018-06-28 13:00:00  PRM 13.9%  requirement 20,902.0 MW
+
+                 accredited_mw    p_nom
+
+carrier                                
+
+Gas:CC                   533.9    576.0
+
+Gas:CT                13,431.2 14,910.4
+
+Geothermal                 0.0      0.0
+
+Hydro                    564.0    667.7
+
+Hydro:Pumped             532.0    578.5
+
+Nuclear:SMR                0.0      0.0
+
+Solar+Storage              0.0      0.0
+
+Solar:PV                 119.5  9,158.8
+
+Storage:Battery          653.0  1,104.1
+
+Wind                   5,068.4 16,360.3
+
+  accredited total 20,902.0 MW  slack 0.0 MW
+
+  dual $93,512.21/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+Zonal deliverability (firm RA pipes at t*):
+
+  t* 2018-06-28 13:00:00  statewide peak 18,351.2 MW
+
+          accredited_mw  net_firm_in_mw  load_at_tstar_mw  slack_mw  dual
+
+zone                                                                     
+
+Denver          5,856.9         5,481.8          11,338.7       0.0  -0.0
+
+North           4,230.9        -2,742.3           1,488.6       0.0  -0.0
+
+South           4,956.9        -1,402.6           3,300.6     253.8  -0.0
+
+Mountain        1,078.1          -710.4             367.7       0.0  -0.0
+
+East            4,435.8        -1,540.4             598.4   2,297.0  -0.0
+
+West              343.3           913.8           1,257.2       0.0  -0.0
+
+RA pipe flows (positive = from -> to):
+
+                             from        to  flow_mw  limit_mw  at_bound
+
+pipe                                                                    
+
+RA_pipe_South_West          South      West     63.5      63.5      True
+
+RA_pipe_East_South           East     South    484.4     484.4      True
+
+RA_pipe_East_North           East     North    591.5     591.5      True
+
+RA_pipe_Denver_South       Denver     South -1,610.4   1,610.4      True
+
+RA_pipe_Mountain_South   Mountain     South   -213.1     683.8     False
+
+RA_pipe_Denver_East        Denver      East   -464.5     464.5      True
+
+RA_pipe_Mountain_West    Mountain      West    850.3     961.1     False
+
+RA_pipe_Denver_Mountain    Denver  Mountain    -73.1      73.1      True
+
+RA_pipe_Denver_North       Denver     North -3,333.8   4,070.5     False
+
+RA_pipe_Mountain_North   Mountain     North      0.0       0.0      True
+
+RA_pipe_North_West          North      West      0.0       0.0      True
+
+  reserve_margin_CO dual $93,512.21/MW-yr
+
+  large CC merge: cherokee__7_cc  576.0 MW  (CT 336.0 + CA 240.0, scale=1.000)  co2=803.6 lb/MWh  hr=6761 Btu/kWh
+
+CO2 cap (annual, production + attributed imports):
+
+  cap 2.1012 MMT  solved 2.1011 MMT  in-state 0.0542  imports 2.0469  slack 0.0000
+
+  import energy 6,183,421 MWh (positive Market.p only)
+
+  dual $-0.35/metric ton  (native on co2_CO)
+
+Storage cyclic-week energy balance (expect ~0):
+
+  week 0: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 1: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_East)
+
+  week 2: max |net| = 0.0000 MWh  (Built_Storage:Battery_North_2040)
+
+  week 3: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_East)
+
+  week 4: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_East)
+
+  week 5: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_East)
+
+  week 6: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_East)
+
+  week 7: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_East)
+
+  week 8: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 9: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+  week 10: max |net| = 0.0000 MWh  (Denver_Hydro:Pumped_agg)
+
+Net interchange by interface (TWh, + = CO export):
+
+  Link_West_FourCorners: West <-> FourCorners  +3.668 TWh
+
+  Link_West_Utah: West <-> Utah  +2.492 TWh
+
+  Link_East_Nebraska: East <-> Nebraska  +4.508 TWh
+
+  Link_South_NewMexico: South <-> NewMexico  +0.828 TWh
+
+  Link_Mountain_Wyoming: Mountain <-> Wyoming  +1.018 TWh
+
+  Link_North_Wyoming: North <-> Wyoming  +5.780 TWh
+
+  Link_East_EasternInterconnect: East <-> EasternInterconnect  +0.889 TWh
+
+  total  +19.183 TWh
+
+INFO:pypsa.network.io:Exported network 'Unnamed Network' saved to '.\pypsa\scenarios\core\2045.nc contains: storage_units, sub_networks, carriers, links, loads, buses, generators
+
+  wrote pypsa\scenarios\core\2045.nc
+
+
+
+=== YEAR 2050/2050 START (step 5/5) ===
+
+  surviving vintages: 19 generators, 2 storage
+
+
+
+[1/6] Buses...
+
+  6 CO buses: ['Denver', 'North', 'South', 'Mountain', 'East', 'West']
+
+  6 external buses: ['Wyoming', 'Utah', 'FourCorners', 'NewMexico', 'Nebraska', 'EasternInterconnect']
+
+
+
+[2/6] Links...
+
+  11 links, internal_limits (raw_sum_mw), bidirectional
+
+    Link_South_West: South <-> West  p_nom=363.1 MW
+
+    Link_East_South: East <-> South  p_nom=994.4 MW
+
+    Link_East_North: East <-> North  p_nom=1,245.3 MW
+
+    Link_Denver_South: Denver <-> South  p_nom=3,024.1 MW
+
+    Link_Mountain_South: Mountain <-> South  p_nom=1,394.4 MW
+
+    Link_Denver_East: Denver <-> East  p_nom=1,769.1 MW
+
+    Link_Mountain_West: Mountain <-> West  p_nom=1,720.9 MW
+
+    Link_Denver_Mountain: Denver <-> Mountain  p_nom=522.0 MW
+
+    Link_Denver_North: Denver <-> North  p_nom=6,786.4 MW
+
+    Link_Mountain_North: Mountain <-> North  p_nom=37.2 MW
+
+    Link_North_West: North <-> West  p_nom=421.5 MW
+
+  7 links, external (raw_sum_mw), bidirectional
+
+    Link_West_FourCorners: West <-> FourCorners  p_nom=1,555.6 MW
+
+    Link_West_Utah: West <-> Utah  p_nom=1,118.8 MW
+
+    Link_East_Nebraska: East <-> Nebraska  p_nom=1,044.0 MW
+
+    Link_South_NewMexico: South <-> NewMexico  p_nom=324.9 MW
+
+    Link_Mountain_Wyoming: Mountain <-> Wyoming  p_nom=504.8 MW
+
+    Link_North_Wyoming: North <-> Wyoming  p_nom=2,031.5 MW
+
+    Link_East_EasternInterconnect: East <-> EasternInterconnect  p_nom=210.0 MW
+
+
+
+[3/6] Representative weeks (Milestone 2 load + Milestone 3 clustering)...
+
+.\.venv\Lib\site-packages\tsam\pipeline\orchestrator.py:296: UserWarning: The time series covers 8760 time steps, which is not a whole number of 168-step periods. The last period is filled up with the first 144 time steps of the series so it can be clustered; its occurrence count is reduced accordingly and the padding is dropped again on reconstruction.
+
+  period_profiles = unstack_to_periods(norm_data.values, cfg.n_timesteps_per_period)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+INFO:pyomo.contrib.appsi.solvers.highs:Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+INFO:pyomo.contrib.appsi.solvers.highs:MIP has 2863 rows; 2809 cols; 8374 nonzeros; 2809 integer variables (2809 binary)
+
+INFO:pyomo.contrib.appsi.solvers.highs:Coefficient ranges:
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Matrix  [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Cost    [7e+01, 8e+02]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Bound   [1e+00, 1e+00]
+
+INFO:pyomo.contrib.appsi.solvers.highs:  RHS     [1e+00, 1e+01]
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolving model
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:2810 rows, 2809 cols, 8374 nonzeros 0s
+
+INFO:pyomo.contrib.appsi.solvers.highs:Presolve reductions: rows 2810(-53); columns 2809(-0); nonzeros 8374(-0) 
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving MIP model with:
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2810 rows
+
+INFO:pyomo.contrib.appsi.solvers.highs:   2809 cols (2809 binary, 0 integer, 0 implied int., 0 continuous, 0 domain fixed)
+
+INFO:pyomo.contrib.appsi.solvers.highs:   8374 nonzeros
+
+INFO:pyomo.contrib.appsi.solvers.highs:   Thread count 2 (of 4 threads). Using 1 max workers. Parallel search off
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+
+INFO:pyomo.contrib.appsi.solvers.highs:     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+
+INFO:pyomo.contrib.appsi.solvers.highs:Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs: J       0       0         0   0.00%   -inf            16650.084472       Large        0      0      0         0     0.3s
+
+INFO:pyomo.contrib.appsi.solvers.highs: T       0       0         0   0.00%   0               7536.522111      100.00%        0      0      0       261     0.4s
+
+INFO:pyomo.contrib.appsi.solvers.highs:         1       0         1 100.00%   7536.522111     7536.522111        0.00%        0      0      0       261     0.4s
+
+INFO:pyomo.contrib.appsi.solvers.highs:
+
+INFO:pyomo.contrib.appsi.solvers.highs:Solving report
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Status            Optimal
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Primal bound      7536.52211092
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Dual bound        7536.52211092
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Gap               0% (tolerance: 0.01%)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  P-D integral      0.0712371002883
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Solution status   feasible
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    7536.52211092 (objective)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (bound viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (int. viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (row viol.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Timing            0.44
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.15 (Presolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.29 (Solve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0.00 (Postsolve)
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Max sub-MIP depth 0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Nodes             1
+
+INFO:pyomo.contrib.appsi.solvers.highs:  Repair LPs        0
+
+INFO:pyomo.contrib.appsi.solvers.highs:  LP iterations     261
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (strong br.)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (separation)
+
+INFO:pyomo.contrib.appsi.solvers.highs:                    0 (heuristics)
+
+  1704 snapshots in 11 periods (weighted hours=8451.4)
+
+    2018-01-15 00:00 to 2018-01-21 23:00  (168h)  weight=3.00
+
+    2018-02-12 00:00 to 2018-02-18 23:00  (168h)  weight=5.00
+
+    2018-03-12 00:00 to 2018-03-18 23:00  (168h)  weight=7.00
+
+    2018-06-04 00:00 to 2018-06-10 23:00  (168h)  weight=2.00
+
+    2018-07-02 00:00 to 2018-07-08 23:00  (168h)  weight=2.00
+
+    2018-07-23 00:00 to 2018-07-29 23:00  (168h)  weight=3.00
+
+    2018-09-17 00:00 to 2018-09-23 23:00  (168h)  weight=13.00
+
+    2018-10-22 00:00 to 2018-10-28 23:00  (168h)  weight=10.00
+
+    2018-12-10 00:00 to 2018-12-16 23:00  (168h)  weight=3.00
+
+    2018-12-31 00:00 to 2018-12-31 23:00  (24h)  weight=2.14
+
+    2018-06-25 00:00 to 2018-07-01 23:00  (168h)  weight=2.00
+
+
+
+[4/6] Existing fleet + candidates...
+
+  16 existing + 19 vintage + 41 candidate generators
+
+  3 existing + 2 vintage + 12 candidate storage
+
+  hybrid_candidates: 6 Solar+Storage generators, 6 storage
+
+  6 market generators at Candidate_Gas:CC MC = $35.44/MWh
+
+    Market_Wyoming: bus=Wyoming  p_nom=2,536.3 MW
+
+    Market_Utah: bus=Utah  p_nom=1,118.8 MW
+
+    Market_FourCorners: bus=FourCorners  p_nom=1,555.6 MW
+
+    Market_NewMexico: bus=NewMexico  p_nom=324.9 MW
+
+    Market_Nebraska: bus=Nebraska  p_nom=1,044.0 MW
+
+    Market_EasternInterconnect: bus=EasternInterconnect  p_nom=210.0 MW
+
+  relax_pmin: p_min_pu=0 on 76 in-state generators (6 Market_* kept at p_min_pu=-1)
+
+
+
+[5/6] Capacity factors (aligned to representative snapshots)...
+
+  p_max_pu assigned to 36 of 76 generators (solar/wind only)INFO:pypsa.consistency:Sanitizing network...
+
+
+
+INFO:pypsa.components._types.carriers:Adding 12 missing carriers: ['AC', 'Gas:CC', 'Gas:CT', 'Geothermal', 'Hydro', 'Hydro:Pumped', 'Nuclear:SMR', 'Solar+Storage', 'Solar:PV', 'Storage:Battery', 'Wind', 'import']
+
+INFO:pypsa.components._types.carriers:Assigned colors to 12 carriers using 'tab10' palette.
+
+
+
+[6/6] Network assembled.INFO:pypsa.consistency:Network sanitization complete.
+
+
+
+Solving 2050 (1704 snapshots, week-cyclic SOC, statewide PRM, zonal RA pipes, CO2 cap, relax_pmin, aggregate_large_cc, hybrid_candidates)...
+
+  RA: peak=20,521.2 MW at 2018-06-28 13:00:00  PRM=13.9%  requirement=23,373.6 MW
+
+  RA pipes: t*=2018-06-28 13:00:00  statewide peak=20,521.2 MW  11 internal interfaces
+
+    RA_pipe_South_West: South <-> West  +/-63.5 MW
+
+    RA_pipe_East_South: East <-> South  +/-484.4 MW
+
+    RA_pipe_East_North: East <-> North  +/-591.5 MW
+
+    RA_pipe_Denver_South: Denver <-> South  +/-1,610.4 MW
+
+    RA_pipe_Mountain_South: Mountain <-> South  +/-683.8 MW
+
+    RA_pipe_Denver_East: Denver <-> East  +/-464.5 MW
+
+    RA_pipe_Mountain_West: Mountain <-> West  +/-961.1 MW
+
+    RA_pipe_Denver_Mountain: Denver <-> Mountain  +/-73.1 MW
+
+    RA_pipe_Denver_North: Denver <-> North  +/-4,070.5 MW
+
+    RA_pipe_Mountain_North: Mountain <-> North  +/-0.0 MW  (N-1 zero)
+
+    RA_pipe_North_West: North <-> West  +/-0.0 MW  (N-1 zero)
+
+  zonal load at t*:
+
+    Denver: 12,899.8 MW
+
+    North: 1,562.5 MW
+
+    South: 3,606.9 MW
+
+    Mountain: 406.6 MW
+
+    East: 664.4 MW
+
+    West: 1,381.0 MW
+
+  CO2: cap=0.0000 MMT (0 t)  path=statutory  import intensity=729.8 lb/MWh (Candidate_Gas:CC)
+
+INFO:linopy.model: Solve problem using Highs solver
+
+  hybrid: 6 pairs  p_nom equality on 6 extendable  charge-from-solar on 6
+
+
+INFO:linopy.model:Solver options:
+
+ - solver: simplex
+
+ - threads: 2
+
+INFO:linopy.io:Writing objective.
+
+
+Writing constraints.:   0%|[38;2;128;191;255m          [0m| 0/54 [00:00<?, ?it/s]
+Writing constraints.:  11%|[38;2;128;191;255m#1        [0m| 6/54 [00:00<00:01, 39.05it/s]
+Writing constraints.:  26%|[38;2;128;191;255m##5       [0m| 14/54 [00:00<00:00, 58.48it/s]
+Writing constraints.:  39%|[38;2;128;191;255m###8      [0m| 21/54 [00:00<00:00, 47.19it/s]
+Writing constraints.:  56%|[38;2;128;191;255m#####5    [0m| 30/54 [00:00<00:00, 59.62it/s]
+Writing constraints.:  80%|[38;2;128;191;255m#######9  [0m| 43/54 [00:00<00:00, 79.14it/s]
+Writing constraints.: 100%|[38;2;128;191;255m##########[0m| 54/54 [00:00<00:00, 74.85it/s]
+
+
+Writing continuous variables.:   0%|[38;2;128;191;255m          [0m| 0/9 [00:00<?, ?it/s]
+Writing continuous variables.: 100%|[38;2;128;191;255m##########[0m| 9/9 [00:00<00:00, 105.84it/s]
+
+INFO:linopy.io: Writing time: 0.83s
+
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+
+LP linopy-problem-z11ql0i_ has 584539 rows; 267592 cols; 1099668 nonzeros
+
+Coefficient ranges:
+
+  Matrix  [5e-05, 7e+00]
+
+  Cost    [8e-01, 6e+05]
+
+  Bound   [6e+01, 4e+03]
+
+  RHS     [4e-04, 1e+04]
+
+Presolving model
+
+140069 rows, 182920 cols, 485188 nonzeros 0s
+
+Dependent equations search running on 36214 equations with time limit of 1000.00s
+
+Dependent equations search removed 0 rows and 0 nonzeros in 0.01s (limit = 1000.00s)
+
+135387 rows, 154208 cols, 463504 nonzeros 1s
+
+Presolve reductions: rows 135387(-449152); columns 154208(-113384); nonzeros 463504(-636164) 
+
+Solving the presolved LP
+
+Using dual simplex solver
+
+
+
+========== HiGHS simplex: YEAR 2050 (step 5/5) ==========
+
+2050 |   Iteration        Objective     Infeasibilities num(sum)
+
+2050 |           0     0.0000000000e+00 Ph1: 0(0) 2.3s
+
+2050 |       24777    -1.7322095092e+09 Pr: 13161(1.00969e+07); Du: 0(1.5075e-06) 7.3s
+
+2050 |       30442    -1.6964049449e+09 Pr: 14064(1.44319e+07); Du: 0(1.28158e-06) 12.7s
+
+2050 |       35451    -1.6513856329e+09 Pr: 14775(1.29904e+07); Du: 0(1.54276e-06) 18.0s
+
+2050 |       39771    -1.5759762995e+09 Pr: 20238(1.57359e+07); Du: 0(1.53577e-06) 23.6s
+
+2050 |       41926    -1.5759762537e+09 Pr: 20531(2.07129e+07); Du: 0(1.6205e-06) 29.5s
+
+2050 |       43457    -1.5759761368e+09 Pr: 20868(4.03941e+07); Du: 0(1.45763e-06) 35.6s
+
+2050 |       45063    -1.5493470413e+09 Pr: 21635(4.10707e+07); Du: 0(1.45763e-06) 41.8s
+
+2050 |       47008    -1.4263535593e+09 Pr: 22141(1.16349e+08); Du: 0(1.67746e-06) 46.9s
+
+2050 |       48513    -1.4263534807e+09 Pr: 22436(1.2296e+08); Du: 0(1.43235e-06) 52.0s
+
+2050 |       50231    -1.4160627873e+09 Pr: 23017(1.27338e+08); Du: 0(1.43235e-06) 57.7s
+
+2050 |       52301    -1.3505368968e+09 Pr: 23548(6.82877e+07); Du: 0(1.57314e-06) 64.1s
+
+2050 |       53440    -1.3391197688e+09 Pr: 28482(7.23297e+08); Du: 0(1.61308e-06) 70.0s
+
+2050 |       55326    -1.2928107291e+09 Pr: 24799(8.44217e+07); Du: 0(1.48383e-06) 76.5s
+
+2050 |       57491    -1.2919515875e+09 Pr: 25038(8.62253e+07); Du: 0(1.10106e-06) 82.7s
+
+2050 |       58988    -1.2919515670e+09 Pr: 25164(8.7328e+07); Du: 0(1.19585e-06) 87.8s
+
+2050 |       60511    -1.2919515223e+09 Pr: 25351(9.08894e+07); Du: 0(1.17452e-06) 94.2s
+
+2050 |       63333    -1.1143917809e+09 Pr: 29612(1.07608e+08); Du: 0(9.18814e-07) 99.8s
+
+2050 |       65688    -1.0912841243e+09 Pr: 24866(2.81883e+08); Du: 0(1.14026e-06) 105.5s
+
+2050 |       69103    -1.0038419222e+09 Pr: 29395(1.10263e+08); Du: 0(1.59866e-06) 111.4s
+
+2050 |       71752    -8.7790638510e+08 Pr: 39878(3.06265e+08); Du: 0(1.34268e-06) 116.9s
+
+2050 |       74369    -7.8798687198e+08 Pr: 31042(1.53517e+09); Du: 0(1.13004e-06) 122.7s
+
+2050 |       78700    -6.0576439754e+08 Pr: 29163(1.00272e+08); Du: 0(1.0512e-06) 129.8s
+
+2050 |       81294    -5.5856645036e+08 Pr: 22659(2.37766e+07); Du: 0(1.10387e-06) 136.4s
+
+2050 |       84080    -5.0427770869e+08 Pr: 28835(5.00712e+07); Du: 0(1.17786e-06) 143.5s
+
+2050 |       87694    -3.6519337193e+08 Pr: 28486(1.90083e+08); Du: 0(1.56852e-06) 151.4s
+
+2050 |       90188    -2.7160890556e+08 Pr: 28315(3.52661e+07); Du: 0(1.29536e-06) 158.5s
+
+2050 |       92340    -1.6737070605e+08 Pr: 26580(2.95879e+07); Du: 0(1.4071e-06) 164.5s
+
+2050 |       95037     4.1647212680e+07 Pr: 38416(3.27647e+08); Du: 0(1.35212e-06) 170.8s
+
+2050 |       98075     1.1539592726e+08 Pr: 27058(6.15379e+07); Du: 0(1.13404e-06) 177.1s
+
+2050 |      101214     2.0254525767e+08 Pr: 27190(5.68993e+08); Du: 0(1.0746e-06) 184.4s
+
+2050 |      103915     2.4539136712e+08 Pr: 36911(1.03542e+09); Du: 0(1.08391e-06) 194.2s
+
+2050 |      105891     2.7765144305e+08 Pr: 27231(7.17209e+08); Du: 0(9.17231e-07) 202.0s
+
+2050 |      107517     3.0460100869e+08 Pr: 26466(3.10379e+10); Du: 0(1.04067e-06) 210.1s
+
+2050 |      109323     3.3779975599e+08 Pr: 29500(2.73903e+08); Du: 0(9.20771e-07) 215.4s
+
+2050 |      111156     4.1180977627e+08 Pr: 31826(2.18044e+08); Du: 0(7.59247e-07) 227.7s
+
+2050 |      112039     4.2877069208e+08 Pr: 28377(1.56187e+08); Du: 0(8.6004e-07) 235.8s
+
+2050 |      113055     4.4371626055e+08 Pr: 31854(2.22532e+07); Du: 0(9.16281e-07) 242.2s
+
+2050 |      114099     4.5269562630e+08 Pr: 37819(8.31685e+08); Du: 0(6.94717e-07) 251.7s
+
+2050 |      114982     4.6062573928e+08 Pr: 48571(3.9056e+08); Du: 0(5.70055e-07) 260.1s
+
+2050 |      115826     4.7209889610e+08 Pr: 40899(4.92889e+07); Du: 0(6.91532e-07) 268.5s
+
+2050 |      116826     4.8582363645e+08 Pr: 35096(8.81977e+08); Du: 0(5.87819e-07) 278.0s
+
+2050 |      118513     4.9919972823e+08 Pr: 27999(1.58747e+08); Du: 0(8.90648e-07) 286.4s
+
+2050 |      120595     5.1139379197e+08 Pr: 31748(7.51174e+07); Du: 0(1.05797e-06) 296.9s
+
+2050 |      121577     5.1317391398e+08 Pr: 26367(1.21132e+07); Du: 0(1.09051e-06) 305.3s
+
+2050 |      122506     5.1708614171e+08 Pr: 25163(2.28305e+07); Du: 0(1.10175e-06) 311.9s
+
+2050 |      123751     5.2307469806e+08 Pr: 30055(2.71545e+08); Du: 0(1.11735e-06) 322.7s
+
+2050 |      124749     5.2981454011e+08 Pr: 29539(7.69499e+08); Du: 0(9.73485e-07) 331.8s
+
+2050 |      125771     5.3658049498e+08 Pr: 33087(9.09006e+07); Du: 0(1.11064e-06) 337.9s
+
+2050 |      126886     5.4376642042e+08 Pr: 34560(8.18605e+09); Du: 0(1.34795e-06) 343.9s
+
+2050 |      127851     6.0131518726e+08 Pr: 39806(5.81732e+08); Du: 0(1.27094e-06) 351.9s
+
+2050 |      129707     6.1026649513e+08 Pr: 38265(7.23969e+07); Du: 0(1.40192e-06) 361.1s
+
+2050 |      130614     6.1210700175e+08 Pr: 34195(2.62514e+07); Du: 0(1.44617e-06) 371.1s
+
+2050 |      132389     6.1988327978e+08 Pr: 27952(4.47079e+07); Du: 0(1.2443e-06) 380.9s
+
+2050 |      134003     6.2305134489e+08 Pr: 26938(1.68246e+07); Du: 0(1.07844e-06) 386.3s
+
+2050 |      135968     6.3151300037e+08 Pr: 27578(6.36131e+07); Du: 0(1.00837e-06) 393.5s
+
+2050 |      136929     6.3924402562e+08 Pr: 41533(4.13353e+07); Du: 0(9.94415e-07) 402.3s
+
+2050 |      138166     6.4373980096e+08 Pr: 41591(2.97564e+07); Du: 0(8.78526e-07) 408.8s
+
+2050 |      140327     6.4866167832e+08 Pr: 26808(2.10191e+07); Du: 0(8.69703e-07) 415.3s
+
+2050 |      142567     6.5494008868e+08 Pr: 25528(3.87267e+07); Du: 0(7.97497e-07) 421.4s
+
+2050 |      144731     6.5899229870e+08 Pr: 27123(8.82756e+07); Du: 0(9.87388e-07) 427.4s
+
+2050 |      146710     6.6252099494e+08 Pr: 25555(8.83345e+07); Du: 0(7.72013e-07) 433.0s
+
+2050 |      148969     6.6516514750e+08 Pr: 18869(7.78319e+06); Du: 0(1.19664e-06) 438.6s
+
+2050 |      151049     6.6854048881e+08 Pr: 22753(5.04422e+07); Du: 0(1.17367e-06) 444.0s
+
+2050 |      153191     6.7036409010e+08 Pr: 25861(8.83454e+07); Du: 0(1.1751e-06) 450.2s
+
+2050 |      154997     6.7426208620e+08 Pr: 36194(5.69411e+08); Du: 0(8.00763e-07) 456.0s
+
+2050 |      156758     6.7563712514e+08 Pr: 29923(8.46643e+07); Du: 0(1.04951e-06) 462.3s
+
+2050 |      158558     6.7705049121e+08 Pr: 16536(2.71848e+06); Du: 0(9.14283e-07) 467.5s
+
+2050 |      160456     6.7984997005e+08 Pr: 33111(2.71448e+07); Du: 0(9.18837e-07) 473.4s
+
+2050 |      162157     6.8619687329e+08 Pr: 28387(1.12085e+08); Du: 0(9.26785e-07) 479.1s
+
+2050 |      163973     6.8776132862e+08 Pr: 26648(2.10069e+07); Du: 0(9.05756e-07) 484.2s
+
+2050 |      168393     6.9220628293e+08 Pr: 21060(2.46369e+06); Du: 0(8.66067e-07) 489.5s
+
+2050 |      173898     6.9495752814e+08 Pr: 29989(1.5086e+07); Du: 0(1.03437e-06) 494.9s
+
+2050 |      178351     6.9828140656e+08 Pr: 23259(5.56817e+06); Du: 0(8.50218e-07) 499.9s
+
+2050 |      183317     7.0124852264e+08 Pr: 14334(4.9353e+06); Du: 0(8.80389e-07) 505.1s
+
+2050 |      188856     7.0322055135e+08 Pr: 24444(4.68484e+07); Du: 0(8.03962e-07) 510.4s
+
+2050 |      194603     7.0549717749e+08 Pr: 14623(2.14999e+06); Du: 0(6.1842e-07) 516.6s
+
+2050 |      202556     7.0869194265e+08 Pr: 14290(1.59044e+06); Du: 0(9.49123e-07) 522.7s
+
+2050 |      208820     7.0912735877e+08 Pr: 9771(99166.4); Du: 0(8.54902e-07) 528.6s
+
+2050 |      215600     7.1079702782e+08 Pr: 6549(1.36509e+06); Du: 0(1.02813e-06) 534.3s
+
+2050 |      221858     7.1198263199e+08 Pr: 0(0); Du: 0(3.62882e-09) 537.5s
+
+
+
+Performed postsolve
+
+Solving the original LP from the solution after postsolve
+
+
+
+Model name          : linopy-problem-z11ql0i_
+
+Model status        : Optimal
+
+Simplex   iterations: 221858
+
+Objective value     :  7.1198263199e+08
+
+P-D objective error :  1.3746237935e-13
+
+HiGHS run time      :        538.27
+
+INFO:linopy.constants: Optimization successful: 
+
+Status: ok
+
+Termination condition: optimal
+
+Solution: 267592 primals, 584726 duals
+
+Objective: 7.12e+08
+
+Solver: highs
+
+Runtime: 538.27s
+
+MIP gap: inf
+
+Dual bound: 0.00e+00
+
+Solver model: available
+
+Solver message: Optimal
+
+
+
+INFO:pypsa.optimization.optimize:The variable 'RA_pipe' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The variable 'CO2_import_flow' could not be mapped to the network component because it does not include the symbol '-'.
+
+INFO:pypsa.optimization.optimize:The shadow-prices of the constraints Generator-fix-p-lower, Generator-fix-p-upper, Generator-ext-p-lower, Generator-ext-p-upper, Link-fix-p-lower, Link-fix-p-upper, StorageUnit-fix-p_dispatch-lower, StorageUnit-fix-p_dispatch-upper, StorageUnit-ext-p_dispatch-lower, StorageUnit-ext-p_dispatch-upper, StorageUnit-fix-p_store-lower, StorageUnit-fix-p_store-upper, StorageUnit-ext-p_store-lower, StorageUnit-ext-p_store-upper, StorageUnit-fix-state_of_charge-lower, StorageUnit-fix-state_of_charge-upper, StorageUnit-ext-state_of_charge-lower, StorageUnit-ext-state_of_charge-upper, StorageUnit-energy_balance, reserve_margin_CO, RA_deliverability_Denver, RA_deliverability_North, RA_deliverability_South, RA_deliverability_Mountain, RA_deliverability_East, RA_deliverability_West, CO2_import_ge_p, co2_CO, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Denver_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_East_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_East_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_Mountain_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_North_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_North_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_South_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_South_Battery, hybrid_charge_from_solar_Candidate_Solar_plus_Storage_West_Battery, hybrid_pair_p_nom_Candidate_Solar_plus_Storage_West_Battery were not assigned to the network.
+
+=== YEAR 2050 DONE status=ok  wall=559s  objective=$711,982,632  vintages_carried=33 ===
+
+Build-out by carrier (MW):
+
+layer            existing  vintage  new_build    total
+
+carrier                                               
+
+Solar:PV          4,329.2  4,499.2    9,912.0 18,740.4
+
+Wind                249.0 13,352.1    1,280.1 14,881.2
+
+Gas:CT              726.2 13,974.2        0.0 14,700.4
+
+Storage:Battery       0.0    886.6   12,918.5 13,805.1
+
+Nuclear:SMR           0.0      0.0    1,858.2  1,858.2
+
+Hydro               638.2      0.0        0.0    638.2
+
+Hydro:Pumped        578.5      0.0        0.0    578.5
+
+Zonal shadow prices, mean over snapshots ($/MWh):
+
+name
+
+Denver                 65.611065
+
+North                  65.077476
+
+South                  65.609869
+
+Mountain               65.522663
+
+East                   38.153195
+
+West                   65.571858
+
+Wyoming                67.721127
+
+Utah                   76.231129
+
+FourCorners            76.231129
+
+NewMexico              77.867856
+
+Nebraska               50.572180
+
+EasternInterconnect    50.572180
+
+Reserve margin (statewide, copper-plate):
+
+  peak 20,521.2 MW at 2018-06-28 13:00:00  PRM 13.9%  requirement 23,373.6 MW
+
+                 accredited_mw    p_nom
+
+carrier                                
+
+Gas:CC                     0.0      0.0
+
+Gas:CT                13,243.9 14,700.4
+
+Geothermal                 0.0      0.0
+
+Hydro                    539.1    638.2
+
+Hydro:Pumped             532.0    578.5
+
+Nuclear:SMR            1,728.1  1,858.2
+
+Solar+Storage              0.0      0.0
+
+Solar:PV                 108.2 18,740.4
+
+Storage:Battery        8,051.1 13,805.1
+
+Wind                   4,125.1 14,881.2
+
+  accredited total 28,327.6 MW  slack 4,954.0 MW
+
+  dual $-0.00/MW-yr
+
+Zonal deliverability (firm RA pipes at t*):
+
+  t* 2018-06-28 13:00:00  statewide peak 20,521.2 MW
+
+          accredited_mw  net_firm_in_mw  load_at_tstar_mw  slack_mw  dual
+
+zone                                                                     
+
+Denver          6,681.3         6,218.5          12,899.8       0.0   0.0
+
+North           8,803.0        -3,479.0           1,562.5   3,761.5  -0.0
+
+South           6,324.4        -1,746.3           3,606.9     971.1  -0.0
+
+Mountain        1,586.8           829.1             406.6   2,009.3  -0.0
+
+East            3,269.4        -1,540.4             664.4   1,064.5  -0.0
+
+West            1,662.8          -281.9           1,381.0       0.0  -0.0
+
+RA pipe flows (positive = from -> to):
+
+                             from        to  flow_mw  limit_mw  at_bound
+
+pipe                                                                    
+
+RA_pipe_South_West          South      West    -63.5      63.5      True
+
+RA_pipe_East_South           East     South    484.4     484.4      True
+
+RA_pipe_East_North           East     North    591.5     591.5      True
+
+RA_pipe_Denver_South       Denver     South -1,610.4   1,610.4      True
+
+RA_pipe_Mountain_South   Mountain     South   -683.8     683.8      True
+
+RA_pipe_Denver_East        Denver      East   -464.5     464.5      True
+
+RA_pipe_Mountain_West    Mountain      West   -218.4     961.1     False
+
+RA_pipe_Denver_Mountain    Denver  Mountain    -73.1      73.1      True
+
+RA_pipe_Denver_North       Denver     North -4,070.5   4,070.5      True
+
+RA_pipe_Mountain_North   Mountain     North      0.0       0.0      True
+
+RA_pipe_North_West          North      West      0.0       0.0      True
+
+  reserve_margin_CO dual $-0.00/MW-yr
+
+CO2 cap (annual, production + attributed imports):
+
+  cap 0.0000 MMT  solved 0.0000 MMT  in-state 0.0000  imports 0.0000  slack 0.0000
+
+  import energy 0 MWh (positive Market.p only)
+
+  dual $-35,226.64/metric ton  (native on co2_CO)
+
+Storage cyclic-week energy balance (expect ~0):
+
+  week 0: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 1: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 2: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 3: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 4: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_South)
+
+  week 5: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 6: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 7: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 8: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 9: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+  week 10: max |net| = 0.0000 MWh  (Candidate_Storage:Battery_North)
+
+Net interchange by interface (TWh, + = CO export):
+
+  Link_West_FourCorners: West <-> FourCorners  +10.882 TWh
+
+  Link_West_Utah: West <-> Utah  +8.114 TWh
+
+  Link_East_Nebraska: East <-> Nebraska  +7.512 TWh
+
+  Link_South_NewMexico: South <-> NewMexico  +2.272 TWh
+
+  Link_Mountain_Wyoming: Mountain <-> Wyoming  +3.765 TWh
+
+  Link_North_Wyoming: North <-> Wyoming  +14.105 TWh
+
+  Link_East_EasternInterconnect: East <-> EasternInterconnect  +1.581 TWh
+
+  total  +48.231 TWh
+
+INFO:pypsa.network.io:Exported network 'Unnamed Network' saved to '.\pypsa\scenarios\core\2050.nc contains: storage_units, sub_networks, carriers, links, loads, buses, generators
+
+  wrote pypsa\scenarios\core\2050.nc
+
+
+
+=== MYOPIC SEQUENCE COMPLETE ===
+
+  pypsa\scenarios\core\capacity_by_year.csv
+
+  pypsa\scenarios\core\solve.log
+
+  pypsa\scenarios\core\2030.nc
+
+  pypsa\scenarios\core\2035.nc
+
+  pypsa\scenarios\core\2040.nc
+
+  pypsa\scenarios\core\2045.nc
+
+  pypsa\scenarios\core\2050.nc
+

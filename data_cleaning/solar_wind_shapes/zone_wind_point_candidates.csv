@@ -1,0 +1,6 @@
+zone,point_index,county,lon,lat,wkt
+East,1,Baca/Prowers,-102.461,37.58,POINT(-102.461 37.58)
+East,2,Prowers/Kiowa,-103.6,38.95,POINT(-103.6 38.95)
+East,3,Logan/Yuma,-102.3,40.15,POINT(-102.3 40.15)
+North,1,Larimer/Weld,-104.063,40.889,POINT(-104.063 40.889)
+South,1,Pueblo,-104.54,38.182,POINT(-104.54 38.182)

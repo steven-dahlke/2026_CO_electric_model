@@ -1,0 +1,512 @@
+plant_code,generator_id,plant_name,technology,prime_mover,energy_source,tech_type,nameplate_mw,summer_mw,storage_mwh,max_charge_mw,max_discharge_mw,status,commission_date,retirement_date,ba_code,state,county,latitude,longitude,zone_assignment,filter_source
+460,IC1,Pueblo,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-02-01,,PSCO,CO,Pueblo,38.2667,-104.6144,South,CO+BA
+460,IC3,Pueblo,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-02-01,,PSCO,CO,Pueblo,38.2667,-104.6144,South,CO+BA
+460,IC4,Pueblo,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-02-01,,PSCO,CO,Pueblo,38.2667,-104.6144,South,CO+BA
+460,IC5,Pueblo,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-02-01,,PSCO,CO,Pueblo,38.2667,-104.6144,South,CO+BA
+464,CT1,Alamosa,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.6,13.0,,,,OP,1973-06-01,2026-12-01,PSCO,CO,Alamosa,37.4594,-105.8947,South,CO+BA
+464,CT2,Alamosa,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.6,14.0,,,,OP,1977-06-01,2026-12-01,PSCO,CO,Alamosa,37.4594,-105.8947,South,CO+BA
+467,A,Cabin Creek,Hydroelectric Pumped Storage,PS,WAT,Hydro:Pumped,150.0,170.0,,,,OP,1967-06-01,,PSCO,CO,Clear Creek,39.6551,-105.7088,Denver,CO+BA
+467,B,Cabin Creek,Hydroelectric Pumped Storage,PS,WAT,Hydro:Pumped,150.0,170.0,,,,OP,1967-06-01,,PSCO,CO,Clear Creek,39.6551,-105.7088,Denver,CO+BA
+469,4,Cherokee,Natural Gas Steam Turbine,ST,NG,Gas:ST,380.8,310.0,,,,OP,1968-06-01,2027-12-01,PSCO,CO,Adams,39.807275,-104.964548,Denver,CO+BA
+469,5,Cherokee,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,185.3,168.0,,,,OP,2015-08-01,,PSCO,CO,Adams,39.807275,-104.964548,Denver,CO+BA
+469,6,Cherokee,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,185.3,168.0,,,,OP,2015-08-01,,PSCO,CO,Adams,39.807275,-104.964548,Denver,CO+BA
+469,7,Cherokee,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,255.0,240.0,,,,OP,2015-08-01,,PSCO,CO,Adams,39.807275,-104.964548,Denver,CO+BA
+470,2,Comanche (CO),Conventional Steam Coal,ST,SUB,Coal,396.0,330.0,,,,OP,1975-06-01,2025-12-01,WACM,CO,Pueblo,38.2081,-104.5747,South,CO+BA
+470,3,Comanche (CO),Conventional Steam Coal,ST,SUB,Coal,856.8,750.0,,,,OP,2010-07-01,,WACM,CO,Pueblo,38.2081,-104.5747,South,CO+BA
+471,1,Fruita,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.6,14.0,,,,OP,1973-06-01,2026-12-01,PSCO,CO,Mesa,39.1364,-108.7347,West,CO+BA
+472,1,Georgetown Hydro,Conventional Hydroelectric,HY,WAT,Hydro,0.6,0.8,,,,OP,1906-01-01,,PSCO,CO,Clear Creek,39.6919,-105.6978,Denver,CO+BA
+472,2,Georgetown Hydro,Conventional Hydroelectric,HY,WAT,Hydro,0.6,0.8,,,,OP,1908-01-01,,PSCO,CO,Clear Creek,39.6919,-105.6978,Denver,CO+BA
+474,2,Salida,Conventional Hydroelectric,HY,WAT,Hydro,0.6,0.6,,,,OP,1908-06-01,2027-12-01,PSCO,CO,Chaffee,38.53419,-106.182003,South,CO+BA
+476,A,Shoshone (CO),Conventional Hydroelectric,HY,WAT,Hydro,7.2,7.5,,,,OP,1909-06-01,,PSCO,CO,Garfield,39.57013,-107.226876,West,CO+BA
+476,B,Shoshone (CO),Conventional Hydroelectric,HY,WAT,Hydro,7.2,7.5,,,,OP,1909-06-01,,PSCO,CO,Garfield,39.57013,-107.226876,West,CO+BA
+477,6,Valmont,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,59.3,43.0,,,,OP,1973-05-01,2026-12-01,PSCO,CO,Boulder,40.0195,-105.202,Denver,CO+BA
+492,A1,South Plant (CO),Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,40.9,25.0,,,,OP,2023-06-01,,WACM,CO,El Paso,38.824444,-104.833333,South,CO+BA
+492,A2,South Plant (CO),Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,40.9,25.0,,,,OP,2023-06-01,,WACM,CO,El Paso,38.824444,-104.833333,South,CO+BA
+492,A3,South Plant (CO),Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,40.9,25.0,,,,OP,2023-06-01,,WACM,CO,El Paso,38.824444,-104.833333,South,CO+BA
+492,A4,South Plant (CO),Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,40.9,25.0,,,,OP,2023-06-01,,WACM,CO,El Paso,38.824444,-104.833333,South,CO+BA
+492,A5,South Plant (CO),Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,40.9,25.0,,,,OP,2023-06-01,,WACM,CO,El Paso,38.824444,-104.833333,South,CO+BA
+492,A6,South Plant (CO),Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,40.6,25.0,,,,OP,2023-06-01,,WACM,CO,El Paso,38.824444,-104.833333,South,CO+BA
+493,1,George Birdsall,Natural Gas Steam Turbine,ST,NG,Gas:ST,17.3,16.0,,,,OP,1953-08-01,,WACM,CO,El Paso,38.881389,-104.816944,South,CO+BA
+493,2,George Birdsall,Natural Gas Steam Turbine,ST,NG,Gas:ST,18.8,16.0,,,,OP,1954-03-01,,WACM,CO,El Paso,38.881389,-104.816944,South,CO+BA
+493,3,George Birdsall,Natural Gas Steam Turbine,ST,NG,Gas:ST,25.0,22.0,,,,OP,1957-03-01,,WACM,CO,El Paso,38.881389,-104.816944,South,CO+BA
+494,1,Manitou Springs,Conventional Hydroelectric,HY,WAT,Hydro,2.5,2.5,,,,OP,1939-05-01,,WACM,CO,El Paso,38.855556,-104.933056,South,CO+BA
+494,2,Manitou Springs,Conventional Hydroelectric,HY,WAT,Hydro,2.5,2.5,,,,OP,1927-05-01,,WACM,CO,El Paso,38.855556,-104.933056,South,CO+BA
+494,3,Manitou Springs,Conventional Hydroelectric,HY,WAT,Hydro,0.6,0.5,,,,OP,2006-03-01,,WACM,CO,El Paso,38.855556,-104.933056,South,CO+BA
+495,1,Ruxton Park,Conventional Hydroelectric,HY,WAT,Hydro,1.0,1.0,,,,OP,1925-05-01,,WACM,CO,El Paso,38.841354,-104.973802,South,CO+BA
+502,5,Holly,Petroleum Liquids,IC,DFO,Gas:IC,0.4,0.3,,,,SB,2000-06-01,,WACM,CO,Prowers,38.032717,-102.073659,East,CO+BA
+502,CAT,Holly,Petroleum Liquids,IC,DFO,Gas:IC,1.8,1.7,,,,SB,2007-09-01,,WACM,CO,Prowers,38.032717,-102.073659,East,CO+BA
+502,EMD,Holly,Petroleum Liquids,IC,DFO,Gas:IC,0.7,0.7,,,,SB,1993-01-01,,WACM,CO,Prowers,38.032717,-102.073659,East,CO+BA
+504,1,Julesburg,Petroleum Liquids,IC,DFO,Gas:IC,0.9,0.7,,,,SB,1951-11-01,,WACM,CO,Sedgwick,40.9505,-102.2795,East,CO+BA
+504,3,Julesburg,Petroleum Liquids,IC,DFO,Gas:IC,0.3,0.2,,,,SB,1945-02-01,,WACM,CO,Sedgwick,40.9505,-102.2795,East,CO+BA
+504,4,Julesburg,Petroleum Liquids,IC,DFO,Gas:IC,1.3,1.1,,,,SB,1964-12-01,,WACM,CO,Sedgwick,40.9505,-102.2795,East,CO+BA
+504,5,Julesburg,Petroleum Liquids,IC,DFO,Gas:IC,0.3,0.2,,,,SB,1946-04-01,,WACM,CO,Sedgwick,40.9505,-102.2795,East,CO+BA
+507,1,Las Animas,Petroleum Liquids,IC,DFO,Gas:IC,0.3,0.3,,,,OP,1941-11-01,,WACM,CO,Bent,38.0647,-103.2159,East,CO+BA
+507,2,Las Animas,Petroleum Liquids,IC,DFO,Gas:IC,0.3,0.3,,,,OP,1941-11-01,,WACM,CO,Bent,38.0647,-103.2159,East,CO+BA
+507,4,Las Animas,Petroleum Liquids,IC,DFO,Gas:IC,1.0,1.0,,,,OP,1951-01-01,,WACM,CO,Bent,38.0647,-103.2159,East,CO+BA
+507,5,Las Animas,Petroleum Liquids,IC,DFO,Gas:IC,1.0,1.0,,,,OP,1951-01-01,,WACM,CO,Bent,38.0647,-103.2159,East,CO+BA
+507,6,Las Animas,Petroleum Liquids,IC,DFO,Gas:IC,3.0,2.5,,,,OP,1967-03-01,,WACM,CO,Bent,38.0647,-103.2159,East,CO+BA
+508,T1-T3,Lamar Plant,Onshore Wind Turbine,WT,WND,Wind,4.5,4.0,,,,OP,2004-02-01,,PSCO,CO,Prowers,38.033327,-102.537915,East,CO+BA
+508,T4,Lamar Plant,Onshore Wind Turbine,WT,WND,Wind,1.5,1.5,,,,OP,2004-02-01,,PSCO,CO,Prowers,38.033327,-102.537915,East,CO+BA
+511,3,Trinidad (CO),Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,1.9,1.9,,,,SB,1966-05-01,,WACM,CO,Las Animas,37.178979,-104.487492,South,CO+BA
+511,4,Trinidad (CO),Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,1.9,1.9,,,,SB,1966-05-01,,WACM,CO,Las Animas,37.178979,-104.487492,South,CO+BA
+511,5,Trinidad (CO),Petroleum Liquids,IC,DFO,Gas:IC,1.8,1.8,,,,OP,1999-01-01,,WACM,CO,Las Animas,37.178979,-104.487492,South,CO+BA
+511,6,Trinidad (CO),Petroleum Liquids,IC,DFO,Gas:IC,1.8,1.8,,,,OP,1999-01-01,,WACM,CO,Las Animas,37.178979,-104.487492,South,CO+BA
+511,7,Trinidad (CO),Petroleum Liquids,IC,DFO,Gas:IC,1.8,1.8,,,,OP,1999-01-01,,WACM,CO,Las Animas,37.178979,-104.487492,South,CO+BA
+512,1,Blue Mesa,Conventional Hydroelectric,HY,WAT,Hydro,43.2,43.2,,,,OP,1967-09-01,,WACM,CO,Gunnison,38.453191,-107.337483,West,CO+BA
+512,2,Blue Mesa,Conventional Hydroelectric,HY,WAT,Hydro,43.2,43.2,,,,OP,1967-11-01,,WACM,CO,Gunnison,38.453191,-107.337483,West,CO+BA
+513,1,Estes,Conventional Hydroelectric,HY,WAT,Hydro,15.0,17.2,,,,OP,1950-09-01,,WACM,CO,Larimer,40.376771,-105.509665,North,CO+BA
+513,2,Estes,Conventional Hydroelectric,HY,WAT,Hydro,15.0,17.2,,,,OP,1950-12-01,,WACM,CO,Larimer,40.376771,-105.509665,North,CO+BA
+513,3,Estes,Conventional Hydroelectric,HY,WAT,Hydro,15.0,17.2,,,,OP,1950-12-01,,WACM,CO,Larimer,40.376771,-105.509665,North,CO+BA
+514,1,Morrow Point,Conventional Hydroelectric,HY,WAT,Hydro,86.6,86.6,,,,OP,1970-12-01,,WACM,CO,Montrose,38.451753,-107.539299,West,CO+BA
+514,2,Morrow Point,Conventional Hydroelectric,HY,WAT,Hydro,86.6,86.6,,,,OP,1971-01-01,,WACM,CO,Montrose,38.451753,-107.539299,West,CO+BA
+515,1,Big Thompson,Conventional Hydroelectric,HY,WAT,Hydro,4.5,5.2,,,,OP,1959-04-01,,WACM,CO,Larimer,40.421031,-105.223804,North,CO+BA
+516,1,Green Mountain,Conventional Hydroelectric,HY,WAT,Hydro,13.0,13.0,,,,OP,1943-05-01,,WACM,CO,Summit,39.878805,-106.332725,Mountain,CO+BA
+516,2,Green Mountain,Conventional Hydroelectric,HY,WAT,Hydro,13.0,13.0,,,,OP,1943-05-01,,WACM,CO,Summit,39.878805,-106.332725,Mountain,CO+BA
+517,1,Marys Lake,Conventional Hydroelectric,HY,WAT,Hydro,8.1,9.3,,,,OP,1951-05-01,,WACM,CO,Larimer,40.34408,-105.534308,North,CO+BA
+518,1,Flatiron,Conventional Hydroelectric,HY,WAT,Hydro,43.0,43.0,,,,OP,1954-01-01,,WACM,CO,Larimer,40.364996,-105.236032,North,CO+BA
+518,2,Flatiron,Conventional Hydroelectric,HY,WAT,Hydro,43.0,43.0,,,,OP,1954-01-01,,WACM,CO,Larimer,40.364996,-105.236032,North,CO+BA
+518,3,Flatiron,Hydroelectric Pumped Storage,PS,WAT,Hydro:Pumped,8.5,8.5,,,,OP,1954-05-01,,WACM,CO,Larimer,40.364996,-105.236032,North,CO+BA
+519,1,Pole Hill,Conventional Hydroelectric,HY,WAT,Hydro,38.2,38.2,,,,OP,1954-01-01,,WACM,CO,Larimer,40.365056,-105.325074,North,CO+BA
+520,1,Lower Molina,Conventional Hydroelectric,HY,WAT,Hydro,5.6,5.6,,,,OP,1962-12-01,,WACM,CO,Mesa,39.19366,-108.044088,West,CO+BA
+521,1,Upper Molina,Conventional Hydroelectric,HY,WAT,Hydro,9.9,9.9,,,,OP,1962-12-01,,WACM,CO,Mesa,39.143808,-108.004777,West,CO+BA
+525,1,Hayden,Conventional Steam Coal,ST,BIT,Coal,190.0,179.0,,,,OP,1965-07-01,2028-12-01,PSCO,CO,Routt,40.4856,-107.185,West,CO+BA
+525,2,Hayden,Conventional Steam Coal,ST,BIT,Coal,275.4,262.0,,,,OP,1976-09-01,2027-12-01,PSCO,CO,Routt,40.4856,-107.185,West,CO+BA
+6021,1,Craig (CO),Conventional Steam Coal,ST,SUB,Coal,446.4,427.0,,,,OP,1980-07-01,2025-12-01,WACM,CO,Moffat,40.4627,-107.5912,West,CO+BA
+6021,2,Craig (CO),Conventional Steam Coal,ST,SUB,Coal,446.4,410.0,,,,OP,1979-11-01,2028-09-01,WACM,CO,Moffat,40.4627,-107.5912,West,CO+BA
+6021,3,Craig (CO),Conventional Steam Coal,ST,SUB,Coal,534.8,448.0,,,,OP,1984-10-01,2029-12-01,WACM,CO,Moffat,40.4627,-107.5912,West,CO+BA
+6112,1,Fort St Vrain,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,342.6,308.0,,,,OP,1998-07-01,,PSCO,CO,Weld,40.2461,-104.8742,North,CO+BA
+6112,2,Fort St Vrain,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,175.1,150.0,,,,OP,1996-05-01,,PSCO,CO,Weld,40.2461,-104.8742,North,CO+BA
+6112,3,Fort St Vrain,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,175.1,142.0,,,,OP,1999-01-01,,PSCO,CO,Weld,40.2461,-104.8742,North,CO+BA
+6112,4,Fort St Vrain,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,175.1,142.0,,,,OP,2001-06-01,,PSCO,CO,Weld,40.2461,-104.8742,North,CO+BA
+6112,5,Fort St Vrain,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,140.3,140.0,,,,OP,2009-05-01,,PSCO,CO,Weld,40.2461,-104.8742,North,CO+BA
+6112,6,Fort St Vrain,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,140.3,140.0,,,,OP,2009-05-01,,PSCO,CO,Weld,40.2461,-104.8742,North,CO+BA
+6159,1,Crystal,Conventional Hydroelectric,HY,WAT,Hydro,28.0,35.0,,,,OP,1978-06-01,,WACM,CO,Montrose,38.510573,-107.625335,West,CO+BA
+6206,1,Tacoma,Conventional Hydroelectric,HY,WAT,Hydro,2.3,2.3,,,,OP,1906-06-01,,WACM,CO,La Plata,37.52372,-107.782786,West,CO+BA
+6206,2,Tacoma,Conventional Hydroelectric,HY,WAT,Hydro,2.3,2.3,,,,OP,1905-06-01,,WACM,CO,La Plata,37.52372,-107.782786,West,CO+BA
+6207,1,Ames Hydro,Conventional Hydroelectric,HY,WAT,Hydro,3.6,2.8,,,,OP,1906-06-01,,WACM,CO,San Miguel,37.866,-107.8831,West,CO+BA
+6208,1,Mount Elbert,Hydroelectric Pumped Storage,PS,WAT,Hydro:Pumped,100.0,115.0,,,,OP,1981-06-01,,WACM,CO,Lake,39.094197,-106.352331,Mountain,CO+BA
+6208,2,Mount Elbert,Hydroelectric Pumped Storage,PS,WAT,Hydro:Pumped,100.0,115.0,,,,OP,1984-02-01,,WACM,CO,Lake,39.094197,-106.352331,Mountain,CO+BA
+6248,1,Pawnee,Conventional Steam Natural Gas,ST,NG,Gas:ST,552.3,505.0,,,,OP,1981-11-01,,PSCO,CO,Morgan,40.2217,-103.6803,North,CO+BA
+6516,IC1A,Rocky Ford,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-02-01,,PSCO,CO,Otero,38.0492,-103.7136,East,CO+BA
+6516,IC2,Rocky Ford,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-06-01,,PSCO,CO,Otero,38.0492,-103.7136,East,CO+BA
+6516,IC3,Rocky Ford,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-06-01,,PSCO,CO,Otero,38.0492,-103.7136,East,CO+BA
+6516,IC4,Rocky Ford,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-06-01,,PSCO,CO,Otero,38.0492,-103.7136,East,CO+BA
+6516,IC5,Rocky Ford,Petroleum Liquids,IC,DFO,Gas:IC,2.0,2.0,,,,OP,1964-06-01,,PSCO,CO,Otero,38.0492,-103.7136,East,CO+BA
+6619,1,Burlington (CO),Petroleum Liquids,GT,DFO,Other,64.7,50.0,,,,SB,1977-06-01,,WACM,CO,Kit Carson,39.3561,-102.2431,East,CO+BA
+6619,2,Burlington (CO),Petroleum Liquids,GT,DFO,Other,64.7,50.0,,,,SB,1977-07-01,,WACM,CO,Kit Carson,39.3561,-102.2431,East,CO+BA
+6761,1,Rawhide,Conventional Steam Coal,ST,SUB,Coal,293.6,280.0,,,,OP,1984-04-01,2029-12-01,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,A,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,89.3,65.0,,,,OP,2002-06-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,B,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,89.3,65.0,,,,OP,2002-08-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,C,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,89.3,65.0,,,,OP,2002-09-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,D,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,89.3,65.0,,,,OP,2004-06-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,F,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,149.6,128.0,,,,OP,2008-06-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+7233,1,Tesla,Conventional Hydroelectric,HY,WAT,Hydro,26.6,28.0,,,,OP,1997-04-01,,WACM,CO,El Paso,38.973655,-104.901141,South,CO+BA
+7372,1,McPhee,Conventional Hydroelectric,HY,WAT,Hydro,1.2,1.2,,,,OP,1992-12-01,,WACM,CO,Montezuma,37.57522,-108.574002,West,CO+BA
+7373,1,Towaoc,Conventional Hydroelectric,HY,WAT,Hydro,11.4,11.4,,,,OP,1993-05-01,,WACM,CO,Montezuma,37.429538,-108.574871,West,CO+BA
+7458,1,Basalt,Conventional Hydroelectric,HY,WAT,Hydro,5.0,4.5,,,,OP,1985-09-01,,PSCO,CO,Eagle,39.363056,-106.821944,Mountain,CO+BA
+7995,IC1,Airport Industrial,Petroleum Liquids,IC,DFO,Gas:IC,2.5,2.5,,,,OP,2002-01-01,,PSCO,CO,Pueblo,38.2844,-104.5308,South,CO+BA
+7995,IC2,Airport Industrial,Petroleum Liquids,IC,DFO,Gas:IC,2.5,2.5,,,,OP,2002-01-01,,PSCO,CO,Pueblo,38.2844,-104.5308,South,CO+BA
+7995,IC3,Airport Industrial,Petroleum Liquids,IC,DFO,Gas:IC,2.5,2.5,,,,OP,2002-01-01,,PSCO,CO,Pueblo,38.2844,-104.5308,South,CO+BA
+7995,IC4,Airport Industrial,Petroleum Liquids,IC,DFO,Gas:IC,2.5,2.5,,,,OP,2002-01-01,,PSCO,CO,Pueblo,38.2844,-104.5308,South,CO+BA
+8067,1,Fort Lupton,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,50.4,44.0,,,,OP,1972-04-01,2026-12-01,PSCO,CO,Weld,40.0922,-104.796,North,CO+BA
+8067,2,Fort Lupton,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,50.4,44.0,,,,OP,1972-04-01,2026-12-01,PSCO,CO,Weld,40.0922,-104.796,North,CO+BA
+8100,1,Springfield (CO),Petroleum Liquids,IC,DFO,Gas:IC,1.2,1.2,,,,SB,1965-08-01,,WACM,CO,Baca,37.4028,-102.6217,East,CO+BA
+8100,2,Springfield (CO),Petroleum Liquids,IC,DFO,Gas:IC,0.2,0.2,,,,SB,1950-08-01,,WACM,CO,Baca,37.4028,-102.6217,East,CO+BA
+8100,IC4,Springfield (CO),Petroleum Liquids,IC,DFO,Gas:IC,0.5,0.5,,,,SB,1950-09-01,,WACM,CO,Baca,37.4028,-102.6217,East,CO+BA
+8100,IC5,Springfield (CO),Petroleum Liquids,IC,DFO,Gas:IC,0.8,0.8,,,,SB,1960-09-01,,WACM,CO,Baca,37.4028,-102.6217,East,CO+BA
+8219,1,Ray D Nixon,Conventional Steam Coal,ST,SUB,Coal,207.0,195.0,,,,OP,1980-04-01,2029-12-01,WACM,CO,El Paso,38.633451,-104.70577,South,CO+BA
+8219,GT1,Ray D Nixon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,37.8,30.0,,,,OP,1999-07-01,,WACM,CO,El Paso,38.633451,-104.70577,South,CO+BA
+8219,GT2,Ray D Nixon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,37.8,30.0,,,,OP,1999-07-01,,WACM,CO,El Paso,38.633451,-104.70577,South,CO+BA
+10003,GEN1,Colorado Energy Nations Company,Natural Gas Steam Turbine,ST,NG,Gas:ST,7.5,10.0,,,,OP,1976-09-01,,PSCO,CO,Jefferson,39.7606,-105.215,Denver,CO+BA
+10003,GEN2,Colorado Energy Nations Company,Natural Gas Steam Turbine,ST,NG,Gas:ST,7.5,10.0,,,,OP,1977-05-01,,PSCO,CO,Jefferson,39.7606,-105.215,Denver,CO+BA
+10003,GEN3,Colorado Energy Nations Company,Natural Gas Steam Turbine,ST,NG,Gas:ST,20.0,20.0,,,,OP,1983-06-01,,PSCO,CO,Jefferson,39.7606,-105.215,Denver,CO+BA
+10070,GEN1,Foothills Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,3.1,3.1,,,,OP,1985-05-01,,WACM,CO,Douglas,39.4588,-105.0657,Denver,CO+BA
+10081,GEN1,Strontia Springs Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,1.0,1.0,,,,OP,1986-07-01,,PSCO,CO,Douglas,39.4326,-105.1263,Denver,CO+BA
+10180,3,Metro Wastewater Reclamation District,Other Waste Biomass,IC,OBG,Other,2.0,1.2,,,,SB,1985-04-01,,PSCO,CO,Denver,39.8078,-104.9542,Denver,CO+BA
+10180,4,Metro Wastewater Reclamation District,Other Waste Biomass,IC,OBG,Other,2.0,1.2,,,,SB,1985-04-01,,PSCO,CO,Denver,39.8078,-104.9542,Denver,CO+BA
+10180,5,Metro Wastewater Reclamation District,Other Waste Biomass,GT,OBG,Other,3.5,2.5,,,,OP,2000-08-01,,PSCO,CO,Denver,39.8078,-104.9542,Denver,CO+BA
+10180,6,Metro Wastewater Reclamation District,Other Waste Biomass,GT,OBG,Other,3.5,2.5,,,,OP,2000-09-01,,PSCO,CO,Denver,39.8078,-104.9542,Denver,CO+BA
+10421,GEN1,Dillon Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,1.8,1.8,,,,OP,1987-10-01,,PSCO,CO,Summit,39.6208,-106.0662,Mountain,CO+BA
+10422,GEN1,Williams Fork Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,3.0,3.0,,,,OP,1959-07-01,,WACM,CO,Grand,40.035,-106.2053,Mountain,CO+BA
+10422,GEN2,Williams Fork Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,0.5,0.5,,,,OP,2012-09-01,,WACM,CO,Grand,40.035,-106.2053,Mountain,CO+BA
+10423,GEN1,North Fork Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,5.5,5.5,,,,OP,1988-01-01,,WACM,CO,Park,39.4616,-105.677,South,CO+BA
+10424,GEN1,Gross Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,4.0,4.0,,,,OP,2007-08-01,,PSCO,CO,Jefferson,39.9456,-105.3565,Denver,CO+BA
+10424,GEN2,Gross Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,4.0,4.0,,,,OP,2007-08-01,,PSCO,CO,Jefferson,39.9456,-105.3565,Denver,CO+BA
+10682,GT3,Brush Generation Facility,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,37.0,32.0,,,,OP,1994-01-01,,PSCO,CO,Morgan,40.2415,-103.631,North,CO+BA
+10682,GT4,Brush Generation Facility,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,23.8,25.0,,,,OP,1999-06-01,,PSCO,CO,Morgan,40.2415,-103.631,North,CO+BA
+10682,GT5,Brush Generation Facility,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,23.8,25.0,,,,OP,1999-06-01,,PSCO,CO,Morgan,40.2415,-103.631,North,CO+BA
+10682,ST2,Brush Generation Facility,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,37.0,40.0,,,,OP,1994-01-01,,PSCO,CO,Morgan,40.2415,-103.631,North,CO+BA
+10682,ST4,Brush Generation Facility,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,90.0,90.0,,,,OP,2002-09-01,,PSCO,CO,Morgan,40.2415,-103.631,North,CO+BA
+50205,7101,Williams Ignacio Natural Gas Plant,All Other,ST,WH,Other,6.1,6.1,,,,OP,1984-12-01,,WACM,CO,La Plata,37.145556,-107.784722,West,CO+BA
+50206,GEN1,Vallecito Hydroelectric,Conventional Hydroelectric,HY,WAT,Hydro,0.8,0.8,,,,OP,1989-05-01,,WACM,CO,La Plata,37.377715,-107.578745,West,CO+BA
+50206,GEN2,Vallecito Hydroelectric,Conventional Hydroelectric,HY,WAT,Hydro,2.5,2.5,,,,OP,1989-05-01,,WACM,CO,La Plata,37.377715,-107.578745,West,CO+BA
+50206,GEN3,Vallecito Hydroelectric,Conventional Hydroelectric,HY,WAT,Hydro,2.5,2.5,,,,OP,1989-05-01,,WACM,CO,La Plata,37.377715,-107.578745,West,CO+BA
+50267,RED1,Redlands Water & Power,Conventional Hydroelectric,HY,WAT,Hydro,1.4,1.4,,,,OP,1931-08-01,,PSCO,CO,Mesa,39.067347,-108.592791,West,CO+BA
+50435,SUG1,Sugarloaf Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,2.5,2.5,,,,OP,1985-11-01,,PSCO,CO,Lake,39.252672,-106.374808,Mountain,CO+BA
+50707,LMA,JM Shafer Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,58.5,272.0,,,,OP,1994-06-01,,PSCO,CO,Weld,40.0986,-104.7736,North,CO+BA
+50707,LMB,JM Shafer Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,58.5,,,,,OP,1994-06-01,,PSCO,CO,Weld,40.0986,-104.7736,North,CO+BA
+50707,LMC,JM Shafer Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,58.5,,,,,OP,1994-07-01,,PSCO,CO,Weld,40.0986,-104.7736,North,CO+BA
+50707,LMD,JM Shafer Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,58.5,,,,,OP,1994-07-01,,PSCO,CO,Weld,40.0986,-104.7736,North,CO+BA
+50707,LME,JM Shafer Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,58.5,,,,,OP,1994-07-01,,PSCO,CO,Weld,40.0986,-104.7736,North,CO+BA
+50707,STA,JM Shafer Generating Station,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,52.2,,,,,OP,1994-06-01,,PSCO,CO,Weld,40.0986,-104.7736,North,CO+BA
+50707,STB,JM Shafer Generating Station,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,52.2,,,,,OP,1994-06-01,,PSCO,CO,Weld,40.0986,-104.7736,North,CO+BA
+54142,GEN1,Hillcrest Pump Station,Conventional Hydroelectric,HY,WAT,Hydro,2.0,2.0,,,,OP,1993-06-01,,PSCO,CO,Denver,39.6419,-104.9138,Denver,CO+BA
+54372,GT1,University of Colorado,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,16.0,15.0,,,,OP,1992-08-01,,PSCO,CO,Boulder,40.00759,-105.269204,Denver,CO+BA
+54372,GT2,University of Colorado,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,16.0,15.0,,,,OP,1992-08-01,,PSCO,CO,Boulder,40.00759,-105.269204,Denver,CO+BA
+54372,ST1,University of Colorado,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,1.0,1.0,,,,OP,1992-08-01,,PSCO,CO,Boulder,40.00759,-105.269204,Denver,CO+BA
+54630,D-1,American Gypsum Cogeneration,Petroleum Liquids,IC,DFO,Gas:IC,1.6,1.2,,,,SB,1990-03-01,,PSCO,CO,Eagle,39.648565,-106.949394,Mountain,CO+BA
+54630,D-2,American Gypsum Cogeneration,Petroleum Liquids,IC,DFO,Gas:IC,1.6,1.2,,,,SB,1990-03-01,,PSCO,CO,Eagle,39.648565,-106.949394,Mountain,CO+BA
+54630,T-1,American Gypsum Cogeneration,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,2.8,2.6,,,,OP,1990-03-01,,PSCO,CO,Eagle,39.648565,-106.949394,Mountain,CO+BA
+54630,T-2,American Gypsum Cogeneration,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,3.6,2.6,,,,OP,1990-03-01,,PSCO,CO,Eagle,39.648565,-106.949394,Mountain,CO+BA
+54679,0001,Boulder City Lakewood Hydro,Conventional Hydroelectric,HY,WAT,Hydro,3.5,3.5,,,,OP,2004-02-01,,PSCO,CO,Boulder,40.0111,-105.3347,Denver,CO+BA
+54680,0001,Boulder City Betasso Hydro Plant,Conventional Hydroelectric,HY,WAT,Hydro,3.0,3.0,,,,OP,1987-12-01,,PSCO,CO,Boulder,40.0111,-105.3347,Denver,CO+BA
+54729,COX1,Taylor Draw Hydroelectric Facility,Conventional Hydroelectric,HY,WAT,Hydro,2.3,2.0,,,,OP,1993-04-01,,WACM,CO,Rio Blanco,40.106269,-108.711161,West,CO+BA
+55127,UN1,Manchief Electric Generating Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,150.0,125.0,,,,OP,2000-06-01,,PSCO,CO,Morgan,40.217143,-103.68504,North,CO+BA
+55127,UN2,Manchief Electric Generating Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,150.0,125.0,,,,OP,2000-06-01,,PSCO,CO,Morgan,40.217143,-103.68504,North,CO+BA
+55200,UN5,Arapahoe Combustion Turbine Project,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,71.1,39.0,,,,OP,2000-05-01,,PSCO,CO,Denver,39.6692,-105.0018,Denver,CO+BA
+55200,UN6,Arapahoe Combustion Turbine Project,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,71.1,39.0,,,,OP,2000-05-01,,PSCO,CO,Denver,39.6692,-105.0018,Denver,CO+BA
+55200,UN7,Arapahoe Combustion Turbine Project,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,51.8,44.5,,,,OP,2002-10-01,,PSCO,CO,Denver,39.6692,-105.0018,Denver,CO+BA
+55207,UN7,Valmont Combustion Turbine Project,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,71.1,36.0,,,,OP,2000-05-01,,PSCO,CO,Boulder,40.0205,-105.2009,Denver,CO+BA
+55207,UN8,Valmont Combustion Turbine Project,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,71.1,40.0,,,,OP,2001-05-01,,PSCO,CO,Boulder,40.0205,-105.2009,Denver,CO+BA
+55283,1,Front Range Power Plant,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,153.9,135.0,,,,OP,2003-04-01,,WACM,CO,El Paso,38.6281,-104.7069,South,CO+BA
+55283,2,Front Range Power Plant,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,153.9,135.0,,,,OP,2003-04-01,,WACM,CO,El Paso,38.6281,-104.7069,South,CO+BA
+55283,3,Front Range Power Plant,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,246.5,190.0,,,,OP,2003-04-01,,WACM,CO,El Paso,38.6281,-104.7069,South,CO+BA
+55453,S1,Fountain Valley Power Facility,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,38.0,39.0,,,,OP,2001-07-01,,PSCO,CO,El Paso,38.5569,-104.6875,South,CO+BA
+55453,S2,Fountain Valley Power Facility,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,38.0,39.0,,,,OP,2001-07-01,,PSCO,CO,El Paso,38.5569,-104.6875,South,CO+BA
+55453,S3,Fountain Valley Power Facility,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,38.0,39.0,,,,OP,2001-07-01,,PSCO,CO,El Paso,38.5569,-104.6875,South,CO+BA
+55453,S4,Fountain Valley Power Facility,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,38.0,39.0,,,,OP,2001-07-01,,PSCO,CO,El Paso,38.5569,-104.6875,South,CO+BA
+55453,S5,Fountain Valley Power Facility,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,38.0,39.0,,,,OP,2001-07-01,,PSCO,CO,El Paso,38.5569,-104.6875,South,CO+BA
+55453,S6,Fountain Valley Power Facility,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,38.0,39.0,,,,OP,2001-08-01,,PSCO,CO,El Paso,38.5569,-104.6875,South,CO+BA
+55504,L1,Limon Generating Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,77.1,67.0,,,,OP,2002-02-01,,WACM,CO,Lincoln,39.2038,-103.7005,East,CO+BA
+55504,L2,Limon Generating Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,77.1,67.0,,,,OP,2002-02-01,,WACM,CO,Lincoln,39.2038,-103.7005,East,CO+BA
+55505,BR1,Frank Knutson,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,77.1,67.0,,,,OP,2002-05-01,,PSCO,CO,Adams,39.941129,-104.682015,Denver,CO+BA
+55505,BR2,Frank Knutson,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,77.1,67.0,,,,OP,2002-05-01,,PSCO,CO,Adams,39.941129,-104.682015,Denver,CO+BA
+55645,CT01,Blue Spruce Energy Center,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,198.9,130.0,,,,OP,2003-05-01,,PSCO,CO,Adams,39.747875,-104.681404,Denver,CO+BA
+55645,CT02,Blue Spruce Energy Center,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,198.9,134.0,,,,OP,2003-05-01,,PSCO,CO,Adams,39.747875,-104.681404,Denver,CO+BA
+55650,GE10,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE11,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE12,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE13,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE14,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE15,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE16,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE17,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE18,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE19,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GE20,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN1,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN2,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN3,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN4,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN5,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN6,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN7,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN8,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55650,GEN9,Plains End,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,5.7,5.52,,,,OP,2002-05-01,,PSCO,CO,Jefferson,39.857499,-105.225967,Denver,CO+BA
+55835,CTG1,Rocky Mountain Energy Center,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,175.1,146.0,,,,OP,2004-05-01,,PSCO,CO,Weld,40.0908,-104.5953,North,CO+BA
+55835,CTG2,Rocky Mountain Energy Center,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,175.1,146.0,,,,OP,2004-05-01,,PSCO,CO,Weld,40.0908,-104.5953,North,CO+BA
+55835,STG1,Rocky Mountain Energy Center,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,334.9,300.0,,,,OP,2004-05-01,,PSCO,CO,Weld,40.0908,-104.5953,North,CO+BA
+55931,0001,Boulder City Silver Lake Hydro,Conventional Hydroelectric,HY,WAT,Hydro,3.3,3.3,,,,OP,2000-05-01,,PSCO,CO,Boulder,39.991311,-105.50003,Denver,CO+BA
+56173,CG,Colorado Green Holdings LLC,Onshore Wind Turbine,WT,WND,Wind,162.0,162.0,,,,OP,2003-12-01,,PSCO,CO,Prowers,37.7033,-102.6231,East,CO+BA
+56320,1,Spring Canyon,Onshore Wind Turbine,WT,WND,Wind,60.0,60.0,,,,OP,2006-02-01,,PSCO,CO,Logan,40.983,-102.9647,East,CO+BA
+56371,1,Cedar Creek Wind,Onshore Wind Turbine,WT,WND,Wind,221.0,221.0,,,,OP,2007-11-01,,PSCO,CO,Weld,40.8944,-104.0206,North,CO+BA
+56371,2,Cedar Creek Wind,Onshore Wind Turbine,WT,WND,Wind,79.5,79.5,,,,OP,2007-11-01,,PSCO,CO,Weld,40.8944,-104.0206,North,CO+BA
+56445,GEN1,Spindle Hill Energy Center,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,210.0,135.0,,,,OP,2007-05-01,,PSCO,CO,Weld,40.092192,-104.887844,North,CO+BA
+56445,GEN2,Spindle Hill Energy Center,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,210.0,135.0,,,,OP,2007-05-01,,PSCO,CO,Weld,40.092192,-104.887844,North,CO+BA
+56460,WT1,Twin Buttes Wind Project,Onshore Wind Turbine,WT,WND,Wind,75.0,75.0,,,,OP,2007-07-01,,PSCO,CO,Bent,37.6735,-102.8622,East,CO+BA
+56481,1,SunE Alamosa,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,0.14,,,,OP,2007-12-01,,PSCO,CO,Alamosa,37.690304,-105.880501,South,CO+BA
+56481,2,SunE Alamosa,Solar Photovoltaic,PV,SUN,Solar:PV,7.2,5.4,,,,OP,2007-12-01,,PSCO,CO,Alamosa,37.690304,-105.880501,South,CO+BA
+56516,2G01,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G02,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G03,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G04,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G05,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G06,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G07,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,7.4,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G08,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G09,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G10,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G11,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G12,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G13,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56516,2G14,Plains End II LLC,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,8.4,8.04,,,,OP,2008-05-01,,PSCO,CO,Jefferson,39.8586,-105.2256,Denver,CO+BA
+56530,GEN1,DADS Gas Recovery,Landfill Gas,IC,LFG,Other,0.8,0.8,,,,OP,2008-07-01,,PSCO,CO,Arapahoe,39.6522,-104.7161,Denver,CO+BA
+56530,GEN2,DADS Gas Recovery,Landfill Gas,IC,LFG,Other,0.8,0.8,,,,OP,2008-07-01,,PSCO,CO,Arapahoe,39.6522,-104.7161,Denver,CO+BA
+56530,GEN3,DADS Gas Recovery,Landfill Gas,IC,LFG,Other,0.8,0.8,,,,OP,2008-07-01,,PSCO,CO,Arapahoe,39.6522,-104.7161,Denver,CO+BA
+56530,GEN4,DADS Gas Recovery,Landfill Gas,IC,LFG,Other,0.8,0.8,,,,OP,2008-07-01,,PSCO,CO,Arapahoe,39.6522,-104.7161,Denver,CO+BA
+56563,GE,Peetz Table Wind Energy,Onshore Wind Turbine,WT,WND,Wind,199.5,199.5,,,,OP,2007-09-01,,PSCO,CO,Logan,40.986,-103.436,East,CO+BA
+56613,1,Logan Wind Energy,Onshore Wind Turbine,WT,WND,Wind,201.0,201.0,,,,OP,2007-10-01,,PSCO,CO,Logan,40.941,-103.259,East,CO+BA
+56815,1,Denver Int Airport,Solar Photovoltaic,PV,SUN,Solar:PV,1.9,1.9,,,,OP,2008-09-01,,PSCO,CO,Denver,39.902984,-104.659252,Denver,CO+BA
+56922,EAST,WWRF Solar Plant,Solar Photovoltaic,PV,SUN,Solar:PV,0.5,0.4,,,,OP,2009-02-01,,PSCO,CO,Garfield,39.522904,-107.81341,West,CO+BA
+56922,WEST,WWRF Solar Plant,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,0.9,,,,OP,2009-02-01,,PSCO,CO,Garfield,39.522904,-107.81341,West,CO+BA
+56998,4,Pueblo Airport Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,40.0,37.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,43,Pueblo Airport Generating Station,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,20.0,20.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,5,Pueblo Airport Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,40.0,37.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,53,Pueblo Airport Generating Station,Natural Gas Fired Combined Cycle,CA,NG,Gas:CC,20.0,20.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,6,Pueblo Airport Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,40.0,37.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,7,Pueblo Airport Generating Station,Natural Gas Fired Combined Cycle,CT,NG,Gas:CT,40.0,37.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,CT08,Pueblo Airport Generating Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,40.0,40.0,,,,OP,2016-12-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,GT1,Pueblo Airport Generating Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,100.0,90.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+56998,GT2,Pueblo Airport Generating Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,100.0,90.0,,,,OP,2012-01-01,,PSCO,CO,Pueblo,38.320833,-104.52639,South,CO+BA
+57141,CSU1,RV CSU Power LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.9,1.9,,,,OP,2009-12-01,,PSCO,CO,Larimer,40.591099,-105.145904,North,CO+BA
+57174,CHW1,Colorado Highlands Wind,Onshore Wind Turbine,WT,WND,Wind,71.0,71.0,,,,OP,2012-12-01,,WACM,CO,Logan,40.756944,-102.743055,East,CO+BA
+57174,CHW2,Colorado Highlands Wind,Onshore Wind Turbine,WT,WND,Wind,25.1,25.1,,,,OP,2013-09-01,,WACM,CO,Logan,40.756944,-102.743055,East,CO+BA
+57210,1,Cedar Creek II,Onshore Wind Turbine,WT,WND,Wind,248.3,248.3,,,,OP,2011-03-01,,PSCO,CO,Weld,40.9475,-103.783889,North,CO+BA
+57244,KCW,Kit Carson Windpower,Onshore Wind Turbine,WT,WND,Wind,51.0,51.0,,,,OP,2010-11-01,,WACM,CO,Kit Carson,39.3383,-102.3533,East,CO+BA
+57290,GE,Northern Colorado Wind LLC,Onshore Wind Turbine,WT,WND,Wind,22.5,22.5,,,,OP,2009-08-01,,PSCO,CO,Logan,40.9881,-102.8969,East,CO+BA
+57290,SIEM,Northern Colorado Wind LLC,Onshore Wind Turbine,WT,WND,Wind,151.8,151.8,,,,OP,2009-08-01,,PSCO,CO,Logan,40.9881,-102.8969,East,CO+BA
+57315,1-139,Cedar Point Wind,Onshore Wind Turbine,WT,WND,Wind,252.0,252.0,,,,OP,2011-05-01,,PSCO,CO,Lincoln,39.421787,-103.67814,East,CO+BA
+57317,1,San Luis Valley Solar Ranch,Solar Photovoltaic,PV,SUN,Solar:PV,35.0,35.0,,,,OP,2011-12-01,,PSCO,CO,Alamosa,37.694535,-105.927622,South,CO+BA
+57368,1,Alamosa Solar,Solar Photovoltaic,PV,SUN,Solar:PV,30.0,30.0,,,,OP,2012-04-01,,PSCO,CO,Alamosa,37.598579,-105.955832,South,CO+BA
+57377,GS-P1,Greater Sandhill I,Solar Photovoltaic,PV,SUN,Solar:PV,10.0,10.0,,,,OP,2010-09-01,,PSCO,CO,Alamosa,37.685467,-105.8909,South,CO+BA
+57377,GS-P2,Greater Sandhill I,Solar Photovoltaic,PV,SUN,Solar:PV,9.0,9.0,,,,OP,2010-12-01,,PSCO,CO,Alamosa,37.685467,-105.8909,South,CO+BA
+57507,CSUII,RV CSU Power II LLC,Solar Photovoltaic,PV,SUN,Solar:PV,3.0,3.0,,,,OP,2010-12-01,,PSCO,CO,Larimer,40.592841,-105.147097,North,CO+BA
+57509,1,Carson Solar I,Solar Photovoltaic,PV,SUN,Solar:PV,2.0,1.5,,,,OP,2007-12-01,,WACM,CO,El Paso,38.7228,-104.7817,South,CO+BA
+57554,AFA1,AFA Solar Farm,Solar Photovoltaic,PV,SUN,Solar:PV,5.5,5.5,,,,OP,2011-03-01,,WACM,CO,El Paso,38.957901,-104.806627,South,CO+BA
+57643,V100,"Vestas Towers America, Inc.",Onshore Wind Turbine,WT,WND,Wind,1.8,1.8,,,,OP,2010-04-01,,WACM,CO,Pueblo,38.1728,-104.62,South,CO+BA
+57645,PV1,City & County of Denver at Denver Int'l,Solar Photovoltaic,PV,SUN,Solar:PV,3.4,3.4,,,,OP,2011-06-01,,PSCO,CO,Denver,39.904133,-104.654183,Denver,CO+BA
+57681,1,City of Boulder WWTP,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,0.9,,,,OP,2010-06-01,,PSCO,CO,Boulder,40.048025,-105.180327,Denver,CO+BA
+57980,WTG,Busch Ranch Wind Energy,Onshore Wind Turbine,WT,WND,Wind,29.0,29.0,,,,OP,2012-10-01,,PSCO,CO,Huerfano,37.801111,-104.491944,South,CO+BA
+58081,ATB-2,Western Sugar Coop- Ft Morgan,Natural Gas Steam Turbine,ST,NG,Gas:ST,3.0,3.0,,,,OP,1947-09-01,,PSCO,CO,Morgan,40.263,-103.8069,North,CO+BA
+58126,1,Limon Wind I,Onshore Wind Turbine,WT,WND,Wind,200.0,200.0,,,,OP,2012-11-01,,PSCO,CO,Lincoln,39.380975,-103.573236,East,CO+BA
+58127,1,Limon Wind II,Onshore Wind Turbine,WT,WND,Wind,200.0,200.0,,,,OP,2012-11-01,,PSCO,CO,Lincoln,39.341389,-103.581111,East,CO+BA
+58481,CSU1,CSU Pueblo,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2008-12-01,,WACM,CO,Pueblo,38.306111,-104.58,South,CO+BA
+58547,1,SMPA Solar 1 Community Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2012-12-01,,PSCO,CO,Montrose,38.2725,-108.785556,West,CO+BA
+58548,WTG1,Huerfano River Wind,Onshore Wind Turbine,WT,WND,Wind,2.0,2.0,,,,OP,2013-10-01,,WACM,CO,Huerfano,37.772222,-104.832222,South,CO+BA
+58548,WTG2,Huerfano River Wind,Onshore Wind Turbine,WT,WND,Wind,2.0,2.0,,,,OP,2013-10-01,,WACM,CO,Huerfano,37.772222,-104.832222,South,CO+BA
+58548,WTG3,Huerfano River Wind,Onshore Wind Turbine,WT,WND,Wind,2.0,2.0,,,,OP,2013-10-01,,WACM,CO,Huerfano,37.772222,-104.832222,South,CO+BA
+58548,WTG4,Huerfano River Wind,Onshore Wind Turbine,WT,WND,Wind,2.0,2.0,,,,OP,2013-10-01,,WACM,CO,Huerfano,37.772222,-104.832222,South,CO+BA
+58622,1,Carter Hydro,Conventional Hydroelectric,HY,WAT,Hydro,1.3,1.3,,,,OP,2012-06-01,,WACM,CO,Larimer,40.324167,-105.208889,North,CO+BA
+58622,2,Carter Hydro,Conventional Hydroelectric,HY,WAT,Hydro,1.3,1.3,,,,OP,2012-06-01,,WACM,CO,Larimer,40.324167,-105.208889,North,CO+BA
+58769,1,Spring Canyon Expansion Wind Energy Ctr,Onshore Wind Turbine,WT,WND,Wind,34.0,34.0,,,,OP,2014-10-01,,PSCO,CO,Logan,40.964167,-103.077222,East,CO+BA
+58769,SCIII,Spring Canyon Expansion Wind Energy Ctr,Onshore Wind Turbine,WT,WND,Wind,28.6,28.6,,,,OP,2014-12-01,,PSCO,CO,Logan,40.964167,-103.077222,East,CO+BA
+58783,SC-1,South Canal Hydro-1,Conventional Hydroelectric,HY,WAT,Hydro,4.0,3.8,,,,OP,2013-06-01,,WACM,CO,Montrose,38.483333,-107.755,West,CO+BA
+58784,SC-3,South Canal Hydro-3,Conventional Hydroelectric,HY,WAT,Hydro,3.5,3.3,,,,OP,2013-08-01,,WACM,CO,Montrose,38.470278,-107.771389,West,CO+BA
+58901,TCWG1,Tri-County Water Hydropower Project,Conventional Hydroelectric,HY,WAT,Hydro,7.2,7.2,,,,OP,2014-04-01,,WACM,CO,Ouray,38.239167,-107.758056,West,CO+BA
+58901,TCWG2,Tri-County Water Hydropower Project,Conventional Hydroelectric,HY,WAT,Hydro,0.8,0.8,,,,OP,2014-04-01,,WACM,CO,Ouray,38.239167,-107.758056,West,CO+BA
+59083,WT1,Limon III Wind LLC,Onshore Wind Turbine,WT,WND,Wind,200.6,200.6,,,,OP,2014-08-01,,PSCO,CO,Lincoln,39.353333,-103.474167,East,CO+BA
+59143,FR-1,Front Range Project,Landfill Gas,IC,LFG,Other,3.2,3.1,,,,OP,2011-10-01,,WACM,CO,Weld,40.029444,-105.004722,North,CO+BA
+59144,15755,Brighton PV Solar Plant,Solar Photovoltaic,PV,SUN,Solar:PV,1.8,1.8,,,,OP,2012-12-01,,WACM,CO,Adams,39.9825,-104.940833,Denver,CO+BA
+59198,STER3,Sterling PV 3,Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2014-12-01,,PSCO,CO,Logan,40.6316,-103.194694,East,CO+BA
+59199,MESA1,Mesa PV1,Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2014-12-01,,PSCO,CO,Mesa,39.0672,-108.509139,West,CO+BA
+59239,ESS01,Eagle Springs Solar LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2013-08-01,,PSCO,CO,Garfield,39.526111,-107.696111,West,CO+BA
+59462,DIA4,Denver Intl Airport IV Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2014-07-01,,SWPP,CO,Denver,39.902697,-104.673935,Denver,CO_only
+59656,COMCH,Comanche Solar,Solar Photovoltaic,PV,SUN,Solar:PV,120.0,120.0,,,,OP,2016-09-01,,PSCO,CO,Pueblo,38.205278,-104.566667,South,CO+BA
+59742,HCE,Sunnyside Ranch Community Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2015-04-01,,PSCO,CO,Garfield,39.415027,-107.157188,West,CO+BA
+59807,GBDIA,Airport 1 Solar (DIA),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2009-12-01,,SWPP,CO,Adams,39.899455,-104.674809,Denver,CO_only
+59848,PPSG1,Pikes Peak Solar Garden 1 LLC CSG,Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2015-07-01,,WACM,CO,El Paso,38.7745,-104.7458,South,CO+BA
+59849,23377,Adams Community Solar Garden LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.2,1.2,,,,OP,2015-07-01,,PSCO,CO,Adams,39.7876,-104.5859,Denver,CO+BA
+59850,23376,Adams Community Solar Garden III LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.2,1.2,,,,OP,2015-07-01,,PSCO,CO,Adams,39.7867,-104.5877,Denver,CO+BA
+59974,GW1,Golden West Power Partners LLC,Onshore Wind Turbine,WT,WND,Wind,250.0,250.0,,,,OP,2015-10-01,,PSCO,CO,El Paso,38.935,-104.212,South,CO+BA
+59975,CW1,Carousel Wind Farm LLC,Onshore Wind Turbine,WT,WND,Wind,150.0,150.0,,,,OP,2015-11-01,,PSCO,CO,Kit Carson,39.334,-102.173,East,CO+BA
+60008,SCCO3,Hooper Solar,Solar Photovoltaic,PV,SUN,Solar:PV,52.0,52.0,,,,OP,2015-12-01,,PSCO,CO,Alamosa,37.691863,-105.990812,South,CO+BA
+60023,FTLUP,SR Jenkins Ft Lupton,Solar Photovoltaic,PV,SUN,Solar:PV,13.0,13.0,,,,OP,2016-05-01,,PSCO,CO,Weld,40.081444,-104.746661,North,CO+BA
+60119,GEN1,Granby Hydro,Conventional Hydroelectric,HY,WAT,Hydro,1.2,1.2,,,,OP,2016-05-01,,PSCO,CO,Grand,40.1464,-105.8683,Mountain,CO+BA
+60143,WTG,Peak View Wind Farm,Onshore Wind Turbine,WT,WND,Wind,60.8,60.8,,,,OP,2016-11-01,,PSCO,CO,Huerfano,37.710444,-104.505464,South,CO+BA
+60247,VVS,Valley View Solar,Solar Photovoltaic,PV,SUN,Solar:PV,4.0,4.0,,,,OP,2015-12-01,,WACM,CO,Weld,40.418786,-104.891944,North,CO+BA
+60248,CAREY,Skylark,Solar Photovoltaic,PV,SUN,Solar:PV,4.0,4.0,,,,OP,2015-12-01,,WACM,CO,Weld,40.577889,-104.894792,North,CO+BA
+60283,MVRKS,SR Mavericks,Solar Photovoltaic,PV,SUN,Solar:PV,7.8,7.8,,,,OP,2016-12-01,,WACM,CO,Weld,40.23,-105.03,North,CO+BA
+60304,SISPV,"San Isabel Solar, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,30.0,30.0,,,,OP,2016-12-01,,PSCO,CO,Las Animas,37.372,-104.843,South,CO+BA
+60320,SSCO1,Jeffco Community Solar Gardens LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.2,1.2,,,,OP,2016-05-01,,PSCO,CO,Jefferson,39.859564,-105.149694,Denver,CO+BA
+60351,BSPV1,Bison Solar LLC,Solar Photovoltaic,PV,SUN,Solar:PV,30.0,30.0,,,,OP,2016-10-01,,PSCO,CO,Larimer,40.863809,-105.0111,North,CO+BA
+60497,SKY B,SR Skylark B,Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2016-09-01,,WACM,CO,Weld,40.579472,-104.895675,North,CO+BA
+60511,PV1,Clear Spring Ranch PV Project,Solar Photovoltaic,PV,SUN,Solar:PV,10.0,10.0,,,,OP,2016-10-01,,WACM,CO,El Paso,38.602102,-104.694688,South,CO+BA
+60619,GEN1,Rush Creek Wind,Onshore Wind Turbine,WT,WND,Wind,600.0,582.3,,,,OP,2018-12-01,,PSCO,CO,Elbert,39.172111,-103.845358,East,CO+BA
+60720,WELD1,Weld 1 Community Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2017-10-01,,PSCO,CO,Weld,40.232146,-104.791865,North,CO+BA
+60722,LOGA1,Logan 1 Community Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2017-10-01,,PSCO,CO,Logan,40.609968,-103.145084,East,CO+BA
+60723,CONEJ,Conejos 1 Community Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2017-11-01,,PSCO,CO,Conejos,37.195886,-105.982424,South,CO+BA
+60724,ARAP3,Arapahoe 3 Community Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,1.8,1.8,,,,OP,2017-09-01,,PSCO,CO,Arapahoe,39.638358,-104.674249,Denver,CO+BA
+60725,ADCO2,Xcel Adams 2 Community Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2017-12-01,,PSCO,CO,Adams,39.784937,-104.583391,Denver,CO+BA
+60726,ADCO1,Xcel Adams 1 Community Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,1.8,1.8,,,,OP,2017-09-01,,PSCO,CO,Adams,39.765479,-104.588631,Denver,CO+BA
+60764,PV1,Victory Solar LLC,Solar Photovoltaic,PV,SUN,Solar:PV,12.8,12.8,,,,OP,2016-12-01,,PSCO,CO,Adams,39.795,-104.433,Denver,CO+BA
+60801,PUEB2,"CEC Solar #1117, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-08-01,,PSCO,CO,Pueblo,38.284425,-104.523951,South,CO+BA
+61040,WT1,Twin Buttes II Wind,Onshore Wind Turbine,WT,WND,Wind,75.0,75.0,,,,OP,2017-12-01,,WACM,CO,Prowers,37.773,-102.546,East,CO+BA
+61189,GEN1,Shavano Falls Hydro,Conventional Hydroelectric,HY,WAT,Hydro,2.8,2.8,,,,OP,2015-06-01,,WACM,CO,Montrose,38.491966,-108.002283,West,CO+BA
+61190,GEN1,Shavano Falls Hydro Drop 4,Conventional Hydroelectric,HY,WAT,Hydro,4.8,4.5,,,,OP,2015-06-01,,WACM,CO,Montrose,38.450483,-107.776727,West,CO+BA
+61191,GEN1,Drop 5 (CO),Conventional Hydroelectric,HY,WAT,Hydro,2.4,2.4,,,,OP,2017-03-01,,WACM,CO,Montrose,38.404377,-107.810213,West,CO+BA
+61314,KERS,SR Kersey,Solar Photovoltaic,PV,SUN,Solar:PV,3.5,3.5,,,,OP,2017-08-01,,WACM,CO,Weld,40.386197,-104.55095,North,CO+BA
+61425,COYCS,Coyote Ridge Community Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2017-10-01,,WACM,CO,Larimer,40.500969,-105.13143,North,CO+BA
+61439,PANPV,Panasonic Carport Solar Hybrid,Solar Photovoltaic,PV,SUN,Solar:PV,1.3,1.3,,,,OP,2017-05-01,,PSCO,CO,Adams,39.808719,-104.781494,Denver,CO+BA
+61462,PV1,SR Platte Solar Farm,Solar Photovoltaic,PV,SUN,Solar:PV,16.0,16.0,,,,OP,2017-11-01,,PSCO,CO,Weld,40.181742,-104.692067,North,CO+BA
+61472,ANTO2,San Luis Solar Garden,Solar Photovoltaic,PV,SUN,Solar:PV,1.2,1.2,,,,OP,2017-08-01,,PSCO,CO,Conejos,37.068132,-106.018925,South,CO+BA
+61563,53962,Denver Metro Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2017-12-01,,PSCO,CO,Adams,39.759298,-104.621139,Denver,CO+BA
+61605,1,San Luis Valley Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,2.7,2.7,,,,OP,2017-11-01,,PSCO,CO,Saguache,37.777,-106.22,South,CO+BA
+61606,1,Vilas Solar Array,Solar Photovoltaic,PV,SUN,Solar:PV,4.0,4.0,,,,OP,2017-12-01,,PSCO,CO,Baca,37.384,-102.466,East,CO+BA
+61752,PV1,Quincy II Solar Garden,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-05-01,,PSCO,CO,Arapahoe,39.638409,-104.662508,Denver,CO+BA
+61753,PV1,Imboden Solar Garden,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-05-01,,PSCO,CO,Adams,39.786769,-104.583574,Denver,CO+BA
+61753,PV2,Imboden Solar Garden,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-05-01,,PSCO,CO,Adams,39.786769,-104.583574,Denver,CO+BA
+61811,PCEC,Titan Solar,Solar Photovoltaic,PV,SUN,Solar:PV,50.0,50.0,,,,OP,2018-12-01,,PSCO,CO,Arapahoe,39.68646,-104.01398,Denver,CO+BA
+61886,GEN1,Bar D,Solar Photovoltaic,PV,SUN,Solar:PV,4.0,4.0,,,,OP,2018-12-01,,WACM,CO,Rio Blanco,39.923679,-108.462709,West,CO+BA
+61991,PI-QF,"Pioneer Solar (CO), LLC",Solar Photovoltaic,PV,SUN,Solar:PV,80.0,80.0,,,,OP,2021-06-01,,PSCO,CO,Adams,39.761569,-104.45903,Denver,CO+BA
+62224,53971,Oak Leaf Solar XXVII LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-11-01,,PSCO,CO,Weld,40.44,-104.64,North,CO+BA
+62239,53963,Oak Leaf Solar XXX LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-12-01,,PSCO,CO,Alamosa,37.453381,-105.878021,South,CO+BA
+62243,53964,Oak Leaf Solar XXI (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-12-01,,PSCO,CO,Arapahoe,39.638,-104.604,Denver,CO+BA
+62244,53977,Oak Leaf Solar XXXI LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-12-01,,PSCO,CO,Mesa,39.145,-108.32,West,CO+BA
+62245,53968,Oak Leaf Solar XXV LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-12-01,,PSCO,CO,Arapahoe,39.637,-104.529,Denver,CO+BA
+62251,53975,Oak Leaf Solar XXXII (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-03-01,,PSCO,CO,Garfield,39.523,-107.815,West,CO+BA
+62252,53965,Oak Leaf Solar XXII LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-01-01,,PSCO,CO,Adams,39.903806,-104.667473,Denver,CO+BA
+62253,53967,Oak Leaf Solar XXIV LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-01-01,,PSCO,CO,Arapahoe,39.637,-104.561,Denver,CO+BA
+62254,53970,Oak Leaf Solar XXVI LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-01-01,,PSCO,CO,Adams,39.899959,-104.73453,Denver,CO+BA
+62255,53973,Oak Leaf Solar XXVIII LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-06-01,,PSCO,CO,Weld,40.237,-104.779,North,CO+BA
+62256,53966,Oak Leaf Solar XXIII LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-01-01,,PSCO,CO,Adams,39.80165,-104.62146,Denver,CO+BA
+62260,44901,Trout Creek Solar,Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2019-01-01,,PSCO,CO,Chaffee,38.8151,-106.1104,South,CO+BA
+62373,I25BA,I25 Battery Storage,Batteries,BA,MWH,Storage:Battery,4.0,4.0,16.0,4.0,4.0,OP,2018-12-01,,WACM,CO,Weld,40.140285,-104.978012,North,CO+BA
+62376,PV1,Grazing Yak Solar,Solar Photovoltaic,PV,SUN,Solar:PV,35.0,35.0,,,,OP,2019-11-01,,WACM,CO,El Paso,38.977759,-104.252715,South,CO+BA
+62379,47301,Spanish Peaks Solar,Solar Photovoltaic,PV,SUN,Solar:PV,140.0,140.0,,,,OP,2024-12-01,2058-12-01,PSCO,CO,Las Animas,37.378,-104.475,South,CO+BA
+62445,WT,Busch Ranch II Wind Farm,Onshore Wind Turbine,WT,WND,Wind,59.4,59.4,,,,OP,2019-11-01,,PSCO,CO,Huerfano,37.766416,-104.42945,South,CO+BA
+62489,GEN1,Crossing Trails Wind Power Project LLC.,Onshore Wind Turbine,WT,WND,Wind,104.0,104.0,,,,OP,2021-04-01,,WACM,CO,Kit Carson,39.046623,-102.822377,East,CO+BA
+62495,20181,Palmer Solar,Solar Photovoltaic,PV,SUN,Solar:PV,60.0,60.0,,,,OP,2020-04-01,,WACM,CO,El Paso,38.6299,-104.6526,South,CO+BA
+62663,SO390,Gilcrest Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-08-01,,WACM,CO,Weld,40.289366,-104.783613,North,CO+BA
+62664,SO393,Quincy Solar (CO),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2018-09-01,,WACM,CO,Arapahoe,39.63838,-104.562645,Denver,CO+BA
+62667,LFHSL,Lafayette Horizon Solar CSG LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2019-02-01,,PSCO,CO,Boulder,39.981606,-105.063747,Denver,CO+BA
+62718,X0037,Mesa CSG 2 Massicotte,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-05-01,,PSCO,CO,Mesa,39.044814,-108.419672,West,CO+BA
+62719,X0038,Mesa CSG 1 Murdock,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-05-01,,PSCO,CO,Mesa,39.108785,-108.64387,West,CO+BA
+62840,MTBRZ,"Mountain Breeze Wind, LLC",Onshore Wind Turbine,WT,WND,Wind,171.7,171.7,,,,OP,2020-10-01,,PSCO,CO,Weld,40.960618,-104.003174,North,CO+BA
+62877,ADEN3,Amazon Denver DEN3,Solar Photovoltaic,PV,SUN,Solar:PV,4.6,4.6,,,,OP,2019-11-01,,PSCO,CO,Adams,39.885061,-104.982339,Denver,CO+BA
+62952,CRW01,Cheyenne Ridge Wind Farm,Onshore Wind Turbine,WT,WND,Wind,498.4,477.1,,,,OP,2020-08-01,,PSCO,CO,Cheyenne,39.016944,-102.2113,East,CO+BA
+63022,1,Fort Carson Battery Energy Storage Syste,Batteries,BA,MWH,Storage:Battery,4.2,4.2,8.5,4.2,4.2,OP,2018-12-01,,WACM,CO,El Paso,38.745474,-104.777675,South,CO+BA
+63092,RIVER,Riverview Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-11-01,,WACM,CO,Logan,40.66583,-103.132442,East,CO+BA
+63163,SIFRS,Tom Sifers Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2019-11-01,,WACM,CO,Grand,39.959166,-105.846,Mountain,CO+BA
+63164,WHSKY,Whiskey Hill Solar,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2019-11-01,,WACM,CO,Jackson,40.8125,-106.289722,Mountain,CO+BA
+63276,X0133,Mtn. Solar 1,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-08-01,,PSCO,CO,Adams,39.777621,-104.58591,Denver,CO+BA
+63277,X0133,Mtn. Solar 2,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-09-01,,PSCO,CO,Adams,39.766772,-104.59054,Denver,CO+BA
+63278,X0056,CO LI CSG 1 - Kamerra,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2019-10-01,,PSCO,CO,Adams,39.784879,-104.583391,Denver,CO+BA
+63379,X0134,Mtn. Solar 3 CSG,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2020-01-01,,PSCO,CO,Morgan,40.280904,-103.61911,North,CO+BA
+63536,BLD3,Amazon DEN2 Solar Project,Solar Photovoltaic,PV,SUN,Solar:PV,1.2,1.2,,,,OP,2019-10-01,,PSCO,CO,Adams,39.75,-104.75,Denver,CO+BA
+63586,KERII,SR Kersey II,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2019-12-01,,WACM,CO,Weld,40.386223,-104.554038,North,CO+BA
+63587,SKYC,SR Skylark C,Solar Photovoltaic,PV,SUN,Solar:PV,1.1,1.1,,,,OP,2019-12-01,,WACM,CO,Weld,40.575118,-104.89577,North,CO+BA
+63681,13,Oak Leaf Solar XXXIII LLC (Lantz),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2020-01-01,,PSCO,CO,Chaffee,38.5357,-106.0753,South,CO+BA
+63681,14,Oak Leaf Solar XXXIII LLC (Lantz),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2020-01-01,,PSCO,CO,Chaffee,38.5357,-106.0753,South,CO+BA
+63722,BA1,Rawhide Prairie Solar Hybrid,Batteries,BA,MWH,Storage:Battery,1.0,1.0,2.0,1.0,1.0,OP,2021-03-01,,PSCO,CO,Larimer,40.857978,-105.015561,North,CO+BA
+63722,PV1,Rawhide Prairie Solar Hybrid,Solar Photovoltaic,PV,SUN,Solar:PV,22.0,22.0,,,,OP,2021-03-01,,PSCO,CO,Larimer,40.857978,-105.015561,North,CO+BA
+63731,NT125,Neptune Energy Center Hybrid,Batteries,BA,MWH,Storage:Battery,125.0,125.0,500.0,125.0,125.0,OP,2023-06-01,,PSCO,CO,Pueblo,38.330263,-104.414155,South,CO+BA
+63731,NT325,Neptune Energy Center Hybrid,Solar Photovoltaic,PV,SUN,Solar:PV,325.0,325.0,,,,OP,2023-06-01,,PSCO,CO,Pueblo,38.330263,-104.414155,South,CO+BA
+63753,218,"Platteville Solar CSG, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,1.3,1.3,,,,OP,2020-01-01,,PSCO,CO,Weld,40.22833,-104.77471,North,CO+BA
+63770,COBH1,Bighorn Solar 1,Solar Photovoltaic,PV,SUN,Solar:PV,240.0,240.0,,,,OP,2021-11-01,,PSCO,CO,Pueblo,38.207518,-104.596708,South,CO+BA
+63776,TW100,Thunder Wolf Energy Center Hybrid,Batteries,BA,MWH,Storage:Battery,100.0,100.0,400.0,100.0,100.0,OP,2023-06-01,,PSCO,CO,Pueblo,38.1899,-104.39804,South,CO+BA
+63776,TW300,Thunder Wolf Energy Center Hybrid,Solar Photovoltaic,PV,SUN,Solar:PV,248.0,248.0,,,,OP,2023-06-01,,PSCO,CO,Pueblo,38.1899,-104.39804,South,CO+BA
+63803,WBOPL,"Bronco Plains Wind, LLC",Onshore Wind Turbine,WT,WND,Wind,300.0,299.0,,,,OP,2020-09-01,,PSCO,CO,Kit Carson,39.088845,-103.025074,East,CO+BA
+63869,DGIBM,IBM Solar,Solar Photovoltaic,PV,SUN,Solar:PV,8.1,8.1,,,,OP,2019-07-01,,PSCO,CO,Boulder,40.038266,-105.244892,Denver,CO+BA
+64021,225,Alden Solar CSG LLC,Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2020-03-01,,PSCO,CO,Weld,40.45633,-104.58107,North,CO+BA
+64024,262,"Monte Vista Solar 2 CSG, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2020-05-01,,PSCO,CO,Rio Grande,37.57176,-106.09988,South,CO+BA
+64031,228,"Fremont CO 1, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,1.8,1.8,,,,OP,2020-01-01,,PSCO,CO,Fremont,38.46446,-105.21246,South,CO+BA
+64123,GEN35,James W. Broderick Hydropower Plant,Conventional Hydroelectric,HY,WAT,Hydro,3.5,3.3,,,,OP,2019-05-01,,PACE,CO,Pueblo,38.27,-104.72,South,CO_only
+64123,GEN40,James W. Broderick Hydropower Plant,Conventional Hydroelectric,HY,WAT,Hydro,4.0,3.8,,,,OP,2019-05-01,,PACE,CO,Pueblo,38.27,-104.72,South,CO_only
+64152,SNAKE,SR Rattlesnake,Solar Photovoltaic,PV,SUN,Solar:PV,6.0,6.0,,,,OP,2020-12-01,,WACM,CO,Weld,40.105427,-104.413144,North,CO+BA
+64200,JSG,Jack's Solar Garden,Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2020-10-01,,PSCO,CO,Boulder,40.122552,-105.130321,Denver,CO+BA
+64212,CO465,Pike Solar Hybrid,Solar Photovoltaic,PV,SUN,Solar:PV,175.0,175.0,,,,OP,2023-12-01,,PSCO,CO,El Paso,38.6217,-104.5814,South,CO+BA
+64265,263,Rock Creek 2 CSG,Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2020-12-01,,WACM,CO,Alamosa,37.39955,-105.90341,South,CO+BA
+64266,264,Alamosa Solar South CSG,Solar Photovoltaic,PV,SUN,Solar:PV,1.6,1.6,,,,OP,2021-01-01,,PSCO,CO,Alamosa,37.4512,-105.85916,South,CO+BA
+64352,SC,Mtn Solar 6 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-03-01,,WACM,CO,Logan,40.613557,-103.233735,East,CO+BA
+64353,SC,NSE Camber Solar PS11 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-03-01,,WACM,CO,Logan,40.613557,-103.233735,East,CO+BA
+64355,SC,"NSE Camber BH CSG 2, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2021-11-01,,WACM,CO,Crowley,38.209158,-103.747306,East,CO+BA
+64356,SC,NSE Camber Solar PS13 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-02-01,,WACM,CO,Logan,40.619084,-103.158886,East,CO+BA
+64357,SC,NSE Camber Solar PS6 LLC CSG,Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-02-01,,WACM,CO,Weld,40.260736,-104.824172,North,CO+BA
+64358,SC,NSE Camber Solar PS5 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-02-01,,WACM,CO,Weld,40.250222,-104.839513,North,CO+BA
+64359,SC,Pivot Solar 12 LLC(CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2022-03-01,,WACM,CO,Logan,40.613557,-103.233735,East,CO+BA
+64386,GLCRV,Gilcrest V CSG,Solar Photovoltaic,PV,SUN,Solar:PV,4.8,4.8,,,,OP,2021-02-01,,PSCO,CO,Weld,40.317966,-104.770747,North,CO+BA
+64388,TRUCO,TruStile Doors - Denver,Solar Photovoltaic,PV,SUN,Solar:PV,1.2,1.2,,,,OP,2021-02-01,,PSCO,CO,Adams,39.825708,-104.97312,Denver,CO+BA
+64648,SC,Pivot Solar 4 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-07-01,,WACM,CO,Weld,40.228419,-104.777024,North,CO+BA
+64649,SC,Pivot Solar 1 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2022-07-01,,WACM,CO,Garfield,39.414671,-108.090731,West,CO+BA
+64650,SC,Pivot Solar 14 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-12-01,,WACM,CO,Morgan,40.266898,-103.657514,North,CO+BA
+64651,SC,Pivot Solar 2 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-12-01,,WACM,CO,Morgan,40.266898,-103.657514,North,CO+BA
+64652,SC,Pivot Solar 15 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.0,1.0,,,,OP,2022-12-01,,WACM,CO,Morgan,40.266856,-103.65937,North,CO+BA
+64653,SC,Pivot Solar 7 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-07-01,,WACM,CO,Garfield,39.523107,-107.815344,West,CO+BA
+64654,SC,Pivot Solar 3 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-07-01,,WACM,CO,Garfield,39.414671,-108.090731,West,CO+BA
+64655,SC,Pivot Solar 8 LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2022-07-01,,WACM,CO,Weld,40.241166,-104.771384,North,CO+BA
+64831,DIA7,Oak Leaf Solar XVIII LLC,Solar Photovoltaic,PV,SUN,Solar:PV,9.0,9.0,,,,OP,2021-12-01,,SWPP,CO,Adams,39.892563,-104.668494,Denver,CO_only
+64872,PANWD,"Panorama Wind, LLC",Onshore Wind Turbine,WT,WND,Wind,145.0,145.0,,,,OP,2022-06-01,,WACM,CO,Weld,40.952057,-103.907562,North,CO+BA
+64880,75020,Venture 1 - 1A CSG,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-05-01,,PSCO,CO,Adams,39.752297,-104.667388,Denver,CO+BA
+65032,COSM1,Sun Mountain Solar 1,Solar Photovoltaic,PV,SUN,Solar:PV,200.0,200.0,,,,OP,2022-12-01,,PSCO,CO,Pueblo,38.180331,-104.518529,South,CO+BA
+65059,WNIYO,"Niyol Wind, LLC",Onshore Wind Turbine,WT,WND,Wind,205.6,205.0,,,,OP,2021-11-01,,WACM,CO,Logan,40.613364,-102.9526,East,CO+BA
+65084,PTKN,Pitkin County Solar,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,OP,2021-10-01,,WACM,CO,Pitkin,39.247705,-106.876811,Mountain,CO+BA
+65178,MTNS4,Mtn. Solar 4 (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-11-01,,PSCO,CO,Jefferson,39.727586,-105.113057,Denver,CO+BA
+65231,HCO,"Hunter Solar, LLC (CO)",Solar Photovoltaic,PV,SUN,Solar:PV,75.0,75.0,,,,OP,2023-12-01,,PSCO,CO,Arapahoe,39.626617,-104.465038,Denver,CO+BA
+65235,75024,Venture 2 - 1B,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-09-01,,PSCO,CO,Adams,39.752244,-104.66509,Denver,CO+BA
+65236,75021,Venture 3 - 1C,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-09-01,,PSCO,CO,Adams,39.750499,-104.66733,Denver,CO+BA
+65237,75023,Venture 4 - 1D,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-09-01,,PSCO,CO,Adams,39.752334,-104.66733,Denver,CO+BA
+65520,VASQV,Vasquez V CSG,Solar Photovoltaic,PV,SUN,Solar:PV,4.0,4.0,,,,OP,2021-12-01,,PSCO,CO,Weld,40.231806,-104.79894,North,CO+BA
+65609,GLCRS,Gilcrest Sun CSG,Solar Photovoltaic,PV,SUN,Solar:PV,1.8,1.8,,,,OP,2021-12-01,,PSCO,CO,Weld,40.293752,-104.806202,North,CO+BA
+65806,528,DIA 8,Solar Photovoltaic,PV,SUN,Solar:PV,4.5,4.5,,,,OP,2023-02-01,,PSCO,CO,Adams,39.903739,-104.663383,Denver,CO+BA
+65898,T0041,Gaylord Rockies CHP,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,2.0,2.0,,,,OP,2022-05-01,,PSCO,CO,Adams,39.82,-104.75,Denver,CO+BA
+65898,T0042,Gaylord Rockies CHP,Natural Gas Internal Combustion Engine,IC,NG,Gas:IC,2.0,2.0,,,,OP,2022-05-01,,PSCO,CO,Adams,39.82,-104.75,Denver,CO+BA
+65990,USSGB,USS Giveback Solar LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2023-12-01,,PSCO,CO,Pueblo,38.14347,-104.25341,South,CO+BA
+66014,WBOPT,"Bronco Plains Wind II, LLC",Onshore Wind Turbine,WT,WND,Wind,200.0,199.0,,,,OP,2023-12-01,,PSCO,CO,Kit Carson,39.184,-102.97,East,CO+BA
+66095,712,"Cortez Solar 1, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,2.2,2.2,,,,OP,2022-12-01,,WACM,CO,Montezuma,37.361706,-108.524683,West,CO+BA
+66141,711,"Cortez Solar 3, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2023-03-01,,WACM,CO,Montezuma,37.303925,-108.579549,West,CO+BA
+66169,710,"Cortez Solar 2, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,OP,2023-07-01,,WACM,CO,Montezuma,37.378286,-108.614935,West,CO+BA
+66247,21536,"Ash Mesa Solar, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,7.8,7.8,,,,OP,2022-06-01,,PSCO,CO,Montrose,38.663372,-107.996652,West,CO+BA
+66271,HCEPV,Ameresco HCE Solar LLC,Solar Photovoltaic,PV,SUN,Solar:PV,4.5,4.5,,,,OP,2023-08-01,,PSCO,CO,Garfield,39.46647,-107.234767,West,CO+BA
+66432,USGBS,USS Fruita Solar LLC CSG,Solar Photovoltaic,PV,SUN,Solar:PV,2.0,2.0,,,,OP,2024-05-01,,WACM,CO,Mesa,39.09194,-108.42313,West,CO+BA
+66436,USCOG,USS Cogburn Solar LLC (CSG),Solar Photovoltaic,PV,SUN,Solar:PV,2.4,2.4,,,,OP,2024-12-01,,PSCO,CO,Weld,40.464272,-104.610156,North,CO+BA
+66736,P4159,Oak Leaf - CSG Portfolio (OL 36),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-06-01,,SWPP,CO,Arapahoe,39.6517,-104.5315,Denver,CO_only
+66737,P4161,Oak Leaf - CSG Portfolio (OL 37),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2020-12-01,,SWPP,CO,Adams,39.7854,-104.5913,Denver,CO_only
+66738,P4581,Oak Leaf - CSG Portfolio (OL 38),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-06-01,,SWPP,CO,Adams,39.7854,-104.5913,Denver,CO_only
+66739,P4162,Oak Leaf - CSG Portfolio (OL 39),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2021-06-01,,SWPP,CO,Arapahoe,39.65528,-104.52848,Denver,CO_only
+66740,P4347,Oak Leaf - CSG Portfolio (OL 44),Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2020-12-01,,SWPP,CO,Adams,39.78308,-104.58385,Denver,CO_only
+66945,YVEA,East Victory Way Solar,Solar Photovoltaic,PV,SUN,Solar:PV,4.0,4.0,,,,OP,2023-11-01,,PSCO,CO,Moffat,40.51313,-107.50183,West,CO+BA
+67160,T1S,Springfield Wind,Onshore Wind Turbine,WT,WND,Wind,1.5,1.5,,,,OP,2004-02-01,,PSCO,CO,Baca,37.21444,-102.3933,East,CO+BA
+67201,724,DIA 9,Solar Photovoltaic,PV,SUN,Solar:PV,9.8,9.8,,,,OP,2024-10-01,,PSCO,CO,Adams,39.84666,-104.664338,Denver,CO+BA
+67300,RATBA,Rattlesnake Ridge Battery Storage,Batteries,BA,MWH,Storage:Battery,11.8,11.8,47.0,11.8,11.8,OP,2024-05-01,,WACM,CO,Weld,40.197388,-104.608011,North,CO+BA
+67301,PKWBA,Parkway Battery Storage,Batteries,BA,MWH,Storage:Battery,7.8,7.8,31.3,7.8,7.8,OP,2024-05-01,,PSCO,CO,Broomfield,39.985694,-105.010444,Denver,CO+BA
+67302,FREBA,Frederick Battery Storage,Batteries,BA,MWH,Storage:Battery,7.8,7.8,31.3,7.8,7.8,OP,2024-09-01,,WACM,CO,Weld,40.10462,-104.984515,North,CO+BA
+67303,MEABA,Mead Battery Storage,Batteries,BA,MWH,Storage:Battery,7.8,7.8,31.3,7.8,7.8,OP,2024-05-01,,WACM,CO,Weld,40.219394,-104.942166,North,CO+BA
+67304,DAVBA,Davis Battery Storage,Batteries,BA,MWH,Storage:Battery,11.8,11.8,47.0,11.8,11.8,OP,2024-08-01,,WACM,CO,Weld,40.144366,-104.745068,North,CO+BA
+67305,BROBA,Bromley Battery Storage,Batteries,BA,MWH,Storage:Battery,11.8,11.8,47.0,11.8,11.8,OP,2024-06-01,,WACM,CO,Adams,39.978775,-104.768675,Denver,CO+BA
+67306,KEEBA,Keenesburg Battery Storage,Batteries,BA,MWH,Storage:Battery,11.8,11.8,47.0,11.8,11.8,OP,2024-05-01,,WACM,CO,Weld,40.146214,-104.548727,North,CO+BA
+67307,PLVBA,Platte Valley Battery Storage,Batteries,BA,MWH,Storage:Battery,7.8,7.8,31.3,7.8,7.8,OP,2024-07-01,,PSCO,CO,Weld,39.988332,-104.845127,Denver,CO+BA
+67419,PV1,CSWIND America Inc.,Solar Photovoltaic,PV,SUN,Solar:PV,12.3,11.32,,,,OP,2023-10-01,,WACM,CO,Pueblo,38.169473,-104.618971,South,CO+BA
+67441,SC,Pivot Solar 9,Solar Photovoltaic,PV,SUN,Solar:PV,1.7,1.7,,,,OP,2024-04-01,,PSCO,CO,Arapahoe,39.72736,-104.76954,Denver,CO+BA
+67446,SC,Pivot Solar 10,Solar Photovoltaic,PV,SUN,Solar:PV,1.7,1.7,,,,OP,2024-04-01,,PSCO,CO,Arapahoe,39.72883,-104.77063,Denver,CO+BA
+67465,CBEP1,"CBEP Solar 1, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,OP,2023-10-01,,PSCO,CO,Logan,40.665825,-103.203525,East,CO+BA
+67466,CBEP4,"CBEP Solar 4, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,4.0,4.0,,,,OP,2023-11-01,,PSCO,CO,Weld,40.319191000000004,-104.836243,North,CO+BA
+67467,CBEP5,"CBEP Solar 5, LLC",Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,OP,2023-12-01,,PSCO,CO,Weld,40.340485,-104.881674,North,CO+BA
+67952,PV001,LPEA Sunnyside Solar 1 Facility,Solar Photovoltaic,PV,SUN,Solar:PV,1.7,1.7,,,,OP,2024-07-01,,WACM,CO,La Plata,37.124087,-107.860243,West,CO+BA
+68041,948,Overland,Solar Photovoltaic,PV,SUN,Solar:PV,11.0,11.0,,,,OP,2024-12-01,,PSCO,CO,Weld,40.135008,-104.645395,North,CO+BA
+68058,PCEBS,Prairie Center Energy LLC,Batteries,BA,MWH,Storage:Battery,35.4,33.7,235.0,35.4,35.4,OP,2024-12-01,,WACM,CO,Adams,39.930281,-104.794297,Denver,CO+BA
+68234,GEN1,Vinelands Power Plant,Conventional Hydroelectric,HY,WAT,Hydro,4.5,3.5,,,,OP,2022-11-01,,PSCO,CO,Mesa,39.101686,-108.345744,West,CO+BA
+68639,CBEP7,CBEP Solar 7,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,OP,2024-08-01,,PSCO,CO,Weld,40.34036,-104.87889,North,CO+BA
+68640,GREEL,ECA CO Greeley,Solar Photovoltaic,PV,SUN,Solar:PV,3.3,3.3,,,,OP,2024-11-01,,PSCO,CO,Weld,40.481029,-104.715909,North,CO+BA
+68941,BHC3,BH CSG 3,Solar Photovoltaic,PV,SUN,Solar:PV,1.5,1.5,,,,OP,2023-05-01,,WACM,CO,Otero,37.983521,-103.57624,East,CO+BA
+68943,PI20,Pivot Solar 20,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,OP,2023-10-01,,WACM,CO,Weld,40.31766,-104.930923,North,CO+BA
+68944,PI21,Pivot Solar 21,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,OP,2024-04-01,,WACM,CO,Arapahoe,39.728452,-104.769,Denver,CO+BA
+68945,PI37,Pivot Solar 37,Solar Photovoltaic,PV,SUN,Solar:PV,2.5,2.5,,,,OP,2024-06-01,,WACM,CO,Logan,40.620759,-103.234372,East,CO+BA
+68964,PI35,Pivot Solar 35,Solar Photovoltaic,PV,SUN,Solar:PV,3.9,3.9,,,,OP,2024-12-01,,WACM,CO,Weld,40.32734,-104.751821,North,CO+BA
+6761,G,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,44.6,44.6,,,,P,2028-03-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,H,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,44.6,44.6,,,,P,2028-03-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,LM3,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,44.6,44.6,,,,P,2028-03-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,LM4,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,44.6,44.6,,,,P,2028-03-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+6761,LM5,Rawhide,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,44.6,44.6,,,,P,2028-03-01,,PSCO,CO,Larimer,40.860905,-105.021207,North,CO+BA
+64744,TC001,Turkey Creek Solar Project,Solar Photovoltaic,PV,SUN,Solar:PV,200.0,200.0,,,,P,2027-02-01,,WACM,CO,Pueblo,38.382137,-104.91408,South,CO+BA
+64745,BHS02,Black Hollow Sun,Solar Photovoltaic,PV,SUN,Solar:PV,107.0,107.0,,,,T,2026-12-01,,PSCO,CO,Weld,40.616742,-104.848924,North,CO+BA
+64857,C0513,Coyote Gulch Solar,Solar Photovoltaic,PV,SUN,Solar:PV,140.0,140.0,,,,P,2026-12-01,,WACM,CO,Montezuma,37.431,-108.724,West,CO+BA
+64858,C0497,Dolores Canyon Solar,Solar Photovoltaic,PV,SUN,Solar:PV,110.0,110.0,,,,P,2026-12-01,,WACM,CO,Montezuma,37.705,-108.755,West,CO+BA
+65480,CO505,Axial Basin Solar,Solar Photovoltaic,PV,SUN,Solar:PV,145.0,145.0,,,,P,2025-10-01,,PSCO,CO,Moffat,40.327892,-107.75333,West,CO+BA
+67361,DOVES,Dove Solar CSG,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,TS,2025-02-01,,PSCO,CO,Weld,40.318,-104.8914,North,CO+BA
+67362,LARKS,Lark Bunting Solar CSG,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,TS,2025-02-01,,PSCO,CO,Weld,40.311735,-104.77139,North,CO+BA
+67364,BECLS,BecLee Solar CSG,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,TS,2025-02-01,,PSCO,CO,Weld,40.47111,-104.65139,North,CO+BA
+67655,ELKRN,Elk Run,Solar Photovoltaic,PV,SUN,Solar:PV,200.0,200.0,,,,L,2027-03-01,,PSCO,CO,Las Animas,37.454588,-104.488687,South,CO+BA
+67666,SUNDN,Sundance (CO),Solar Photovoltaic,PV,SUN,Solar:PV,74.9,74.9,,,,L,2026-02-01,,PSCO,CO,Elbert,39.414779,-104.448051,East,CO+BA
+68079,STAS1,Stagecoach LRE,Solar Photovoltaic,PV,SUN,Solar:PV,300.0,300.0,,,,T,2029-06-01,,PSCO,CO,Pueblo,38.17739,-104.501227,South,CO+BA
+68261,SNBR1,Sun Bear,Solar Photovoltaic,PV,SUN,Solar:PV,756.0,756.0,,,,L,2029-05-01,,WACM,CO,Montezuma,37.0344,-108.9842,West,CO+BA
+68261,SNBR2,Sun Bear,Batteries,BA,MWH,Storage:Battery,756.0,756.0,3024.0,756.0,756.0,L,2029-05-01,,WACM,CO,Montezuma,37.0344,-108.9842,West,CO+BA
+68343,GRVA1,Grand Valley Solar Generation and BESS,Solar Photovoltaic,PV,SUN,Solar:PV,100.0,100.0,,,,L,2027-12-01,,PSCO,CO,Mesa,39.1987,-108.782,West,CO+BA
+68343,GRVA2,Grand Valley Solar Generation and BESS,Batteries,BA,MWH,Storage:Battery,100.0,100.0,400.0,100.0,100.0,L,2027-12-01,,PSCO,CO,Mesa,39.1987,-108.782,West,CO+BA
+68468,CO513,Canyonland Solar,Solar Photovoltaic,PV,SUN,Solar:PV,140.0,140.0,,,,P,2027-01-01,,WACM,CO,Montezuma,37.4313,-108.7306,West,CO+BA
+68705,H01,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H02,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H03,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H04,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H05,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H06,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H07,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H08,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H09,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68705,H10,Horizon,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,48.0,37.0,,,,P,2028-07-01,,WACM,CO,El Paso,38.775,-104.6668,South,CO+BA
+68741,CPP_1,Canyon Peak Power Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.1,22.2,,,,L,2026-06-01,,WACM,CO,Arapahoe,39.622946,-104.450771,Denver,CO+BA
+68741,CPP_2,Canyon Peak Power Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.1,22.2,,,,L,2026-06-01,,WACM,CO,Arapahoe,39.622946,-104.450771,Denver,CO+BA
+68741,CPP_3,Canyon Peak Power Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.1,22.2,,,,L,2026-07-01,,WACM,CO,Arapahoe,39.622946,-104.450771,Denver,CO+BA
+68741,CPP_4,Canyon Peak Power Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.1,22.2,,,,L,2026-06-01,,WACM,CO,Arapahoe,39.622946,-104.450771,Denver,CO+BA
+68741,CPP_5,Canyon Peak Power Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.1,22.2,,,,L,2026-06-01,,WACM,CO,Arapahoe,39.622946,-104.450771,Denver,CO+BA
+68741,CPP_6,Canyon Peak Power Station,Natural Gas Fired Combustion Turbine,GT,NG,Gas:CT,26.1,22.2,,,,L,2026-07-01,,WACM,CO,Arapahoe,39.622946,-104.450771,Denver,CO+BA
+68957,PI30,Pivot Solar 30,Solar Photovoltaic,PV,SUN,Solar:PV,5.0,5.0,,,,TS,2025-02-01,,WACM,CO,Weld,40.434751,-104.645865,North,CO+BA

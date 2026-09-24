@@ -1,0 +1,9 @@
+tech_class,min_stable_pct,mincap_source,co2_lb_per_mwh,nox_lb_per_mwh,so2_lb_per_mwh,emission_source,storage_duration_hours,round_trip_efficiency_pct,storage_source,allowed_zones,lifetime_years,lifetime_source,Fuel,accredited_capacity_pct,accredited_capacity_source
+Solar:PV,,,0.0,0.0,0.0,zero_emission,,,,All,30.0,atb_2024_tech_life,,,see_elcc_lookup_csv
+Wind,,,0.0,0.0,0.0,zero_emission,,,,"East,North,South",30.0,atb_2024_tech_life,,,see_elcc_lookup_csv
+Solar+Storage,,,0.0,0.0,0.0,zero_emission,4.0,85.0,atb_2024_battery_storage_documentation,All,30.0,atb_2024_tech_life,,,see_elcc_lookup_csv
+Storage:Battery,,,0.0,0.0,0.0,zero_emission,4.0,85.0,atb_2024_battery_storage_documentation,All,15.0,atb_2024_tech_life,,,see_elcc_lookup_csv
+Gas:CT,30.0,siemens_sgt6_5000f_manufacturer_turndown_30pct,1136.9,0.5,0.03,epa_ghg_factor_x_atb_heat_rate_co2__script15_proxy_noxso2,,,,All,30.0,eia_aeo2026_30yr_cost_recovery,natural_gas,90.14,efordd_derate_nerc_gads_2020_2024_all_sizes
+Gas:CC,15.0,ge_7ha_2x1_cc_manufacturer_turndown_15pct,729.8,0.3,0.02,epa_ghg_factor_x_atb_heat_rate_co2__script15_proxy_noxso2,,,,All,30.0,eia_aeo2026_30yr_cost_recovery,natural_gas,95.09,efordd_derate_nerc_gads_2020_2024_all_sizes
+Nuclear:SMR,20.0,chang_oyando_2022_energies_eur_new_lwr_optional_min_20pct,0.0,0.0,0.0,zero_emission,,,,All,60.0,atb_2024_tech_life,uranium,93.0,atb_2024_nuclear_small_capacity_factor
+Geothermal,20.0,proxy_borrowed_from_nuclear_smr_assumption__no_geothermal_specific_source_found,0.0,0.0,0.0,zero_emission,,,,All,30.0,atb_2024_tech_life,,95.48,efordd_derate_nerc_gads_2020_2024_all_sizes

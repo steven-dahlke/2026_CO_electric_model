@@ -1,0 +1,12 @@
+resource,site,cf_2018,cf_lta,scale_factor,hours_clipped
+solar,Denver_cf,0.20974,0.2089,0.99597,0
+solar,East_cf,0.22065,0.2194,0.99431,0
+solar,Mountain_cf,0.20629,0.20304,0.98428,0
+solar,North_cf,0.20425,0.20281,0.99296,0
+solar,South_cf,0.23064,0.22075,0.95711,0
+solar,West_cf,0.21967,0.20715,0.943,0
+wind,North_2018_wind_point1_cf,0.47318,0.47896,1.01222,2227
+wind,East_2018_wind_point1_cf,0.53468,0.52457,0.98109,0
+wind,East_2018_wind_point2_cf,0.36679,0.35892,0.97854,0
+wind,East_2018_wind_point3_cf,0.45452,0.447,0.98346,0
+wind,South_2018_wind_point1_cf,0.25657,0.24362,0.94953,0

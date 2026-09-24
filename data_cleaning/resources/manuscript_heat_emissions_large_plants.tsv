@@ -1,0 +1,13 @@
+Plant	Technology	Capacity (MW)	Heat Rate (BTU/kWh)	CO2 (lb/MWh)	NOx (lb/MWh)	SO2 (lb/MWh)
+Comanche 2	Coal	330	11,192	2,318	1.51	0.96
+Comanche 3	Coal	750	10,921	2,242	0.75	0.94
+Craig	Coal	1,285	11,747	2,464	2.15	0.85
+Hayden	Coal	441	11,683	2,397	0.62	1.38
+Rawhide	Coal	280	10,759	2,115	1.10	0.67
+Ray D Nixon	Coal	195	11,454	2,402	1.84	0.85
+Cherokee	Gas CC	576	6,761	804	0.08	0.00
+Fort St Vrain	Gas CC	742	6,739	801	0.14	0.00
+Front Range	Gas CC	460	7,469	888	0.23	0.00
+RMEC	Gas CC	592	6,784	806	0.06	0.00
+Cherokee	Gas ST	310	11,308	1,344	0.71	0.01
+Gas CT fleet avg. (21 plants)	Gas CT	2,637	10,889	1,285	0.41	0.02

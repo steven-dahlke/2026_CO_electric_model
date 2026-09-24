@@ -1,0 +1,16 @@
+year,carrier,component,gwh
+2030,Storage:Battery,StorageUnit,1587.4346901499634
+2030,Hydro:Pumped,StorageUnit,674.9122488750211
+2030,Solar+Storage,StorageUnit,0.0
+2035,Storage:Battery,StorageUnit,1630.3075939160296
+2035,Hydro:Pumped,StorageUnit,811.362127680342
+2035,Solar+Storage,StorageUnit,0.0
+2040,Storage:Battery,StorageUnit,1415.843819029866
+2040,Hydro:Pumped,StorageUnit,947.4149581014129
+2040,Solar+Storage,StorageUnit,0.0
+2045,Storage:Battery,StorageUnit,2309.136707985261
+2045,Hydro:Pumped,StorageUnit,811.7705275519936
+2045,Solar+Storage,StorageUnit,0.0
+2050,Storage:Battery,StorageUnit,4028.709494653347
+2050,Hydro:Pumped,StorageUnit,481.39121372744063
+2050,Solar+Storage,StorageUnit,-3.410605131648481e-16

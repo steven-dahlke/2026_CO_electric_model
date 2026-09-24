@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: 'If you use this software, please cite it as below.'
+title: PyPSA-CO
+type: software
+authors:
+  - given-names: Steven
+    family-names: Dahlke
+    affiliation: Colorado Public Utilities Commission
+    email: steven.dahlke@state.co.us
+repository-code: 'https://github.com/steven-dahlke/2026_CO_electric_model'
+license: MIT
+version: 1.0.0
+abstract: >-
+  An open, publicly reproducible, multi-period capacity-expansion model of
+  Colorado's electricity system, built with PyPSA.
+
+# TODO once the manuscript is published: add a `preferred-citation` block
+# here (type: article, journal, year, volume, pages, doi) pointing at
+# "Dahlke, S. Electricity capacity expansion aligned to state jurisdiction:
+# Application to Colorado." -- journal TBD, currently in review. Also set
+# `date-released` above to the date of the first tagged release.

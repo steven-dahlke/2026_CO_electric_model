@@ -1,0 +1,7 @@
+Technology	Heat Rate (BTU/kWh)	CO2 (lb/MWh)	NOx (lb/MWh)	SO2 (lb/MWh)
+Coal	10,300	2,110	1.50	0.90
+Gas CC	7,600	890	0.30	0.02
+Gas CT	10,800	1,260	0.50	0.03
+Gas ST	13,500	1,580	0.70	0.10
+Gas IC	9,500	1,110	3.00	0.03
+Nuclear	10,500	0	0.00	0.00

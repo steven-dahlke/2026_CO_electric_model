@@ -1,0 +1,14 @@
+Benchmark	Technology	Fixed O&M ($/kW-yr)	Variable O&M ($/MWh)	Source
+Gas Combined Cycle	Gas:CC	33.80	2.14	ATB
+Gas Combustion Turbine	Gas:CT	25.80	6.94	ATB
+Gas Steam Turbine	Gas:ST	25.80	6.94	ATB
+Battery Storage (4-hr)	Storage:Battery	44.25	0.00	ATB
+Wind Pre-2010	Wind	20.00	0.00	LBNL
+Wind 2010–2019	Wind	21.00	0.00	LBNL
+Wind 2020+	Wind	18.00	0.00	LBNL
+Solar PV, operating	Solar:PV	22.00	0.00	LBNL
+Solar PV, proposed	Solar:PV	11.00	0.00	LBNL
+Hydro <10 MW	Hydro	155.86	0.00	ORNL
+Hydro 10–30 MW	Hydro	71.75	0.00	ORNL
+Hydro 30–100 MW	Hydro	42.06	0.00	ORNL
+Hydro >100 MW	Hydro	28.45	0.00	ORNL
