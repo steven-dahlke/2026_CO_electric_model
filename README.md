@@ -27,9 +27,6 @@ If you use this model, please cite the paper above and this repository (see
 
 ## Quickstart
 
-Developed and tested on Python 3.12.7. Compatibility with other Python
-versions hasn't been checked yet.
-
 ```bash
 pip install -r requirements.txt
 python -u pypsa/scripts/run_scenarios.py core
@@ -44,18 +41,21 @@ depending on the case and your machine. Output lands in
 To run a different case, pass its name instead of `core` (see the table
 below). Passing no argument at all also runs `core`.
 
+Developed and tested on Python 3.12.7. Compatibility with other Python
+versions hasn't been checked yet.
+
 ## The 8 cases
 
-| Case | What it represents | Where it appears in the paper |
-|---|---|---|
-| `core` | Reference case: Colorado's statutory CO2 policy, current transmission, full trade with neighbors | Main text — Figure 2, Table 4 |
-| `island` | Colorado isolated from electricity trade with neighboring systems | Main text — Figure 3, Table 4 |
-| `no_co2_policy` | Reference case with the CO2 constraint removed | Main text — Figure 3, Table 4 |
-| `island_no_co2_policy` | Island + no CO2 policy, combined | Discussion |
-| `cap95` | An alternative CO2 policy trajectory (95% cap, no ramp to 100%) | Discussion |
-| `island_cap95` | Island + the `cap95` policy, combined | Discussion |
-| `unconstrained_internal` | Internal transfer limits relaxed to an effectively unconstrained ("copper plate") level | Discussion — the transmission/wind-siting sensitivity |
-| `island_unconstrained_internal` | Island + unconstrained internal transmission, combined | Discussion |
+| Case | What it represents |
+|---|---|
+| `core` | Reference case: Colorado's statutory CO2 policy, current transmission, full trade with neighbors |
+| `island` | Colorado isolated from electricity trade with neighboring systems |
+| `no_co2_policy` | Reference case with the CO2 constraint removed |
+| `island_no_co2_policy` | Island + no CO2 policy, combined |
+| `cap95` | An alternative CO2 policy trajectory (95% cap, no ramp to 100%) |
+| `island_cap95` | Island + the `cap95` policy, combined |
+| `unconstrained_internal` | Internal transfer limits relaxed to an effectively unconstrained ("copper plate") level |
+| `island_unconstrained_internal` | Island + unconstrained internal transmission, combined |
 
 Every case is a named overlay on `core`'s defaults — see the `CASES` dict at
 the top of `pypsa/scripts/run_scenarios.py`.
@@ -119,5 +119,4 @@ show how those assembled inputs were built from raw public sources, but
 **rebuilding them from scratch is not a one-command process** — it requires
 API keys (NREL NSRDB/WIND Toolkit), access to public data lakes (PUDL's S3
 bucket), and manually downloading a few federal workbooks (EIA's Annual
-Energy Outlook tables). They're included for transparency, not as a promised
-reproducible pipeline.
+Energy Outlook tables).

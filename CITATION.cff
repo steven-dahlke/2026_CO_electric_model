@@ -10,6 +10,11 @@ authors:
 repository-code: 'https://github.com/steven-dahlke/2026_CO_electric_model'
 license: MIT
 version: 1.0.0
+date-released: '2026-09-24'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22946254
+    description: The version-specific archive of PyPSA-CO v1.0.0 on Zenodo.
 abstract: >-
   An open, publicly reproducible, multi-period capacity-expansion model of
   Colorado's electricity system, built with PyPSA.
@@ -17,5 +22,4 @@ abstract: >-
 # TODO once the manuscript is published: add a `preferred-citation` block
 # here (type: article, journal, year, volume, pages, doi) pointing at
 # "Dahlke, S. Electricity capacity expansion aligned to state jurisdiction:
-# Application to Colorado." -- journal TBD, currently in review. Also set
-# `date-released` above to the date of the first tagged release.
+# Application to Colorado." -- journal TBD, currently in review.
