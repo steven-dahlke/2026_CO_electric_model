@@ -1619,8 +1619,22 @@ def tee_solve_log(network_prefix: str, *, append: bool = False):
             yield log_path
         else:
             tees.append(_start_fd_tee(stdout_fd, log_file, lock, encoding) + (stdout_fd,))
+            # Once stdout_fd is dup2'd onto the pipe, the *original* sys.stdout object is
+            # unsafe to write through on Windows: if it was console-backed (a real terminal,
+            # not redirected/piped), it caches the console handle and calling write on it
+            # after the fd now points at a pipe raises OSError [WinError 1] Incorrect
+            # function. Re-open the fd as a plain text stream so Python-level writes (like
+            # the print below) go through the pipe like everything else.
+            sys.stdout = os.fdopen(
+                stdout_fd, "w", encoding=encoding, errors="replace", buffering=1, closefd=False
+            )
             if stderr_fd != stdout_fd:
                 tees.append(_start_fd_tee(stderr_fd, log_file, lock, encoding) + (stderr_fd,))
+                sys.stderr = os.fdopen(
+                    stderr_fd, "w", encoding=encoding, errors="replace", buffering=1, closefd=False
+                )
+            else:
+                sys.stderr = sys.stdout
             print(f"  solve log: {log_path.relative_to(PROJECT_ROOT)}", flush=True)
             yield log_path
     finally:
